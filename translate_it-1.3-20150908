@@ -1,4 +1,4 @@
-1.2	it	2015-09-06 20:45:00CET
+1.3	it	2015-09-08 23:06:08Z
 		
 (General)		(Generale)
 (Main)		(Principale)
@@ -67,12 +67,12 @@ Arc Center Incremental		Centro Arco Incrementale
 Arc Center Incremental.info	Used in the {$mop.header} macro to specify that ArcCenterMode is set to Incremental.\nMach3 recognizes G91.1	Utilizzato nella macro {$mop.header}  per specificare che Modo Centro Arco è impostata su incrementale. Mach3 riconosce G91.1
 Arc Center Mode		Modo Centro Arco
 Arc Center Mode.info	NOTE:  This only affects the arc I,J coordinates.  It does not affect G90/G91 codes	NOTA: Questo riguarda solo le coordinate I,J dell'arco. Non influisce sui codici G90/G91 
-Arc Center Mode.info:MachiningOptions	If Default, then uses post processor setting.	
+Arc Center Mode.info:MachiningOptions	If Default, then uses post processor setting.	Se Default, usa le impostazione del post processore.
 Arc CW		Arco CW
 Arc CW.info	Rule for a clockwise arc feed move.	Imposta un movimento in senso orario dell'arco.
 Arc Display Degrees		Gradi per l'Arco
 Arc Display Degrees.info	Arcs are displayed using multiple line segments.  This setting defines the angle between each segment. Smaller numbers make smoother curves but slower display rates	Gli archi vengono visualizzati utilizzando segmenti di linea. Questa impostazione definisce l'angolo tra ogni segmento. Piccoli numeri generano curve più arrotondate ma la visualizzazione è più lenta
-Arc Expand Tolerance		
+Arc Expand Tolerance		Tolleranza espansione Arco
 Arc Fit		Forma dell'Arco
 Arc Fit Tolerance		Tolleranza forma dell'Arco
 Arc Output		Uscita Arco
@@ -85,12 +85,13 @@ ARC_EDIT_1	Enter first arc point or esc	Inserisci il primo punto dell'arco o ESC
 ARC_EDIT_2	Enter second arc point	Inserisci secondo punto dell'arco
 ARC_EDIT_3	Enter arc center, hold SHIFT to invert the arc	Inserisci il centro dell'arco, tenere premuto SHIFT per invertire l'arco
 Arc_Fit	Arc fit	Forma dell'Arco
+Arcs Centers		
 ArcText Plugin		ArcText Plugin
 Array Copy		Copia di Matrice
 Array_Copy	Array copy	Copia di Matrice
 Auto		Auto
-Auto Arc Fitting		
-Auto Arc Fitting.info	Whether to apply arc fitting in certain drawing operations (such as plane slicing).	
+Auto Arc Fitting		Auto Aggiusta Arco
+Auto Arc Fitting.info	Whether to apply arc fitting in certain drawing operations (such as plane slicing).	Applica l'auto aggiustamento arco in alcune 
 Auto-Apply Transformations		Auto-applica le trasformazioni
 Auto-Apply Transformations.info	If True, transformations such as rotations, moving, resizing and array copies will automatically apply transformations and reset the transformation matrix.	Se Vero, trasformazioni come rotazione, spostamento, ridimensionamento e copie di matrice sono applicate automaticamente e viene impostata la matrice di trasformazione.
 Autocalc		Calcolo Automatico
@@ -147,7 +148,7 @@ C Axis		Asse C
 C Axis.info		Asse C.info
 Cache Conflict Action		Cache Conflitto d'azione
 Cache Conflict Action.info	Action to take when style properties are not found or have changed current default values.	Azione da intraprendere quando le proprietà di stile non si trovano o sono cambiati i valori predefiniti.
-CAD Extras		
+CAD Extras		Aggiunte a CAD
 calc		calc
 Calculate		Calcolare
 CAM Styles		Stili CAM
@@ -161,7 +162,7 @@ Cancel Action		Annulla azione
 Cancel current action		Annulla azione corrente
 CANCEL_OPERATION	Cancel current operation?	Annullare l'operazione in corso?
 CanConvertToPolylines		Possibile convertire in polilinee
-CanConvertToPolylines.info		
+CanConvertToPolylines.info		è possibile convertire in polilinee
 Canned Cycle		Ciclo Fisso
 Canned Cycle End		Fine del ciclo fisso
 Canned Cycle End.info	Code used at the start of a group of canned cycles.	Codice utilizzato alla fine di un gruppo di cicli fissi.\nCancella il modo movimento (incluso qualsiasi ciclo)
@@ -391,7 +392,7 @@ drawing units		Unità di disegno
 Drawing Units		Unità di disegno
 Drawing Units.info	The unit of distance used within the drawing.	L'unità di disegno impiegata all'interno del disegno.
 Drawing Units.info:CamBamConfig	This sets the drawing units to be used for new drawings.	Imposta le unità di disegno da utilizzare per nuovi disegni.
-Drawing Units.info:DrawingGrid		
+Drawing Units.info:DrawingGrid		Unità di disegno
 DrawingTemplate		Disegno da Modello
 DrawingTemplate.info	Filename of a CamBam drawing (.cb file) to be used as a template for new drawings.	Nome di un disegno CamBam (file. Cb) da utilizzare come modello per nuovi disegni.
 Drill		Foratura 
@@ -532,7 +533,7 @@ EVALUATION_EXPIRED	Evaluation period expired.  Please register CamBam to continu
 EVALUATION_EXPIRED2	Your evaluation has expired.\nPlease help support the future development of CamBam\nPurchase at www.cambam.co.uk/shop\nSome functionality will be disabled.	Il tuo periodo di prova è scaduto. Si prega di contribuire a sostenere lo sviluppo futuro acquistando CamBam a www.cambam.co.uk/shop Alcune funzionalità verranno disabilitate.
 Exact Stop		Arresto preciso
 Excellon		
-ExcellonIO Config		
+ExcellonIO Config		Impostazioni ExcellonIO
 Exclude Reference Geometry		Escludi Geometria di riferimento
 Exit		Esci
 Experimental		Sperimentale
@@ -562,8 +563,8 @@ Fill Geometry		Riempi Geometria
 Fill Margin		Riempi Margine
 Fill Region		Riempi Regione
 Fill Stepover		Riempi StepOver
-Fillet		Filetto
-Fillet Radius		Raggio del filetto
+Fillet		Raccorda
+Fillet Radius		Raggio del raccordo
 Final Depth Increment		Incremento di profondità finale
 Final Depth Increment.info	The depth increment of the final machining pass.	L'incremento di altezza della passata finale di lavorazione.
 Find		Trova
@@ -579,6 +580,7 @@ Finish Stepover At TargetDepth		Passata di finitura alla profondità del taglio.
 Finish Stepover At TargetDepth.info	If true, then finish stepover stock will be removed at the target depth pass.  If false then finish stepover removed at each depth pass.	Se Vero, il materiale lasciato per [Passata di finitura] viene asportato in un solo passaggio alla profondità di taglio.\nSe Falso, il materiale viene asportato in più passaggi usando l'incremento della profondità di taglio.
 Finish Stepover.info	This is the thickness of stock to leave for the final cut.	Lo spessore del materiale, intorno ai perimetri delle forme, che verrà asportato con l'ultima passata del percorso utensile.
 Finishing		Finitura
+First select a path for the spiral to follow.		
 Fit Points		Adatta punti
 Fit Points.info		Adatta punti.info
 Fit Tolerance		Adatta tolleranza
@@ -594,9 +596,9 @@ Flute Length		Lunghezza Tagliente
 Flute Length.info	Length of the cutting flutes.	Lunghezza dei Taglienti dell'Utensile.
 Flutes		Taglienti
 Flutes.info	Number of cutting edges or flutes.	Quantità di Taglienti.
-Font		Font
-Font Color		
-Font Color.info		Il colore selezionato per il Font
+Font		Carattere
+Font Color		Colore Carattere
+Font Color.info		Il colore selezionato per il Carattere
 Font.info	The name of the font used to display the text.	Il nome del font utilizzato per visualizzare il testo.
 Footer		Piè di pagina
 Footer.info	Rules for the {$footer} macro.\nUsually inserted at the end of the gcode output.	Regole per la macro {$footer}.\nSolitamente inserita alla fine del GCode generato.
@@ -1379,6 +1381,7 @@ Spiral Mill (CCW)		Fresatura Spirale (CCW)
 Spiral Mill (CW)		Fresatura Spirale (CW)
 Spiral Path		Percorso della spirale
 Spiral Path Draw		Disegna percorso della Spirale
+SPIRAL_PATH1	First select a path for the spiral to follow.	
 Spline		Spline
 Spline Curve Steps		Passi Curve Spline 
 Spline Curve Steps.info	When splines are displayed, their shape is approximated by line segments.  This setting controls the number of segments used to display	Quando le Spline vengono visualizzate, la loro forma è approssimata da segmenti di linea. Questa impostazione controlla il numero di segmenti utilizzati per visualizzarle

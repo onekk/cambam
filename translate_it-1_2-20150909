@@ -1,4 +1,4 @@
-1.3	it	2015-09-08 23:06:08Z
+1.2	it	2015-09-09 17:02:02Z
 		
 (General)		(Generale)
 (Main)		(Principale)
@@ -97,6 +97,8 @@ Auto-Apply Transformations.info	If True, transformations such as rotations, movi
 Autocalc		Calcolo Automatico
 Autocalc_Holding_Tabs	Autocalc holding tabs	Calcolo automatico Fermi
 Automatic		Automatico
+Automatic (Inner)		
+Automatic (Outer)		
 Axial Depth Of Cut		Profondità di taglio assiale
 Axial Depth Of Cut.info	Recommended  axial depth of cut.\r\nNot currently used for toolpath generation!	Consigliato per la profondità di taglio assiale. Non è attualmente utilizzato per la generazione di percorsi utensile!
 Axis		Asse
@@ -204,7 +206,7 @@ Click to calculate the number of teeth from the tooth size and pitch diameter.		
 Click to calculate the pitch diameter from the tooth size and number of teeth.		Clicca per calcolare il diametro della ruota dalla dimensione dei denti e dal numero dei denti.
 Click to calculate the tooth size from the number of teeth and pitch diameter.		Clicca per calcolare le dimensioni del dente dal numero dei denti e dal diametro della ruota.
 CLICK_OK_TO_CONFIRM	Click OK to confirm.	Fare clic su OK per confermare.
-Climb		Discorde
+Climb		Concorde
 Clip Area Max		Clip Area Max
 Clip Area Max.info	A 2D Point, used with ClipAreaMin to define a clipping area.\r\nIf ClipAreaMax and ClipAreaMin coordinates are both 0, the 3d machining area will not be clipped.	Un punto 2D, usata con ClipAreaMin per definire un'area di ritaglio. Se le coordinate ClipAreaMax e ClipAreaMin sono entrambi 0, l'area di lavorazione 3D non sarà tagliata.
 Clip Area Min		Clip Area Min
@@ -234,7 +236,7 @@ Control Point Tolerance		Punto di controllo Tolleranza
 Control Point Tolerance.info		Punto di controllo Tolleranza
 Control Points		Punti di controllo
 Control Points.info		Punti di Controllo Points
-Conventional		Concorde
+Conventional		Discorde
 Convert To		Converti
 Convert To Lines		Converti in linee
 Convert_To_Polyline	Convert to polyline	Convertire in polilinea
@@ -451,6 +453,7 @@ End Rewind		Riavvolgere al Termine
 End Rewind.info	Code used for end rewind.	Codice utilizzato per tornare all'inizio dopo la fine del programma
 Engrave		Incisione 
 Enter a point on the circle		Inserire un punto sul cerchio
+Enter a point on the mirror line		
 Enter any two parameters below and click on "Calculate" to generate the third.		Inserisci due parametri e clicca su "Calcola" per generare il terzo.
 Enter arc center, hold SHIFT to invert the arc		Inserisci il centro dell'arco, tieni premuto SHIFT per invertire l'arco
 Enter circle center point or esc		Inserisci il centro del cerchio o ESC
@@ -896,6 +899,8 @@ Minor Scale.info		Dimensione della scala minore della grglia in unità di disegn
 MinorScale		Scala Minore
 MinorScale.info		Dimensione della scala minore della grglia in unità di disegno
 Mirror		Specchio
+MIRROR_EDIT1	Enter a point on the mirror line	
+MIRROR_EDIT2	Select a second point along the mirror line	
 Misc		Varie
 Mixed		Misto
 mm to inches		mm a pollici
@@ -1082,6 +1087,7 @@ Pointlist_From_Geometry	Pointlist from geometry	Lista Punti dalla geometria
 POINTLIST_TOO_FEW_NUMBERS	Too few numbers in point pattern.	Pochi numeri nella sagoma di punti
 Points		Punti
 Points.info	A list of control points that define the polyline.	Un elenco di punti di controllo che definiscono la polilinea.
+Points.info:Line		
 Points.info:PointList	A list of the points contained in the point list.	Un elenco dei punti contenuti nell'elenco dei punti.
 Polar Array Copy		Array Copia polare
 POLAR_ARRAY_1	Select the center point of the polar array	Selezionate il punto centrale della serie polare
@@ -1244,6 +1250,7 @@ Script		Script
 Script-o-matic		Script-o-matic
 Search		Ricerca
 Select {0} point		Seleziona {0} punto
+Select a second point along the mirror line		
 Select All		Seleziona tutto
 Select all on layer		Seleziona tutti i layer
 Select All On Layer		Seleziona, tutto sullo Livello

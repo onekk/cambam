@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=CamBam
+Icon=<Your home>/CamBam0.9.8/cambam.png
+Exec=mono <your home>/CamBam0.9.8/CamBam.exe
+MimeType=
+Categories=Graphics;3DGraphics;Engineering;

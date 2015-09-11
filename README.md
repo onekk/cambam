@@ -9,7 +9,11 @@ In no event will I be liable for any loss or damage including without limitation
 CC BY-NC-SA 3.0 IT 
 
 
+## README
+
 Use the Github Issues to contact me.
+
+Happy CamBamming
 
 Carlo D. (onekk) 
 
@@ -27,6 +31,7 @@ In nessun caso sarà responsabile per qualsiasi tipo di danno, inclusi, senza li
 
 CC BY-NC-SA 3.0 IT 
 
+# LEGGIMI!!!
 
 Il presente manuale è il risultato di una traduzione effettuata partendo dall’originale inglese con l’aiuto di “Google Traduttore”.
 

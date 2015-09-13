@@ -1,4 +1,4 @@
-1.2	it	2015-09-09 17:02:02Z
+1.0	it	2015-09-12 14:00:05Z
 		
 (General)		(Generale)
 (Main)		(Principale)
@@ -92,6 +92,7 @@ Array_Copy	Array copy	Copia di Matrice
 Auto		Auto
 Auto Arc Fitting		Auto Aggiusta Arco
 Auto Arc Fitting.info	Whether to apply arc fitting in certain drawing operations (such as plane slicing).	Applica l'auto aggiustamento arco in alcune 
+Auto Arc Fitting.info:CAMStyle	Whether to apply arc fitting.	
 Auto-Apply Transformations		Auto-applica le trasformazioni
 Auto-Apply Transformations.info	If True, transformations such as rotations, moving, resizing and array copies will automatically apply transformations and reset the transformation matrix.	Se Vero, trasformazioni come rotazione, spostamento, ridimensionamento e copie di matrice sono applicate automaticamente e viene impostata la matrice di trasformazione.
 Autocalc		Calcolo Automatico
@@ -769,10 +770,10 @@ Language		Lingua
 Language Translations		Traduzioni Lingua 
 Language.info		La lingua usata da CamBam
 Larger = higher load capacity. Smaller = higher contact ratio, smoother, quieter operation. A larger value also allows less teeth without undercutting occurring.		Più grande = maggiore capacità di carico. Più piccolo = rapporto di contatto più alto, funzionamento  più fluido, più silenzioso. Un valore maggiore permette anche meno denti senza che si verifichino errori di taglio per difetto.
-Lathe		Tornio
-Lathe Cut Direction		Tornio - direzione di taglio
-Lathe Cut Direction.info		Tornio - direzione di taglio.info
-Lathe Tool Radius Offset		Tornio - Offset raggio utensile
+Lathe		Tornitura
+Lathe Cut Direction		Tornitura - direzione di taglio
+Lathe Cut Direction.info		Tornitura - direzione di taglio.info
+Lathe Tool Radius Offset		Tornitura - Offset raggio utensile
 Lathe Tool Radius Offset.info	If True then the toolpath coordinates will be offset by the tool radius.	Se Vero, le coordinate del percorso utensile sarà compensato dal raggio utensile.
 Lathe X Mode		Tornio - modalità  X
 Lathe X Mode.info	For lathe operations, specifies whether X values are radius or diameter mode.	Per le operazioni di tornitura, specifica se il valore di  X è riferito al raggio o al  diametro.
@@ -1344,7 +1345,9 @@ Slice Widths		Larghezza fetta
 Slope		Pendenza
 Snap to grid		Aggancia alla griglia
 Snap to Grid		Aggancia alla griglia
+Snap To Grid		
 Snap to Grid.info	If True, drawing points will snap to the minor grid units.	Se Vero, i punti del disegno si agganceranno ai punti più vicini della griglia.
+Snap To Object		
 Snap to objects		Aggancio agli oggetti
 Snap to Points		Aggancio ai punti
 Snap to Points.info	If True, drawing points will snap to shape control points, circle centers and other significant points.	Se Vero, i punti del disegno si agganceranno ai punti di controllo degli oggetti, centri di cerchio e altri punti importanti.
@@ -1786,5 +1789,7 @@ Z Axis.info		Asse Z.info
 Z depth index		Indice  profondità Z 
 Z Height Range		Gamma altezza Z
 Z.info		Il valore di Z
+Zoom		
 Zoom actual size		Zoom dimensioni reali
 Zoom to fit		Zoom Adatta alla finestra
+Zoom to objects		

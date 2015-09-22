@@ -1,8 +1,8 @@
-1.0	it	2015-09-19 14:00:05Z
+1.0	it	2015-09-19 18:19:23Z
 		
 (General)		(Generale)
 (Main)		(Principale)
-_3D_Extrude	3D Extrude	Estrusione 3D
+_3D_Extrude	3D Extrude	Estrudi 3D
 _3D_Profile	3D Profile	Profilo 3D
 _3DStudioFiles	3D Studio Files	I file 3D Studio
 _CleanShapeList Test		_CleanShapeList Test
@@ -31,12 +31,12 @@ Add Tab		Aggiungi Scheda
 Add tool		Aggiungi Utensile
 Add_Holding_Tab	Add holding tab	Aggiungi Fermi
 Additive		Additivo
-Additive.info	If set to True then do a bottom up toolpath suitable for (additive) extrusion heads.	Se impostato su Vero genera un percorso utensile additivo, dal basso verso l'alto, adatto per teste di estrusione.\n 
+Additive.info	If set to True then do a bottom up toolpath suitable for (additive) extrusion heads.	Se impostato su Vero genera un PU additivo, dal basso verso l'alto, adatto per teste di estrusione.\n 
 Adjust Cut Width		Regola la Larghezza di taglio
-Adjust Cut Width.info	False - the toolpaths will just follow the calculated profile.\nTrue - machine all the stock layers above as well as on the profile (rouging)	Falso - Il percorso utensile si limiterà a seguire il profilo calcolato.\nVero - Lavora tutti gli strati superiori del materiale, nonché il profilo (grezzo)
+Adjust Cut Width.info	False - the toolpaths will just follow the calculated profile.\nTrue - machine all the stock layers above as well as on the profile (rouging)	Se Falso - Il PU si limiterà a seguire il profilo calcolato.\n\nSe Vero - Lavora tutti gli strati superiori del materiale, nonché il profilo (sgrossatura)
 Advanced		Avanzato
-Align		Allineare
-Align Objects		Allineare gli oggetti
+Align		Allinea
+Align Objects		Allinea gli oggetti
 All		Tutti
 All MOPs Per Copy		Tutte le MOP per copia
 All open documents		Tutti i documenti aperti
@@ -55,9 +55,9 @@ AND_RELATED_PRIMS	and all related drawing objects?	e tutti gli oggetti di disegn
 Angle per step (RotX,RotY,RotZ)		Angolo per passo (RotX, RotY, Rotz)
 Angles		Angoli
 Anti-alias		Anti-alias
-Apply		Applicare
-Apply Transformations		Applicare le trasformazioni
-Apply_Transformations	Apply transformations	Applicare le trasformazioni
+Apply		Applica
+Apply Transformations		Applica le trasformazioni
+Apply_Transformations	Apply transformations	Applica le trasformazioni
 Arc		Arco
 Arc CCW		Arco CCW
 Arc CCW.info	Rule for a counter clockwise arc feed move.	Imposta un movimento in senso antiorario dell'arco
@@ -75,33 +75,33 @@ Arc Display Degrees.info	Arcs are displayed using multiple line segments.  This 
 Arc Expand Tolerance		Tolleranza espansione Arco
 Arc Fit		Forma dell'Arco
 Arc Fit Tolerance		Tolleranza forma dell'Arco
-Arc Output		Uscita Arco
+Arc Output		Generazione Arco
 Arc Output All Axis		Tutti gli Assi dell'Arco
-Arc Output All Axis.info	Controls whether to output all the axis values for G02/G03 moves.	Controlla i valori di uscita di tutti gli assi per movimenti G02/G03 .
-Arc Output.info	Controls how arcs are output to gcode	Controlla come gli archi vengono generati e inviati al file gcode
+Arc Output All Axis.info	Controls whether to output all the axis values for G02/G03 moves.	Controlla i valori di output di tutti gli assi per movimenti G02/G03 .
+Arc Output.info	Controls how arcs are output to gcode	Controlla come gli archi vengono generati nel GCode
 Arc To Lines Tolerance		Tolleranza da Arco a Linee
-Arc To Lines Tolerance.info	If ArcOutput=ConverToLines is used, this value determines the allowed error.\nSmaller tolerances will result in smoother curves, but larger files.	Se viene utilizzato Arco di Uscita = Converti in Linee, questo valore determina l'errore consentito. Tolleranze più piccole si traducono in curve più arrotondate, ma in file di dimensioni maggiori.
+Arc To Lines Tolerance.info	If ArcOutput=ConverToLines is used, this value determines the allowed error.\nSmaller tolerances will result in smoother curves, but larger files.	Se viene utilizzato "Generazione Arco" = Converti in Linee, questo valore determina l'errore consentito. Tolleranze più piccole si traducono in curve più arrotondate, ma in file di dimensioni maggiori.
 ARC_EDIT_1	Enter first arc point or esc	Inserisci il primo punto dell'arco o ESC
 ARC_EDIT_2	Enter second arc point	Inserisci secondo punto dell'arco
 ARC_EDIT_3	Enter arc center, hold SHIFT to invert the arc	Inserisci il centro dell'arco, tenere premuto SHIFT per invertire l'arco
 Arc_Fit	Arc fit	Forma dell'Arco
-Arcs Centers		
+Arcs Centers		Centri dell'Arco
 ArcText Plugin		ArcText Plugin
 Array Copy		Copia di Matrice
 Array_Copy	Array copy	Copia di Matrice
 Auto		Auto
 Auto Arc Fitting		Auto Aggiusta Arco
-Auto Arc Fitting.info	Whether to apply arc fitting in certain drawing operations (such as plane slicing).	Applica l'auto aggiustamento arco in alcune 
-Auto Arc Fitting.info:CAMStyle	Whether to apply arc fitting.	
+Auto Arc Fitting.info	Whether to apply arc fitting in certain drawing operations (such as plane slicing).	Applica l'auto aggiustamento dell'arco per alcune operazioni di disegno (ad esempio nello "slicing" di un piano).
+Auto Arc Fitting.info:CAMStyle	Whether to apply arc fitting.	Applica l'auto aggiustamento dell'arco.
 Auto-Apply Transformations		Auto-applica le trasformazioni
 Auto-Apply Transformations.info	If True, transformations such as rotations, moving, resizing and array copies will automatically apply transformations and reset the transformation matrix.	Se Vero, trasformazioni come rotazione, spostamento, ridimensionamento e copie di matrice sono applicate automaticamente e viene impostata la matrice di trasformazione.
 Autocalc		Calcolo Automatico
 Autocalc_Holding_Tabs	Autocalc holding tabs	Calcolo automatico Fermi
 Automatic		Automatico
-Automatic (Inner)		
-Automatic (Outer)		
+Automatic (Inner)		Automatico (Interno)
+Automatic (Outer)		Automatico (Esterno)
 Axial Depth Of Cut		Profondità di taglio assiale
-Axial Depth Of Cut.info	Recommended  axial depth of cut.\r\nNot currently used for toolpath generation!	Consigliato per la profondità di taglio assiale. Non è attualmente utilizzato per la generazione di percorsi utensile!
+Axial Depth Of Cut.info	Recommended  axial depth of cut.\r\nNot currently used for toolpath generation!	Profondità di taglio assiale consigliata. Non è attualmente utilizzato per la generazione di PU!
 Axis		Asse
 Axis Setup		Impostazione Asse
 B Axis		Asse B
@@ -111,7 +111,7 @@ Back Face Culling		Faccia Posteriore scartata
 Back Face Culling.info	Enabling back face culling can improve performance if mesh is well formed.	Abilita lo scarto della faccia posteriore, può migliorare le prestazioni se la mesh è ben formata.
 Back Face Zero Z		Faccia Posteriore Zero Z 
 Back Face Zero Z.info	The current Z offset that will be at Z=0 when the model is rotated to do the back face.	Il valore di offset Z che sarà a Z = 0 quando il modello viene ruotato per lavorare la faccia posteriore.
-Back Face.info	If False then machine the front face of the model.\r\nIf True then machine the back face.	Se Falso la macchina fà la faccia anteriore del modello.\nSe Vero la macchina fà poi anche la faccia posteriore.
+Back Face.info	If False then machine the front face of the model.\r\nIf True then machine the back face.	Se Vero la macchina lavora la faccia posteriore.\r\n\r\nSe Falso la macchina lavora la faccia anteriore del modello.
 Backface Culling		Faccia Posteriore scartata
 Backface Culling.info	When displaying surface meshes, faces with back facing normals (using right hand rule) are not displayed.	Quando si visualizzano superfici 3D (Mesh), le facce con il retro rivolto verso le normali (usando la regola della mano destra) non vengono visualizzate
 Background Color		Colore di sfondo
@@ -133,9 +133,9 @@ Boundary		Contorno
 Boundary Margin		Margine di Contorno
 Boundary Margin.info	Distance around boundary shapes to machine.	Distanza intorno al contorno delle figure da lavorare.
 Boundary Method		Metodo di Contorno
-Boundary Method.info	Method to use to limit toolpaths to boundary shapes.	Metodo da utilizzare per limitare i percorsi utensile al contorno della figura
+Boundary Method.info	Method to use to limit toolpaths to boundary shapes.	Metodo da utilizzare per limitare i PU al contorno della figura
 Boundary Shape IDs		ID Contorno della Forma
-Boundary Shape IDs.info	List of drawing objects to use as toolpath boundary	Elenco degli oggetti di disegno da utilizzare come contorno percorso utensile
+Boundary Shape IDs.info	List of drawing objects to use as toolpath boundary	Elenco degli oggetti di disegno da utilizzare come contorno PU
 Boundary Taper		Rastremazione Contorno 
 Boundary Taper.info	Angle in degrees from vertical to taper the outer boundary edge.	Angolo in gradi per la rastremazione del bordo esterno del contorno. 
 Bounding Box		Rettangolo di selezione
@@ -183,7 +183,7 @@ Centers		Centri
 Centimeters		Centimetri
 CHANGING_DEPTHINCREMENT	Changing DepthIncrement to be +ve	Modifica Incremento di profondità per essere + ve
 CHANGING_FINALDEPTHINCREMENT	Changing FinalDepthIncrement to be +ve	Modifica Incremento Finale di Profondità per essere + ve
-CHANGING_TARGETDEPTH	TargetDepth > StockSurface : Changing TargetDepth = -TargetDepth	Profondità di taglio > Superficie Pezzo: Modifica Profondità di taglio  = -  Profondità di taglio
+CHANGING_TARGETDEPTH	TargetDepth > StockSurface : Changing TargetDepth = -TargetDepth	Profondità di taglio > Superficie Grezzo: Modifica Profondità di taglio  = -  Profondità di taglio
 Char Space		Spazio 
 Char Space.info	Used to space characters along a line.\n1.0 is the default size.\n2.0 would double the character spacing.	Usato per spazi lungo una linea.\n 1.0 è la dimensione predefinita.\n 2,0 raddoppierebbe la spaziatura dei caratteri.
 Char Space.info:MText	Used to space characters along a line.\r\n1.0 is the default size.\r\n2.0 would double the character spacing.	Usato per spazi lungo una linea.\n 1.0 è la dimensione predefinita.\n 2,0 raddoppierebbe la spaziatura dei caratteri.
@@ -201,7 +201,7 @@ Clear_Layer	Clear layer	Livello trasparente
 Clearance Plane		Piano di Sicurezza
 Clearance Plane Axis		Asse Piano di Sicurezza 
 Clearance Plane Axis.info	Used to specify which direction clearance moves are made.\nUsually Z, but may be set to X or Z for lathe operations.	Utilizzato per specificare in quale direzione si muove l'asse per il piano di sicurezza. Di solito Z, ma può essere impostato su X o Z per operazioni di tornitura.
-Clearance Plane.info	The 'safe' Z location to return before a rapid to a new location.	La  posizione 'sicura'  di Z  a cui andare prima di un movimento rapido in una nuova posizione.
+Clearance Plane.info	The 'safe' Z location to return before a rapid to a new location.	La  posizione 'sicura'  di Z  a cui andare prima di un  rapido per una nuova posizione.
 Clearance Plane.info:CAMStyle	The clearance plane (offset from the work plane)	Il piano di sicurezza (rispetto alla superficie di lavoro)
 Click to calculate the number of teeth from the tooth size and pitch diameter.		Clicca per calcolare il numero di denti, dalla dimensione dei denti e dall diametro della ruota.
 Click to calculate the pitch diameter from the tooth size and number of teeth.		Clicca per calcolare il diametro della ruota dalla dimensione dei denti e dal numero dei denti.
@@ -219,7 +219,7 @@ Closed.info	Open - polyline has two ends and no defined inside or outside.\r\nCl
 Coating		Rivestimento
 Coating.info	Tool coating.	Rivestimento Utensile
 Collision Detection		Rilevamento collisione
-Collision Detection.info	Makes sure adjacent toolpaths do not overlap by unioning them together.	Assicura che percorsi adiacenti non si sovrappongono.
+Collision Detection.info	Makes sure adjacent toolpaths do not overlap by unioning them together.	Assicura che percorsi adiacenti non si sovrappongono quando sono unificati.
 Color		Colore
 Color.info	Color used to draw objects within this layer.	Colore usato per disegnare oggetti all'interno di questo Livello.
 Color.info:StockDef	Color used to display the stock.	Colore usato per visualizzare la superfice del materiale.
@@ -245,9 +245,9 @@ Convert_To_Region	Convert to region	Convertire in regione
 Convex Radius		Raggio Convesso
 Copy		Copia
 Copyright		Copyright
-Corner Overcut		Angolo di Sovrataglio
-Corner Overcut.info	Add a move to cut corners otherwise too narrow for cutter.	Aggiunge un movimento per tagliare gli angoli altrimenti troppo stretti per l'Utensile.
-Corner Overcut.info:CAMStyle	Add a move to cut corners otherwise to narrow for cutter.	Aggiunge un movimento per tagliare gli angoli altrimenti troppo stretti per l'Utensile.
+Corner Overcut		Sovrataglio Angoli 
+Corner Overcut.info	Add a move to cut corners otherwise too narrow for cutter.	Aggiunge un movimento per tagliare gli angoli troppo stretti per l'Utensile.
+Corner Overcut.info:CAMStyle	Add a move to cut corners otherwise to narrow for cutter.	Aggiunge un movimento per tagliare gli angoli troppo stretti per l'Utensile.
 Corner Radius		Raggio angolo
 Corner Radius.info	Used to give rounded corners to the rectangle.	Usato per arrotondare gli  angoli del rettangolo.\nAccetta valori compresi tra 0 e 3
 Create MOP		Crea MOP
@@ -264,7 +264,7 @@ Custom File Header		Personaliz. intestazione
 Custom File Header.info	A multi line gcode script that will be inserted into the final gcode post header section.	GCode multilinea che sarà inserito nella sezione intestazione di pagina prima del GCode generato.
 Custom Filler		Riempitivi personalizzati
 Custom MOP Footer		Lavorazioni (MOP) personalizzate  piè di pagina
-Custom MOP Footer.info	A multi line gcode script that will be inserted into the final gcode post after the machine operation.	 GCode multilinea personalizzato che verrà inserito alla fine del GCode generato. 
+Custom MOP Footer.info	A multi line gcode script that will be inserted into the final gcode post after the machine operation.	GCode multilinea personalizzato che verrà inserito alla fine del GCode generato. 
 Custom MOP Header		Lavorazioni (MOP) personalizzate  di intestazione
 Custom MOP Header.info	A multi line gcode script that will be inserted into the final gcode post before the machine operation.	GCode multilinea personalizzato che verrà inserito all'inizio del GCode generato. 
 Custom Script		Script personalizzato
@@ -272,23 +272,23 @@ Custom Script.info	Custom GCode script used for drilling.	Script personalizzato 
 Cut		Taglia
 Cut Direction		Direzione di Taglio 
 Cut Direction.info	Direction of long profile cut.	Direzione del taglio per lunghi profili.
-Cut Feedrate		Avanzamento Taglio
+Cut Feedrate		Avanzamento
 Cut Feedrate.info	The feed rate to use when cutting.	La velocità di avanzamento da utilizzare durante il taglio.
 Cut Ordering		Ordinamento del Taglio 
 Cut Ordering.info	Controls whether to cut to depth first or all cuts on this level first.	Controlla se tagliare prima in profondità o prima questo Livello di taglio.
-Cut toolpath color		Colore Percorso Utensile 
+Cut toolpath color		Colore PU 
 Cut Velocity		Velocità di Taglio 
 Cut Velocity.info		Velocità di Taglio.info
 Cut Width		Larghezza taglio
 Cut Width Color		Colore della Larghezza di Taglio
-Cut Width Color.info	The color used to display toolpath cut widths.	Il colore utilizzato per visualizzare la larghezze di taglio del percorso utensile.
-Cut Width.info	The total width of the cut.\r\nCutWidth > ToolDiameter will result in multiple stepovers.	La larghezza totale del taglio.\nLarghezza di taglio > Diametro strumento si tradurrà in più passate laterali.
+Cut Width Color.info	The color used to display toolpath cut widths.	Il colore utilizzato per visualizzare la "Larghezza di Taglio" del PU.
+Cut Width.info	The total width of the cut.\r\nCutWidth > ToolDiameter will result in multiple stepovers.	La larghezza totale del taglio.\nLarghezza di taglio > Diametro Utensile genererà più passate laterali.
 Cutter Comp Left		Comp. Fresa Sinistra
 Cutter Comp Left.info	Cutter radius compensation = left.	Compensazione del raggio utensile = sinistra.
 Cutter Comp Off		Comp. Fresa Off
-Cutter Comp Off.info	Cutter radius compensation off.	Compensazione raggio Fresa Off.
+Cutter Comp Off.info	Cutter radius compensation off.	Compensazione del raggio utensile Off.
 Cutter Comp Right		Comp. Fresa Destra
-Cutter Comp Right.info	Cutter radius compensation = right.	Compensazione di raggio utensile = destra.
+Cutter Comp Right.info	Cutter radius compensation = right.	Compensazione del raggio utensile = destra.
 Cutting Depth		Profondità di taglio
 CW		CW
 DATA_MODIFIED	Data has been modified.\n\nDo you wish to save the changes?	I Dati sono stati modificati. Volete salvare le modifiche?
@@ -304,7 +304,7 @@ Default Layer Color		Colore di Livello  Predefinito
 Default Layer Color.info	The color to use when new layers are inserted into a drawing.	Colore da utilizzare per i nuovi livelli inseriti in un disegno.
 Default Post Processor		Post Processor predefinito
 Default Stock Color		Colore predefinito per il materiale
-Default Stock Color.info	The default color to use to display stock objects.	Il colore predefinito da utilizzare per visualizzare il "Pezzo".
+Default Stock Color.info	The default color to use to display stock objects.	Il colore predefinito da utilizzare per visualizzare il "Grezzo".
 Defines the size of the teeth. Must be the same for gears that mesh. Large values have less backlash.		Definisce la dimensione dei denti. Deve essere lo stesso per ingranaggi che ingranano. Grandi valori hanno meno gioco.
 Degenerate Tolerance		Tolleranza degenerata
 Degenerate Tolerance.info	Distance to use in silhouette degenerate test.	Distanza da utilizzare per il test di silhouette degenerate.
@@ -330,7 +330,7 @@ Depth		Profondità
 Depth First		Prima la Profondità
 Depth Increment		Incremento di Profondità
 Depth Increment.info	Depth increment of each machining pass.	Incremento di profondità per ogni passaggio di lavorazione.
-Depth Increment.info:MOPDrill	Used for spiral drilling only. Depth increment of each spiral cut.	Utilizzato solo per la perforazione a spirale. Incremento profondità di ogni taglio a spirale.
+Depth Increment.info:MOPDrill	Used for spiral drilling only. Depth increment of each spiral cut.	Utilizzato solo per la perforazione a spirale. Incremento di profondità di ogni taglio a spirale.
 Description		Descrizione
 Description.info		Description.info
 Destination		Destinazione
@@ -338,7 +338,7 @@ Diagnostic Level		Livello di diagnostica
 Diagnostic Level.info	An integer number used to control the number of information messages displayed in the message pane at the bottom of the CamBam interface.  Typical values are 0 to 4, where 0 displays little or no messages and 4 displays reams of diagnostic information.	Numero intero utilizzato per controllare il numero di messaggi informativi visualizzati nel riquadro messaggio nella parte inferiore di CamBam. Valori tipici vanno da 0 a 4, dove 0 visualizza pochi o nessun messaggio e 4 mostra elenchi di informazioni di diagnostica.
 Diameter		Diametro
 Diameter.info	The diameter of the circle.	Diametro del cerchio.
-Diameter.info:ToolDefinition	The tool diameter.  Used for calculating toolpath offsets.	Diametro dell'utensile. Utilizzato per calcolare l'offset del percorso utensile.
+Diameter.info:ToolDefinition	The tool diameter.  Used for calculating toolpath offsets.	Diametro dell'utensile. Utilizzato per calcolare l'offset del PU.
 Diametral pitch		Passo diametrale
 Diametral Pitch		Passo diametrale
 Direction		Direzione
@@ -353,13 +353,13 @@ Distance Absolute.info	Code used for absolute distance mode	Codice utilizzato pe
 Distance between offset fill lines.		Distanza tra linee di riempimento
 Distance between points (in drawing units) that will be joined.		Distanza tra i punti (in unità di disegno), che verranno uniti.
 Distance Incremental		Distanza incrementale
-Distance Incremental.info	Code used for incremental distance mode	Codice utilizzato per modalità distanza incrementale
+Distance Incremental.info	Code used for incremental distance mode	Codice utilizzato per la modalità distanza incrementale
 Distance Mode		Modalità distanza
 Distance Mode.info	GCode distance mode (absoulte or relative), used to determine X, Y and Z coordinates.  This affects G90/G91 codes	GCode per modalità distanza (Assoluta o Relativa), utilizzati per determinare X, Y e Z. Questo riguarda i codici G90/G91 
 Distance to extrude the selected objects.		Distanza per l'estrusione degli oggetti selezionati.
 Distance to keep clear between boundary shapes.		Le distanze per tenersi discosta tra il contorno delle figure.
 Divers		Diversi
-Divide Geometry		Dividere Geometria
+Divide Geometry		Dividi Geometria
 Dot Product		Dot Product
 Down Left		In basso a Sinistra
 Down Right		In basso a Destra
@@ -367,22 +367,22 @@ Download latest translations		Scarica ultime traduzioni
 Drag		Trascinare
 Drag mouse around center point to rotate - Rotation Axis = {0}, Angle = {1}°\nPress X,Y or Z to change axis		Trascinare il mouse intorno al punto centrale per ruotare - Asse di rotazione = {0}, Angolo = {1} ° Premere X, Y o Z per cambiare l'asse
 Drag Point		Trascinare Punti
-Drag point list points, press enter or middle mouse to end, ESC to cancel		Trascinare  punto o elenco di punti, premere Invio o centrale del mouse alla fine, ESC per annullare
-Drag polyline points, press enter or middle mouse to end, ESC to cancel		Trascinare i punti polilinea, premere invio o centrale del mouse alla fine, ESC per annullare
+Drag point list points, press enter or middle mouse to end, ESC to cancel		Trascinare  punto o elenco di punti, premere INVIO o centrale del mouse per finire, ESC per annullare
+Drag polyline points, press enter or middle mouse to end, ESC to cancel		Trascinare i punti polilinea, premere INVIO o centrale del mouse per finire, ESC per annullare
 DRAG_ENTITY_1	SHIFT+arrow moves 1 grid unit, CTRL+SHIFT+arrow moves 1 major grid unit	MAIUSC + freccia si muove 1 unità di rete, CTRL + MAIUSC + freccia si muove di 1 unità principale di griglia
 DRAG_MACHINING_ORIGIN	Drag machining origin	Trascinare l'origine di lavorazione
 DRAG_MODE	Drag Mode	Modalità trascinamento
 DRAG_POINT	Drag Point	Trascinare Punti
 DRAG_POINT1	SHIFT+arrow moves 1 grid unit, CTRL+SHIFT+arrow moves 1 major grid unit	MAIUSC + freccia si muove 1 unità di rete, CTRL + MAIUSC + freccia si muove di 1 unità principale di griglia
 DRAG_START_POINT	Drag start point	Trascinare il punto di partenza
-Draw		Disegnare
+Draw		Disegno
 Draw a Circle		Disegna un cerchio
-Draw a Point List		Disegna un elenco di Punti
+Draw a Point List		Disegna un Elenco di Punti
 Draw a Polyline		Disegna una polilinea
 Draw a Rectangle		Disegna un rettangolo
 Draw Text		Disegna testo
 Draw_a_Circle	Draw a Circle	Disegna un cerchio
-Draw_a_Point_List	Draw a Point List	Disegna un elenco di Punti
+Draw_a_Point_List	Draw a Point List	Disegna un Elenco di Punti
 Draw_a_Polyline	Draw a Polyline	Disegna una polilinea
 Draw_a_Rectangle	Draw a Rectangle	Disegna un rettangolo
 DRAW_RECTANGLE_1	Enter first rectangle point or esc	Inserisci il primo punto del rettangolo  o ESC
@@ -427,22 +427,22 @@ Edit gcode		Modifica GCode
 Edit Text		Modifica testo
 Edit Text Style		Modifica stile del testo
 Edit_Pointlist	Edit pointlist	Modifica lista punti
-EDIT_POINTLIST_1	Drag point list points, press enter or middle mouse to end, ESC to cancel	Trascinare punto o lista punti, premere INVIO o centrale del mouse per terminare, ESC per annullare
-EDIT_POLY_1	Drag polyline points, press enter or middle mouse to end, ESC to cancel	Trascinate i punti di polilinea, premere INVIO o centrale del mouse per terminare, ESC per annullare
+EDIT_POINTLIST_1	Drag point list points, press enter or middle mouse to end, ESC to cancel	Trascinare punto di un Elenco di punti, premere INVIO o centrale del mouse per finire, ESC per annullare
+EDIT_POLY_1	Drag polyline points, press enter or middle mouse to end, ESC to cancel	Trascinate i punti di polilinea, premere INVIO o centrale del mouse per finire, ESC per annullare
 Edit_Polyline	Edit polyline	Modifica polilinea
 Ellipse		Ellisse
 Enable / Disable MOP		Attiva / Disattiva MOP
 Enable / disable part		Abilitare / disabilitare Parte
 Enabled		Abilitato
-Enabled.info	If Enabled is True, then display the toolpaths associated with this part and include them in g-code output.	Se Abilitato è Vero, visualizza i percorsi utensile associati a questa Parte e li include nel GCode generato.
+Enabled.info	If Enabled is True, then display the toolpaths associated with this part and include them in g-code output.	Se Abilitato è Vero, visualizza i PU associati a questa Parte e li include nel GCode generato.
 Enabled.info:MachineAxisDefinition		Abilitato.info: Definizione Asse Macchina
-Enabled.info:MOP3DSurface	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i percorsi utensile associati a questa MOP e li include nel GCode generato.
-Enabled.info:MOPDrill	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i percorsi utensile associati a questa MOP e li include nel GCode generato.
-Enabled.info:MOPEngrave	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i percorsi utensile associati a questa MOP e li include nel GCode generato.
-Enabled.info:MOPLathe	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i percorsi utensile associati a questa MOP e li include nel GCode generato.
-Enabled.info:MOPNCFile	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i percorsi utensile associati a questa MOP e li include nel GCode generato.
-Enabled.info:MOPPocket	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i percorsi utensile associati a questa MOP e li include nel GCode generato.
-Enabled.info:MOPProfile	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i percorsi utensile associati a questa MOP e li include nel GCode generato.
+Enabled.info:MOP3DSurface	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i PU associati a questa MOP e li include nel GCode generato.
+Enabled.info:MOPDrill	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i PU associati a questa MOP e li include nel GCode generato.
+Enabled.info:MOPEngrave	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i PU associati a questa MOP e li include nel GCode generato.
+Enabled.info:MOPLathe	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i PU associati a questa MOP e li include nel GCode generato.
+Enabled.info:MOPNCFile	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i PU associati a questa MOP e li include nel GCode generato.
+Enabled.info:MOPPocket	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i PU associati a questa MOP e li include nel GCode generato.
+Enabled.info:MOPProfile	If Enabled is True, then display the toolpaths associated with this machine op and include them in g-code output.	Se Abilitato è Vero, visualizza i PU associati a questa MOP e li include nel GCode generato.
 End Comment		Fine Commento
 End Comment.info	Rule for a closing comment character.\nUsed by {$endcomment} macro.	Regola per il carattere di chiusura commento. Utilizzato dalla macro {$endcomment}.
 End Cut		Fine Taglio
@@ -518,10 +518,10 @@ ERR_SETTING_VALUE	Error setting value!	Errore di impostazione del valore!
 ERR_SPIRAL_HOLE_TOO_SMALL	ERROR! {0} : Hole diameter must be > tool diameter for spiral drill	ERRORE! {0}: Il Diametro foro deve essere > Diametro Utensile  per fori a spirale
 ERR_STEPOVER	StepOver must be positive and non-zero	StepOver deve essere positivo e diverso da zero
 ERR_STYLE_RECURSION	CAM style recursion detected in style '{0}'	Ricorsione stile CAM rilevato in stile '{0}'
-ERR_TARGET_DEPTH_ABOVE_STOCKSURFACE	ERROR! {0} : Target depth must be less than stock surface	ERRORE! {0}: La profondità di Taglio deve essere inferiore alla superficie Pezzo
+ERR_TARGET_DEPTH_ABOVE_STOCKSURFACE	ERROR! {0} : Target depth must be less than stock surface	ERRORE! {0}: [Altezza Obiettivo] deve essere inferiore alla superficie Grezzo
 ERR_TO_POLY_NOT_SUPPORTED	{0}->Polyline not supported	{0} -> Polilinea non supportata
 ERR_TOOL_LIB_DUPLICATE_INDEX	Duplicate tool index {0} in library '{1}'	Duplicare indice strumento {0} nella libreria '{1}'
-ERR_TOOLPATH_GEN_IN_PROGRESS	Toolpath generating already in progress for '{0}'	Generazione di percorsi utensile già in corso per '{0}'
+ERR_TOOLPATH_GEN_IN_PROGRESS	Toolpath generating already in progress for '{0}'	Generazione di PU già in corso per '{0}'
 ERR_UNKNOWN_FILL	Unknown fill style	Stile di riempimento sconosciuto
 ERR_UNKNOWN_MACRO	Unknown macro : {0}	Macro sconosciuta: {0}
 ERR_UNKNOWN_NODE_TYPE	Unknown node type : {0}	Nodo di tipo sconosciuto: {0}
@@ -541,11 +541,11 @@ ExcellonIO Config		Impostazioni ExcellonIO
 Exclude Reference Geometry		Escludi Geometria di riferimento
 Exit		Esci
 Experimental		Sperimentale
-Explode		Esplodere
+Explode		Esplodi
 Export		Esporta
 Extents		Estensioni
 EXTERNAL_COMMAND	External command: {0} {1}	Comando esterno: {0} {1}
-Extrude		Estrudere
+Extrude		Estrusione
 Extrusion Height		Altezza di estrusione
 Extrusion Steps		Passi di estrusione
 False		Falso
@@ -558,7 +558,7 @@ Feedrate		Velocità Avanzamento
 Feedrate / (RPM x Flutes)		Velocità Avanzamento / (RPM x Taglienti)
 Feedrate / (Tooth Load x Flutes)		Velocità Avanzamento / (Carico Dente x Taglienti)
 Feedrates		Avanzamenti
-Field Of View		Campo della Vista
+Field Of View		Angolo di visione
 File		File
 File Backups		File di backup
 File Backups.info	Specify the number of backups copies to retain for CamBam (.cb), library and post processor files.	Specificare il numero di copie di backup da conservare per: File CamBam (. cb), Libreria e File di post processor.
@@ -570,7 +570,7 @@ Fill Stepover		Riempi StepOver
 Fillet		Raccorda
 Fillet Radius		Raggio del raccordo
 Final Depth Increment		Incremento di profondità finale
-Final Depth Increment.info	The depth increment of the final machining pass.	L'incremento di altezza della passata finale di lavorazione.
+Final Depth Increment.info	The depth increment of the final machining pass.	L'incremento di profondità della passata finale di lavorazione.
 Find		Trova
 Find / Replace (ctrl+F)		Trova / Sostituisci (CTRL + F)
 Find what:		Trova:
@@ -578,11 +578,11 @@ Find_Next	Find Next	Trova successivo
 FIND_REACHED_END	Reached end of document, starting from beginning.	Raggiunto la fine del documento,  partire dall'inizio.
 FindDialog		Trova. finestra di dialogo
 Finish Stepover		Passata di finitura
-Finish Stepover At Target Depth		Passata di finitura alla profondità del taglio.
-Finish Stepover At Target Depth.info	If true, then finish stepover stock will be removed at the target depth pass.  If false then finish stepover removed at each depth pass.	Se Vero, il materiale lasciato per [Passata di finitura] viene asportato in un solo passaggio alla profondità di taglio.\nSe Falso, il materiale viene asportato in più passaggi usando l'incremento della profondità di taglio.
-Finish Stepover At TargetDepth		Passata di finitura alla profondità del taglio.
-Finish Stepover At TargetDepth.info	If true, then finish stepover stock will be removed at the target depth pass.  If false then finish stepover removed at each depth pass.	Se Vero, il materiale lasciato per [Passata di finitura] viene asportato in un solo passaggio alla profondità di taglio.\nSe Falso, il materiale viene asportato in più passaggi usando l'incremento della profondità di taglio.
-Finish Stepover.info	This is the thickness of stock to leave for the final cut.	Lo spessore del materiale, intorno ai perimetri delle forme, che verrà asportato con l'ultima passata del percorso utensile.
+Finish Stepover At Target Depth		Passata di finitura a [Altezza Obiettivo]
+Finish Stepover At Target Depth.info	If true, then finish stepover stock will be removed at the target depth pass.  If false then finish stepover removed at each depth pass.	Se Vero, il materiale lasciato per [Passata di finitura] viene asportato in un solo passaggio a [Altezza Obiettivo].\n\nSe Falso, il materiale viene asportato in più passaggi usando l'incremento della profondità di taglio.
+Finish Stepover At TargetDepth		Passata di finitura a [Altezza Obiettivo]
+Finish Stepover At TargetDepth.info	If true, then finish stepover stock will be removed at the target depth pass.  If false then finish stepover removed at each depth pass.	Se Vero, il materiale lasciato da  [Passata di finitura] viene asportato in un solo passaggio a [Altezza Obiettivo].\n\nSe Falso, il materiale viene asportato in più passaggi usando l'incremento [Passata di finitura].
+Finish Stepover.info	This is the thickness of stock to leave for the final cut.	Lo spessore del materiale, intorno ai perimetri delle forme, che verrà asportato con l'ultima passata del PU.
 Finishing		Finitura
 First select a path for the spiral to follow.		
 Fit Points		Adatta punti
@@ -595,7 +595,7 @@ Flat Bar		Barra piatta
 Flat Spiral		Spirale piatta
 Flat Spiral Draw		Disegno a spirale piatta
 Flip Axis		Asse di Rotazione
-Flip Axis.info	The axis around which you would flip the stock to machine the back face.	L'asse attorno al quale dovrebbe ruotare il pezzo per lavorare la faccia posteriore.
+Flip Axis.info	The axis around which you would flip the stock to machine the back face.	L'asse attorno al quale va ruotato il Grezzo per lavorare la faccia posteriore.
 Flute Length		Lunghezza Tagliente
 Flute Length.info	Length of the cutting flutes.	Lunghezza dei Taglienti dell'Utensile.
 Flutes		Taglienti
@@ -638,17 +638,17 @@ Gear information. Select and right click to copy to clipboard.		Informazioni Ing
 Gear Information:		Informazioni Ingranaggio:
 Generate Biomorph		Genera biomorfa
 Generate Gear		Genera Ingranaggio
-Generate toolpath '{0}' duration : {1}		Genera percorsi utensile '{0}' durata: {1}
-Generate toolpaths		Genera percorsi utensile
+Generate toolpath '{0}' duration : {1}		Genera PU '{0}' durata: {1}
+Generate toolpaths		Genera PU
 GenerateWaterlines duration : {0}		Genera Waterline durata: {0}
 Gerber - Flatten		Gerber - Unisci
-Gerber - Flatten.info	If True, flatten all layers to a single (unioned) layer.	Se Vero, unisce tutti i Livelli in un unico Livello.
+Gerber - Flatten.info	If True, flatten all layers to a single (unioned) layer.	Se Vero, unifica tutti i Livelli in un unico Livello.
 Gerber - Subtract Layers		Gerber - Sottrai Livelli
 Gerber - Subtract Layers.info	If True, 'Clear' layers will be subtracted from previous layers.	Se Vero, strati chiari saranno sottratti dai livelli precedenti.
-Gerber - Union Layers		Gerber - Unione Livelli
-Gerber - Union Layers.info	If True, all shapes on each layer will be unioned together.	Se Vero, tutte le forme su ogni Livello saranno unite insieme.
-Gerber - Union Traces		Gerber - Unione Tracce
-Gerber - Union Traces.info	If True, each trace will be unioned together.  If False the traces will be left as line and arc sections.	Se Vero, ogni traccia viene unita insieme. Se Falso le tracce saranno lasciate come linee o sezioni di arco.
+Gerber - Union Layers		Gerber - Unifica Livelli
+Gerber - Union Layers.info	If True, all shapes on each layer will be unioned together.	Se Vero, tutte le forme su ogni Livello saranno unificate.
+Gerber - Union Traces		Gerber - Unifica Tracce
+Gerber - Union Traces.info	If True, each trace will be unioned together.  If False the traces will be left as line and arc sections.	Se Vero, ogni traccia viene unificata.\n\n Se Falso le tracce saranno lasciate come linee o sezioni di arco.
 Gerber Import		Gerber - Importa
 GERBER_APERTURE_DEFINED	Aperture {0} already defined	Diaframma {0} già definito
 GERBER_APERTURE_NOT_DEFINED	Aperture {0} not defined	Diaframma {0} non definito
@@ -685,7 +685,7 @@ Header		Intestazione
 Header.info	Rules for the {$header} macro.\nUsually inserted at the start of the gcode output.	Regole per la macro {$header} . Di solito inserita all'inizio del gcode.
 Height		Altezza
 Height.info	The height of the rectangle.	L'altezza del rettangolo.
-Height.info:CBValue`1	The height of the holding tab measured from the stock base or target depth.	L'altezza dei Fermi misurata dal fondo del pezzo o dalla  profondità del taglio.
+Height.info:CBValue`1	The height of the holding tab measured from the stock base or target depth.	L'altezza dei Fermi misurata dal fondo del Grezzo o da [Altezza Obiettivo].
 Height.info:MText	The height of the 'em' square defined for the font.\r\nThe em square will enclose the largest character in the font.	L'altezza del quadrato  (em) definito per il tipo di carattere.\nIl quadrato sarà tale da racchiudere il carattere più grande del font di solito la 'm'.
 HeightMap Generator		Generatore Heightmap
 Heightmap Size		Dimensione Heightmap 
@@ -698,8 +698,8 @@ Hide all but this		Nascondi tutti tranne questo
 Hide_All_But_This_Layer	Hide all but this layer	Nascondi tutti tranne questo Livello
 Hide_Layer	Hide layer	Nascondi Livello
 Hint		Suggerimento
-Holding Tab Drag Toolpath Refresh		Aggiorna il percorso utensile trascinando i fermi
-Holding Tab Drag Toolpath Refresh.info	If True, holding tabs are automatically applied to toolpaths when tabs are moved.\r\nIf False tabs will be applied when the toolpaths are regenerated.	Se Vero, Il percorso utensile sarà aggiornato automaticamente quando si spostano i Fermi.\nSe Falso,Il percorso utensile sarà aggiornato quando i percorsi utensile verranno rigenerati.
+Holding Tab Drag Toolpath Refresh		Aggiorna il PU trascinando i fermi
+Holding Tab Drag Toolpath Refresh.info	If True, holding tabs are automatically applied to toolpaths when tabs are moved.\r\nIf False tabs will be applied when the toolpaths are regenerated.	Se Vero, Il PU sarà aggiornato automaticamente quando si spostano i Fermi.\r\nSe Falso,Il PU sarà aggiornato quando i PU verranno rigenerati.
 Holding Tabs		Fermi
 Holding Tabs.info	Defines holding tabs (bridges) to prevent cut parts moving while cutting.	Definisce i Fermi (ponti) per evitare che parti tagliate si spostano durante il taglio.
 HOLDING_TAB_DRAG	Drag the holding tab...	Trascinare Fermi...
@@ -760,8 +760,8 @@ Iso Grid		Griglia Iso
 Italic		Corsivo
 Italic.info	Italic font style.	Stile del carattere corsivo.
 Javascript		Javascript
-Join		Unire
-Join Tolerance		Tolleranza per unire
+Join		Unisci
+Join Tolerance		Tolleranza per unisci
 JScript		JScript
 Knot Tolerance		Nodo di tolleranza
 Knot Tolerance.info		Nodo Tolerance.info
@@ -774,25 +774,25 @@ Lathe		Tornitura
 Lathe Cut Direction		Tornitura - direzione di taglio
 Lathe Cut Direction.info		Tornitura - direzione di taglio.info
 Lathe Tool Radius Offset		Tornitura - Offset raggio utensile
-Lathe Tool Radius Offset.info	If True then the toolpath coordinates will be offset by the tool radius.	Se Vero, le coordinate del percorso utensile sarà compensato dal raggio utensile.
-Lathe X Mode		Tornio - modalità  X
+Lathe Tool Radius Offset.info	If True then the toolpath coordinates will be offset by the tool radius.	Se Vero, le coordinate del PU saranno compensate con raggio utensile.
+Lathe X Mode		Tornitura - modalità  X
 Lathe X Mode.info	For lathe operations, specifies whether X values are radius or diameter mode.	Per le operazioni di tornitura, specifica se il valore di  X è riferito al raggio o al  diametro.
 Layer		Livello
 Layer.info	The layer that contains this drawing object.	Livello che contiene questo oggetto di disegno.
 Layer_Reorder	Layer reorder	Riordina Livello
 Layers		Livelli
-Lead In Move		Lead In - Movimento
-Lead In Move.info	Defines the lead in move as the tool enters the stock.	Definisce il movimento Lead In dell'Utensile quando si avvicina al pezzo
+Lead In Move		Movimento Lead In
+Lead In Move.info	Defines the lead in move as the tool enters the stock.	Definisce il movimento Lead In dell'Utensile quando si avvicina al Grezzo
 Lead In/Out		Lead In/Out
 Lead Move Feedrate		 Velocità di avanzamento
 Lead Move Feedrate.info	The feed rate to use for the lead in.  If 0 use cutting feedrate.	La velocità di avanzamento da utilizzare. Se 0 viene utilizzata la velocità di taglio.
-Lead Move Type		Tipo del movimento
+Lead Move Type		Tipo di movimento
 Lead Move Type.info	None | Spiral | Tangent	Nessuno | Spirale | Tangente
-Lead Out Length		Lead Out - Lunghezza
-Lead Out Length.info	For spiral drilling only.  The distance to move in the lead out direction.\r\nIf length is positive, move toward the center.\r\nIf length is negative, move away from the center.	Solo per la foratura a spirale. La distanza del movimento Lead Out.\nLead Out - Foratura = Vero\nSe la lunghezza è positiva, si muove verso il centro.\nSe la lunghezza è negativa, si allontana dal centro.
-Lead Out Length.info:CAMStyle	For spiral drilling only.  The distance to move in the lead out direction as specified in LeadoutMove.	Solo per la foratura a spirale. La distanza del movimento Lead Out, come specificato in Lead Out - Movimento\n
-Lead Out Move		Lead Out - Movimento
-Lead Out Move.info	Defines the lead out move as the tool leaves the stock.	Definisce il movimento Lead Out dell'Utensile quando si allontana dal pezzo.
+Lead Out Length		Lunghezza Lead Out
+Lead Out Length.info	For spiral drilling only.  The distance to move in the lead out direction.\r\nIf length is positive, move toward the center.\r\nIf length is negative, move away from the center.	Solo per la foratura a spirale.\nSpecifica quanto muoversi con un "movimento Lead Out".\r\nSe la lunghezza è positiva, si muove verso il centro.\r\nSe la lunghezza è negativa, si allontana dal centro.
+Lead Out Length.info:CAMStyle	For spiral drilling only.  The distance to move in the lead out direction as specified in LeadoutMove.	Solo per la foratura a spirale.\r\n Specifica quanto muoversi con un "Movimento Lead Out".
+Lead Out Move		Movimento Lead Out
+Lead Out Move.info	Defines the lead out move as the tool leaves the stock.	Definisce il movimento dell'Utensile quando si allontana dal Grezzo.
 Left		Sinistra
 Left Down		Sinistra Giù
 Left Hand		Mano Sinistra
@@ -832,7 +832,7 @@ Lower Left		In basso a sinistra
 Lower Left.info	The location of the lower left point of the rectangle.	La posizione del punto in basso a sinistra del rettangolo.
 M Codes		Codici M 
 Machinability Index		Indice di lavorabilità
-Machinability Index.info	Not currently used for toolpath generation!	Non è attualmente utilizzato per la generazione di percorsi utensile!
+Machinability Index.info	Not currently used for toolpath generation!	Non è attualmente utilizzato per la generazione di PU!
 Machine		Macchina
 Machine Definitions		Definizioni Macchina 
 Machine_Definitions	Machine Definitions	Definizioni Macchina 
@@ -848,23 +848,23 @@ Match case		Maiuscole e  minuscole
 Match whole word		Solo parole intere
 MATCHES_REPLACED	{0} matches replaced	{0} corrispondenze sostituite
 Material		Materiale
-Material.info	Stock material.\r\nMay be used to determine which style library to use.	Materiale del Pezzo. Può essere usato per determinare quale libreria stile da utilizzare.
+Material.info	Stock material.\r\nMay be used to determine which style library to use.	Materiale del Grezzo. Può essere usato per determinare quale libreria stile da utilizzare.
 Material.info:ToolDefinition	The main tool material.	L'Utensile principale per il materiale
 Materials		Materiale
 MatrixIdentity	Identity	Identità
 Max		Max
-Max Crossover Distance		Massima distanza d'incrocio
-Max Crossover Distance.info	Maximum distance as a decimal (0 - 1.0) of the tooldiameter to be cut in horizontal transitions.	Spostamento massimo, espresso in decimali (0 - 1.0), del diametro dell'Utensile da tagliare in passaggi orizzontali.
-Max Crossover Distance.info:CAMStyle	Maximum distance as a % of the tooldiameter to be cut in horizontal transitions.	Spostamento massimo, espresso in %, del diametro dell'Utensile da tagliare in passaggi orizzontali.
+Max Crossover Distance		Massimo Incrocio
+Max Crossover Distance.info	Maximum distance as a decimal (0 - 1.0) of the tooldiameter to be cut in horizontal transitions.	Spostamento massimo  da tagliare in passaggi orizzontali.\r\nIn rapporto (0 - 1.0) a [Diametro Utensile].
+Max Crossover Distance.info:CAMStyle	Maximum distance as a % of the tooldiameter to be cut in horizontal transitions.	Spostamento massimo da tagliare in passaggi orizzontali.\r\nIn  rapporto (0 - 1.0) a [Diametro Utensile].
 Max Line Width		Massima larghezza linea
-Max Line Width.info	The maximum line width allowed (in pixels).\nA zero value will use an automatic setting.	
+Max Line Width.info	The maximum line width allowed (in pixels).\r\nA zero value will use an automatic setting.	Lo spessore massimo consentito (in pixel) della linea.\r\nSe 0 saranno usati valori determinati automaticamente.
 Max Ramp Angle		Massimo Angolo di rampa
-Max Ramp Angle.info	Maximum ramp angle.\r\nNot currently used for toolpath generation!	Massimo angolo di rampa. Non è attualmente utilizzato per la generazione di percorsi utensile!
+Max Ramp Angle.info	Maximum ramp angle.\r\nNot currently used for toolpath generation!	Massimo angolo di rampa.\r\n Non è attualmente utilizzato per la generazione di PU!
 Max Value		Valore Massimo
 Max Value.info		Valore Massimo
 Maximum		Massimo
 Maximum allowed error between arc segment and mid point of source segment.		Errore massimo consentito tra segmento di arco e il punto medio del segmento di origine.
-Maximum allowed error when converting arcs to lines.		
+Maximum allowed error when converting arcs to lines.		Errore massimo consentito nella conversione Arco > Linea
 Maximum Arc Radius		Raggio massimo dell'arco
 Maximum Arc Radius.info	A numerical value that controls the maximum radius allowed for arc moves. If an arcs radius exceeds this value, a straight line move (G1) is used.	Valore numerico che controlla il raggio massimo consentito per movimenti circolari. Se un raggio di arco supera questo valore, viene usato un movimento rettilineo (G1).
 Maximum distance between points to be considered intersected.		Distanza massima tra i punti per essere considerati intersecanti.
@@ -885,7 +885,7 @@ Method		Metodo
 Method.info	None - Normal perpendicular sides.\nSlope - Value contains the angle in degrees from vertical.\nConvexRadius - Value contains the radius of the convex curve.\nConcaveRadius - Value contains the radius of the concave curve.	Nessuno - lati perpendicolari.\nPendenza - Valore dell'angolo in gradi dalla verticale.\nRaggio Convesso - Valore del raggio della curva convessa.\nRaggio Concavo - Valore del raggio della curva concava.
 Millimeters		Millimetri
 Milling Direction		Direzione di fresatura
-Milling Direction.info	Controls the direction the cutter moves around the toolpath.\r\nConventional or Climb milling supported.	Controlla la direzione del taglio di tutto il percorso utensile.\nFresature Concorde o Discorde sono supportate.
+Milling Direction.info	Controls the direction the cutter moves around the toolpath.\r\nConventional or Climb milling supported.	Controlla la direzione del taglio di tutto il PU.\r\nSono supportate Fresature Concorde o Discorde.
 Min		Min
 Min Value		Valore Minimo
 Min Value.info		Valore Minimo.info
@@ -912,11 +912,11 @@ Mold.info	If False then machine a positive image of the model.  If True then mac
 MOP		MOP
 MOP.info	Defines how each item of the {$mops} macro is formatted. Each active machining operation in the drawing will have its own 'MOP' section.	Definisce come ogni elemento della macro {$mops} è formattato. Ogni Lavorazione attiva nel disegno avrà la propria sezione 'MOP'.
 MOP_Reorder	MOP reorder	Riordinare MOP
-More...		Di più ...
+More...		Extra...
 Motor Torque		Coppia del Motore
 Motor Torque.info		Coppia del Motore.info
-Move		Muovere
-Moves		Si muove
+Move		Muovi
+Moves		Mosse (Moves)
 MSG_ABORTED	Operations aborted.	Operazioni interrotta.
 MSG_ABORTING	Aborting current operations...	Interruzione operazioni in corso ...
 MSG_ABORTING_EXCEED_5S	Waiting longer than 5s for thread abort	Attesa più lunga di 5 secondi per interruzione filettatura
@@ -924,12 +924,12 @@ MSG_EVALUATION_COUNT	You have used {0} of your 40 evaluation uses.	Hai usato {0}
 Name		Nome
 Name.info	The name of the drawing minus file extension.	Il nome del disegno senza estensione.
 Name.info:CAMPart	Descriptive name of this part	Nome descrittivo di questa Parte
-Name.info:CAMStyle	Unique name of this item.	Nome unico di questo articolo.
+Name.info:CAMStyle	Unique name of this item.	Nome univoco dello Stile.
 Name.info:CAMStyleLibrary		Name.info: CAMStyleLibrary
 Name.info:CAMStyleLibraryFolder		Name.info: CAMStyleLibraryFolder
 Name.info:Layer	Unique name of the layer.	Nome univoco del Livello.
-Name.info:MachineDefinition	Unique name of this item.	Nome univoco di questo articolo.
-Name.info:Material	Unique name of this item.	Nome univoco  di questo articolo.
+Name.info:MachineDefinition	Unique name of this item.	Nome univoco della Macchina.
+Name.info:Material	Unique name of this item.	Nome univoco del Materiale.
 Name.info:MaterialLibrary		Nome.info: MaterialLibrary
 Name.info:MaterialLibraryCollection		Nome.info: MaterialLibraryCollection
 Name.info:MOP3DSurface	Each machine operation can be given a meaningful name or description.\r\nThis name is written to the g-code as a comment.	Ad ogni MOP può essere dato un nome significativo o descrittivo. Questo nome è inserito nel GCode generato come commento.
@@ -947,7 +947,7 @@ Nest Each MOP		Ogni  MOP per Nidificazione
 Nest Method		Metodo Nidificazione
 Nest Method.info	Grid - a grid arry of part copies.\nIsoGrid - a grid with alternate rows offset.\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie parziali.\nIsoGrid - una griglia con righe alternate offset.\nPointList - punti copia sono presi da un elenco di punti.
 Nest Method.info:NestingInfo	Grid - a grid arry of part copies.\r\nIsoGrid - a grid with alternate rows offset.\r\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie parziali.\nIsoGrid - una griglia con righe alternate offset.\nPointList - punti copia sono presi da un elenco di punti.
-Nest to point list		Nidificazione a lista di punti 
+Nest to point list		Da Nidificazione a Elenco di punti 
 Nest_Item_Move	Nest item move	Nidificazione voce mossa
 Nesting		Nidificazione
 Nesting Items		Elementi di Nidificazioneo
@@ -1006,22 +1006,22 @@ Offsets per step (X,Y,Z[,Scale])		Offset per passo (X, Y, Z [, Scala])
 OK		OK
 Online Forum		Forum Online
 Online Scripting Help		Guida in linea 
-Only positive numbers allowed.		Solo numeri positivi consentito.
+Only positive numbers allowed.		Sono consentiti solo numeri positivi.
 Open		Apri
 Open Existing File		Apri file esistenti
-Open Offset		Aperto Offset
+Open Offset		Offset aperto
 Open_Existing_File	Open Existing File	Apri file esistenti
 Operations aborted.		Operazioni interrotta.
 Operations are still in progress!\nExit CamBam?		Le operazioni sono ancora in corso!\nUscire da CamBam?
 Optimisation Mode		Modalità Ottimizzazione
-Optimisation Mode.info	If OptimisationMode=Standard, then toolpaths are ordered to minimize rapids.\r\nIf OptimisationMode=Experimental, then a new test optimizer will be used.\r\nIf OptimisationMode=None, then toolpaths are not optimised and are written in the order they were generated.	Se Modalità Ottimizzazione = standard, i percorsi utensile sono generati per ridurre al minimo gli spostamenti rapidi.\nSe Modalità Ottimizzazione = Sperimentale, un nuovo ottimizzatore sperimentale sarà utilizzato.\nSe Modalità Ottimizzazione = Nessuno, i percorsi non sono ottimizzati e sono scritti nell'ordine come sono stati generati.
-Optimisation Mode.info:CAMStyle	If OptimisationMode=Standard, then toolpaths are ordered to minimize rapids.\r\nIf OptimisationMode=None, then toolpaths are not optimised and are written in the order they were generated.	Se Modalità Ottimizzazione = standard, i percorsi utensile sono generati per ridurre al minimo gli spostamenti rapidi.\nSe Modalità Ottimizzazione = Nessuno, i percorsi non sono ottimizzati e sono scritti nell'ordine come sono stati generati.
-Optimisation Mode.info:MOP3DSurface	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla come i percorsi utensile sono generatiin uscita gcode.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliore attualmente in fase di test.\nLegacy (0.9.7) - I percorsi utensile sono ordinati usando la logica della versione 0.9.7.\nNessuno - I percorsi utensile non sono ottimizzati e sono scritti in ordine come sono stati generati.
-Optimisation Mode.info:MOPDrill	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla come i percorsi utensile sono generatiin uscita gcode.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliore attualmente in fase di test.\nLegacy (0.9.7) - I percorsi utensile sono ordinati usando la logica della versione 0.9.7.\nNessuno - I percorsi utensile non sono ottimizzati e sono scritti in ordine come sono stati generati.
-Optimisation Mode.info:MOPEngrave	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla come i percorsi utensile sono generatiin uscita gcode.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliore attualmente in fase di test.\nLegacy (0.9.7) - I percorsi utensile sono ordinati usando la logica della versione 0.9.7.\nNessuno - I percorsi utensile non sono ottimizzati e sono scritti in ordine come sono stati generati.
-Optimisation Mode.info:MOPNCFile	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla come i percorsi utensile sono generatiin uscita gcode.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliore attualmente in fase di test.\nLegacy (0.9.7) - I percorsi utensile sono ordinati usando la logica della versione 0.9.7.\nNessuno - I percorsi utensile non sono ottimizzati e sono scritti in ordine come sono stati generati.
-Optimisation Mode.info:MOPPocket	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla come i percorsi utensile sono generatiin uscita gcode.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliore attualmente in fase di test.\nLegacy (0.9.7) - I percorsi utensile sono ordinati usando la logica della versione 0.9.7.\nNessuno - I percorsi utensile non sono ottimizzati e sono scritti in ordine come sono stati generati.
-Optimisation Mode.info:MOPProfile	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla come i percorsi utensile sono generatiin uscita gcode.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliore attualmente in fase di test.\nLegacy (0.9.7) - I percorsi utensile sono ordinati usando la logica della versione 0.9.7.\nNessuno - I percorsi utensile non sono ottimizzati e sono scritti in ordine come sono stati generati.
+Optimisation Mode.info	If OptimisationMode=Standard, then toolpaths are ordered to minimize rapids.\r\nIf OptimisationMode=Experimental, then a new test optimizer will be used.\r\nIf OptimisationMode=None, then toolpaths are not optimised and are written in the order they were generated.	Se Modalità Ottimizzazione = standard, i PU sono generati per ridurre al minimo i rapidi.\nSe Modalità Ottimizzazione = Sperimentale, un nuovo ottimizzatore sperimentale sarà utilizzato.\nSe Modalità Ottimizzazione = Nessuno, i PU non sono ottimizzati e sono scritti nell'ordine come sono stati generati.
+Optimisation Mode.info:CAMStyle	If OptimisationMode=Standard, then toolpaths are ordered to minimize rapids.\r\nIf OptimisationMode=None, then toolpaths are not optimised and are written in the order they were generated.	Se Modalità Ottimizzazione = standard, i PU sono generati per ridurre al minimo i rapidi.\nSe Modalità Ottimizzazione = Nessuno, i PU non sono ottimizzati e sono scritti nell'ordine come sono stati generati.
+Optimisation Mode.info:MOP3DSurface	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla l'ordine di generazione dei PU nel GCode di uscita.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliorato attualmente in fase di test.\nLegacy (0.9.7) - I PU sono ordinati usando la logica della versione 0.9.7.\nNessuno - I PU non sono ottimizzati e sono scritti nell'ordine di generazione.
+Optimisation Mode.info:MOPDrill	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla l'ordine di generazione dei PU nel GCode di uscita.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliorato attualmente in fase di test.\nLegacy (0.9.7) - I PU sono ordinati usando la logica della versione 0.9.7.\nNessuno - I PU non sono ottimizzati e sono scritti nell'ordine di generazione.
+Optimisation Mode.info:MOPEngrave	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla l'ordine di generazione dei PU nel GCode di uscita.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliorato attualmente in fase di test.\nLegacy (0.9.7) - I PU sono ordinati usando la logica della versione 0.9.7.\nNessuno - I PU non sono ottimizzati e sono scritti nell'ordine di generazione.
+Optimisation Mode.info:MOPNCFile	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla come i PU sono generatiin uscita gcode.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliore attualmente in fase di test.\nLegacy (0.9.7) - I PU sono ordinati usando la logica della versione 0.9.7.\nNessuno - I PU non sono ottimizzati e sono scritti in ordine come sono stati generati.
+Optimisation Mode.info:MOPPocket	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla l'ordine di generazione dei PU nel GCode di uscita.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliorato attualmente in fase di test.\nLegacy (0.9.7) - I PU sono ordinati usando la logica della versione 0.9.7.\nNessuno - I PU non sono ottimizzati e sono scritti nell'ordine di generazione.
+Optimisation Mode.info:MOPProfile	Controls how the toolpaths are ordered in gcode output.\r\n\r\nNew (0.9.8) - A new, improved optimiser currently in testing.\r\nLegacy (0.9.7) - Toolpaths are ordered using same logic as version 0.9.7.\r\nNone - Toolpaths are not optimised and are written in the order they were generated.	Controlla l'ordine di generazione dei PU nel GCode di uscita.\n\nNuovo (0.9.8) - Un nuovo, ottimizzatore migliorato attualmente in fase di test.\nLegacy (0.9.7) - I PU sono ordinati usando la logica della versione 0.9.7.\nNessuno - I PU non sono ottimizzati e sono scritti nell'ordine di generazione.
 Options		Opzioni
 Original Size		Dimensioni originali
 Orthographic		Ortografica
@@ -1036,17 +1036,17 @@ Outside Offsets		Esterno
 OVERWRITE_FILE	The file '{0}' already exists!\r\nOverwrite existing file?	Il file '{0}' esiste già! Sovrascrivere il file esistente?
 OVERWRITE_FILE_2	Do you want to overwrite this file?	Vuoi sovrascrivere il file?
 Parent Style		Stile Genitore
-Parent Style.info	The parent style this style is based on.\r\nDefault properties will inherit from the parent style.	Questo stile è basato sullo stile genitore.\nLe proprietà predefinite sono ereditate dallo stile genitore.
+Parent Style.info	The parent style this style is based on.\r\nDefault properties will inherit from the parent style.	Lo stile genitore su cui è basato questo stile.\nLe proprietà predefinite sono ereditate dallo stile genitore.
 Part		Parte
 Part Code		Codice Parte
-Part Code.info	A general purpose identifier, may be used as a tool catalogue reference.	Un identificatore di uso generale, può essere utilizzato come strumento di riferimento catalogo.
-Part_Reorder	Part reorder	Riordino pezzo
+Part Code.info	A general purpose identifier, may be used as a tool catalogue reference.	Un generico identificatore, per esempio un riferimento di catalogo.
+Part_Reorder	Part reorder	Riordino Parte
 Part1		Part1
 Paste		Incolla
-Paste format		Incolla Formato
+Paste format		Formato Incolla
 Paste_Format	Paste format	Formato Incolla
 PASTE_FORMAT_SELECT_MOP	First select a machining operation to paste the format to	Seleziona prima una MOP per incollare il formato
-Peck Distance		Profodità per ritrarsi
+Peck Distance		Profondità per ritrarsi
 Peck Distance.info	The incremental depth to drill before a retract.  If 0, then don't peck drill.	L'incremento di profondità della foratura prima di ritrarsi. Se è 0, fora senza ritrarsi.
 Pen Width		Larghezza penna
 Pen Width.info	Line width used to draw objects within this layer.	Spessore della linea usata per disegnare oggetti all'interno di questo Livello.
@@ -1054,12 +1054,12 @@ Percent		Per cento
 Perimeters		Perimetri
 Periodic		Periodico
 Periodic.info	This property is not currently used	Questa proprietà non è attualmente utilizzato
-Pitch Diameter		Passo Diametro
-Pitch Diameter:		Passo Diametro:
+Pitch Diameter		Diametro Passo
+Pitch Diameter:		Diametro Passo:
 Planar		Planare
 Planar.info	This property is not currently used	Questa proprietà non è attualmente utilizzato
 Plane Slice Only		Solo Piano di Taglio  
-Plane Slice Only.info	For waterline machining methods, if True, then do simple plane slicing only.\r\nWARNING! If True, overhangs will not be detected.	Per i metodi di lavorazione a Waterline, se Vero, fa solo il piano di taglio.\nATTENZIONE! Se Vero, le sporgenze non vengono rilevate.
+Plane Slice Only.info	For waterline machining methods, if True, then do simple plane slicing only.\r\nWARNING! If True, overhangs will not be detected.	Per i metodi di lavorazione a Waterline, se Vero, fa solo il piano di taglio.\r\nATTENZIONE! Se Vero, le sporgenze non vengono rilevate.
 Plane Slice X		Piano di taglio X
 Plane Slice Y		Piano di taglio Y
 Plane Slice Z		Piano di taglio Z
@@ -1068,73 +1068,73 @@ Plugin disabilitati
 Plugins		Plugin
 PLUGINS_DISABLED	Plugins disabled	Plugin disabilitati
 Plunge Feedrate		Avanzamento Verticale
-Plunge Feedrate.info	The feed rate to use when plunging.	La velocità di avanzamento da utilizzare quando il mandrino scende.
+Plunge Feedrate.info	The feed rate to use when plunging.	La velocità di avanzamento da utilizzare quando il mandrino scende (Plunge Feedrate).
 Poche1.SpindleDirection		Tasca 1. Direzione mandrino
 Pocket		Tasca 
-POCKET_UNCLOSED_SHAPES_IGNORED	Unclosed shapes in pocket ignored!	Forme non chiusa ignorato in tasca!
+POCKET_UNCLOSED_SHAPES_IGNORED	Unclosed shapes in pocket ignored!	Forme non chiusa nella tasca ignorata!
 Point Cloud Reader		Lettore nuvola di punti
-Point list		Lista di Punti
-Point List		Lista di Punti
-Point List ID		ID Lista punti
-Point List ID.info	If using a point list nest method, this property specifies the ID of the point list drawing object.	Se si utilizza una lista punti nidificata, questa proprietà specifica l'ID del punto di prelievo della lista oggetto.
-POINT_DRAW1	Enter points then press enter, (c)lose or esc	Inserire i punti poi premere invio, (c)  (Chiude) o esc
+Point list		Elenco di Punti
+Point List		Elenco di Punti
+Point List ID		ID Elenco di punti
+Point List ID.info	If using a point list nest method, this property specifies the ID of the point list drawing object.	Se si utilizza un Elenco di punti nidificato, questa proprietà specifica l'ID del punto di prelievo della lista oggetto.
+POINT_DRAW1	Enter points then press enter, (c)lose or esc	Inserire i punti poi premere INVIO, (C)hiude o ESC
 Point_Select	Point select	Selezionare il punto
-PointList		Lista Punti
-Pointlist_Centers	Pointlist centers	Lista Punti centro
-Pointlist_Extremas	Pointlist extremas	Lista Punti estrema
-Pointlist_Fill	Pointlist fill	Riempire Lista Punti
+PointList		Elenco di Punti
+Pointlist_Centers	Pointlist centers	Centro Elenco di Punti
+Pointlist_Extremas	Pointlist extremas	Margini Elenco di Punti
+Pointlist_Fill	Pointlist fill	Riempire Elenco di Punti
 POINTLIST_FILL_NOT_SUPPORTED	Point fill on {0} not supported.	Punto di riempimento su {0} non è supportato.
-Pointlist_From_Geometry	Pointlist from geometry	Lista Punti dalla geometria
-POINTLIST_TOO_FEW_NUMBERS	Too few numbers in point pattern.	Pochi numeri nella sagoma di punti
+Pointlist_From_Geometry	Pointlist from geometry	Elenco di Punti da geometria
+POINTLIST_TOO_FEW_NUMBERS	Too few numbers in point pattern.	Pochi numeri nell'Elenco di Punti
 Points		Punti
 Points.info	A list of control points that define the polyline.	Un elenco di punti di controllo che definiscono la polilinea.
 Points.info:Line		
-Points.info:PointList	A list of the points contained in the point list.	Un elenco dei punti contenuti nell'elenco dei punti.
-Polar Array Copy		Array Copia polare
+Points.info:PointList	A list of the points contained in the point list.	Un elenco dei punti contenuti nell'elenco di punti.
+Polar Array Copy		Copia Serie Polare
 POLAR_ARRAY_1	Select the center point of the polar array	Selezionate il punto centrale della serie polare
 Polar_Array_Copy	Polar array copy	Serie copia polare
-POLY_DRAW1	Enter points then press enter, (c)lose or esc	Inserire i punti poi premere invio, (c) (Chiude) o esc
-POLY_SUBTRACT1	Select the source objects, then press ENTER or ESC to cancel 	Selezionare gli oggetti di origine, quindi premere INVIO o ESC per annullare
-POLY_SUBTRACT2	Select the objects to subtract, then press ENTER or ESC to cancel	Selezionare gli oggetti da sottrarre, quindi premere INVIO o ESC per annullare
-POLY_TRIM1	Select the objects to trim, then press ENTER or ESC to cancel	Selezionare gli oggetti da tagliare, quindi premere INVIO o ESC per annullare
-POLY_TRIM2	Select the trimming objects, then press ENTER or ESC to cancel	Selezionare gli oggetti taglio, quindi premere INVIO o ESC per annullare
-POLY_TRIM3	Remove [I]nside or [O]utside the trimming lines ?	Rimuovere [I]  (Interno) o [O]  (Esterno) le linee taglio?
-POLY_TRIM3_CHARS	ioIO	IOIO
+POLY_DRAW1	Enter points then press enter, (c)lose or esc	Inserire i punti poi premere INVIO, (C)hiude o ESC
+POLY_SUBTRACT1	Select the source objects, then press ENTER or ESC to cancel 	Selezionare gli oggetti originali, quindi premere INVIO (ESC per annullare)
+POLY_SUBTRACT2	Select the objects to subtract, then press ENTER or ESC to cancel	Selezionare gli oggetti da sottrarre, quindi premere INVIO (ESC per annullare)
+POLY_TRIM1	Select the objects to trim, then press ENTER or ESC to cancel	Selezionare gli oggetti da spuntare, quindi premere INVIO (ESC per annullare)
+POLY_TRIM2	Select the trimming objects, then press ENTER or ESC to cancel	Selezionare gli oggetti taglio, quindi premere INVIO (ESC per annullare)
+POLY_TRIM3	Remove [I]nside or [O]utside the trimming lines ?	Rimuovere [I] (Interno) o [O] (Esterno) le linee taglio?
+POLY_TRIM3_CHARS	ioIO	ioIO
 Polyline		Polilinea
 Polyline Offset		Polilinea Offset
 PolyRectangle		Rettangolo
-Positive numbers are outside polyline, Negative numbers are inside		I numeri positivi sono fuori polilinea, i numeri negativi sono dentro
+Positive numbers are outside polyline, Negative numbers are inside		I numeri positivi sono al di fuori della polilinea, i numeri negativi sono all'interno
 Post Build		Struttura post processor
 Post File		File per post processor
-Post File.info	Defines the general structure of the gcode output.\nIt typically includes three macros {$header}, {$mops} and {$footer}, which are evaluated based on rules defined in the post processor definition .	Definisce la struttura generale della produzione gcode. In genere comprende tre macro {$header}, {$mop} e {$footer}, che vengono valutati in base alle regole definite nella definizione post processor.
+Post File.info	Defines the general structure of the gcode output.\nIt typically includes three macros {$header}, {$mops} and {$footer}, which are evaluated based on rules defined in the post processor definition .	Definisce la struttura generale del GCode prodotto. In genere comprende tre macro {$header}, {$mop} e {$footer}, che vengono valutate in base alle regole definite nella definizione post processor.
 Post Processor		Post Processor
 Post Processor Macros		Macro Post Processor
-Post Processor Macros.info	Post processor macros can be used to pass values to the post processor.\r\nDefine as macro=value pairs.\r\nThe post processor will refer to them as {$macro}.	Macro Post Processor può essere utilizzato per passare i valori al post processor.\nDefinisci  macro = coppie di valori.\nIl post processor farà riferimento a loro come {$macro}.
-Post Processor.info	Post processor definitions can be used to customise the gcode output.	Definizioni di Post Processor possono essere utilizzati per personalizzare l'uscita del gcode.
+Post Processor Macros.info	Post processor macros can be used to pass values to the post processor.\r\nDefine as macro=value pairs.\r\nThe post processor will refer to them as {$macro}.	Macro Post Processor può essere utilizzato per passare valori al post processor.\nDefinisci  coppie macro= valori.\nIl Post Processor fara riferimento a loro come {$macro}.
+Post Processor.info	Post processor definitions can be used to customise the gcode output.	Definizioni del Post Processor che vengono utilizzate per personalizzare il GCode prodotto.
 Post Processors		Post Processors
 Post_Processors	Post Processors	Post Processors
 Post-Build Command		Post-Build Command
 Post-Build Command Args		Post-Build Command Args
-Post-Build Command Args.info	Arguments to pass to the PostBuildCommand.\n{$cbfile.name} and {$outfile} macros can be used.	Argomenti da passare al Post Build Command.\nMacro {$cbfile.name} e {$outfile} possono essere utilizzate.
-Post-Build Command.info	A command line tool for customising gcode output after it has been initially built by CamBam.	Uno strumento a riga di comando per personalizzare l'uscita del gcode dopo che è stato generato da CamBam.
-POSTPROC_ERROR_LOADING_PP	Error loading post processor '{0}'.	Errore caricamento post processor '{0}'.
-POSTPROC_ERROR_PARSING_MACRO	Error parsing custom macro ({0})	Errore durante l'analisi della macro personalizzata ({0})
-POSTPROC_NOT_FOUND	Post Processor '{0}' not found, using default.	Post Processor '{0}' non trovato, utilizzare l'impostazione predefinita.
+Post-Build Command Args.info	Arguments to pass to the PostBuildCommand.\n{$cbfile.name} and {$outfile} macros can be used.	Argomenti da passare al Post-Build Command.\nPossono essere utilizzate le macro {$cbfile.name} e {$outfile}.
+Post-Build Command.info	A command line tool for customising gcode output after it has been initially built by CamBam.	Uno strumento a riga di comando per personalizzare il GCode prodotto dopo che è stato generato da CamBam, ad esempio uno script per processare comandi non supportati dall'interprete di GCode.
+POSTPROC_ERROR_LOADING_PP	Error loading post processor '{0}'.	Errore nel caricare il Post Processor '{0}'.
+POSTPROC_ERROR_PARSING_MACRO	Error parsing custom macro ({0})	Errore analizzando la macro personalizzata ({0})
+POSTPROC_NOT_FOUND	Post Processor '{0}' not found, using default.	Post Processor '{0}' non trovato, utilizzo quello predefinito.
 POSTPROC_PP_ALREADY_LOADED	Warning! Post Processor ({0}) already loaded.	Attenzione! Post Processor ({0}) già caricato.
 Preserve aspect ratio		Mantieni proporzioni
 Pressure Angle		Angolo di pressione
 Pressure Angle:		Angolo di pressione:
 Primitive IDs		ID primitive
-Primitive IDs.info	List of drawing objects from which this machine operation is defined.  	Elenco degli oggetti di disegno per i quali è definito il tipo di lavorazione.
+Primitive IDs.info	List of drawing objects from which this machine operation is defined.  	Elenco degli oggetti di disegno per i quali questa MOP è definita.
 Primitive Type		Tipo primitivo
 Primitive Type.info	A description of this type of object.	Una descrizione di questo tipo di oggetto.
-Produce gcode		Produrre gcode
+Produce gcode		Produci gcode
 Profile		Profilo 
 Profile 3D Method		Metodo profilo 3D
-Profile 3D Method.info	Method to use to generate 3D profile toolpath.	Metodo da utilizzare per generare percorsi utensile profilo 3D.
+Profile 3D Method.info	Method to use to generate 3D profile toolpath.	Metodo da utilizzare per generare PU per il profilo 3D.
 Profile Method		Metodo profilo
-Profile Method.info	The method used to determine the toolpath from the 3D model.	Il metodo utilizzato per determinare il percorso utensile dal modello 3D.
-Project Lines to Surface		Progetto, linee a superficie
+Profile Method.info	The method used to determine the toolpath from the 3D model.	Il metodo utilizzato per determinare il PU dal modello 3D.
+Project Lines to Surface		Proietta Linee su Superficie
 Projection Resolution		Risoluzione di proiezione
 Prompt		Chiedi
 Prompt for Feature MOP (Experimental)		Richiedi Caratteristica MOP (sperimentale)
@@ -1143,31 +1143,31 @@ Property:		Proprietà:
 Property_Changed	Property changed	Proprietà cambiata
 Python Script		
 Radial Depth Of Cut		Profondità di taglio radiale
-Radial Depth Of Cut.info	Recommended  radial depth of cut.\r\nNot currently used for toolpath generation!	Consigliato profondità di taglio radiale. Non è attualmente utilizzato per la generazione di percorsi utensile!
+Radial Depth Of Cut.info	Recommended  radial depth of cut.\r\nNot currently used for toolpath generation!	Profondità di taglio radiale consigliata. Non è attualmente utilizzato per la generazione di PU!
 Radius		Raggio
 Radius.info	The radius of the arc.	Il raggio dell'arco.
-Rapid		Movimento Rapido
-Rapid Down To Clearance		Veloce verso il basso.
-Rapid Down To Clearance.info	If set True, and Z is above the clearance plane a rapid down to the clearance plane is used.  If False the current Z is maintained.	Se impostata su Vero, e Z è al di sopra del piano di sicurezza, Z scende velocemente fino al piano di sicurezza.\nSe impostato su Falso il valore di Z viene mantenuto.
-Rapid Velocity		Velocità rapida
+Rapid		Rapido
+Rapid Down To Clearance		Rapidi al Piano di Sicurezza.
+Rapid Down To Clearance.info	If set True, and Z is above the clearance plane a rapid down to the clearance plane is used.  If False the current Z is maintained.	Se Vero, e Z è al di sopra del Piano di Sicurezza vengono utilizzati i Rapidi fino al Piano di Sicurezza.\n\nSe Falso il valore di Z viene mantenuto.
+Rapid Velocity		Velocità Rapidi
 Rapid Velocity.info		Velocità rapida.info
-Rapid.info	Rule for a rapid move.	Imposta la velocità alta
+Rapid.info	Rule for a rapid move.	Imposta la velocità dei Rapidi
 Ratio type for tooth size. Diametral Pitch = teeth per pitch diameter. Module = pitch diameter per teeth.		Tipo di rapporto per la dimensione dei denti. Passo denti = denti per diametro ruota. Modulo = diametro ruota per denti.
 Rational		Razionale
 Rational.info	This property is not currently used	Questa proprietà non è attualmente utilizzata
 RawFiles	Raw Files	File Raw
 Rebuild Toolpath Before Post		Rig. PU prima di rig. GCode 
-Rebuild Toolpath Before Post.info	Controls whether to regenerate toolpaths before creating gcode post.	Determina se rigenerare o meno i percorsi utensile (PU) prima che venga generato il gcode
-REBUILD_TOOLPATHS_BEFORE_POST	Rebuild toolpaths before post?	Rigenerare i percorsi utensile (PU) prima di generare il gcode?
+Rebuild Toolpath Before Post.info	Controls whether to regenerate toolpaths before creating gcode post.	Determina se rigenerare o meno i PU prima che venga rigenerato il GCode
+REBUILD_TOOLPATHS_BEFORE_POST	Rebuild toolpaths before post?	Rigenerare i PU prima di generare il GCode?
 Rectangle		Rettangolo
 Rectangle Box		Rettangolo Box
 Redo		Ripeti
-Refresh		Rinfrescare
+Refresh		Rinfresca
 Region		Regione
 Region Fill Style		Stile riempimento Regione
-Region Fill Style.info	Method to use to fill regions.	Metodo da utilizzare per riempire le regioni.
-Region Fill Style.info:CAMStyle	Method to use to fill regions.  Waterline rough only.	Metodo da usare per riempire regioni. Waterline solo grezzo.
-Region Fill Style.info:MOP3DSurface	Method to use to fill regions.  Waterline rough only.	Metodo da usare per riempire regioni. Waterline solo grezzo.
+Region Fill Style.info	Method to use to fill regions.	Metodo da utsare per riempire le regioni.
+Region Fill Style.info:CAMStyle	Method to use to fill regions.  Waterline rough only.	Metodo da usare per riempire regioni. Solo per sgrossatura Waterline.
+Region Fill Style.info:MOP3DSurface	Method to use to fill regions.  Waterline rough only.	Metodo da usare per riempire regioni. Solo per sgrossatura Waterline.
 Region_Fill	Region fill	Riempire Regioni
 REGION_FILL_DURATION	Region Fill duration : {0}	Durata riempimento Regione: {0}
 Regular		Regolare
@@ -1175,40 +1175,40 @@ Regular.info	Regular font style.	Carattere stile normale.
 Reload		Ricarica
 Reload post processors		Ricarica Post Processor
 Remove Arcs		Rimuovi Archi
-Remove Overlaps		Rimuovi le sovrapposizioni
+Remove Overlaps		Rimuovi Sovrapposizioni
 Remove Tab		Rimuovi Fermi
 Remove_Dupes	Remove dupes	Rimuovi doppioni
 Remove_Holding_Tab	Remove holding tab	Rimuovi Fermi
-Remove_Overlaps	Remove overlaps	Rimuovi le sovrapposizioni
+Remove_Overlaps	Remove overlaps	Rimuovi Sovrapposizioni
 REMOVE_PRIMS_IN_LAYER	Remove all the primitives in layer '{0}'?	Rimuovere tutte le primitive nel Livello '{0}'?
 Rename		Rinominare
-Rename all tools		Rinominare tutti gli utensili
-RENAME_FILE	Rename file to '{0}'?	Rinominare file '{0}'?
+Rename all tools		Rinominare tutti gli Utensili
+RENAME_FILE	Rename file to '{0}'?	Rinominare file come '{0}'?
 Rename_Layer	Rename layer	Rinomina Livello
-RENAME_LIB	Rename library to '{0}'?	Rinominare biblioteca a '{0}'?
+RENAME_LIB	Rename library to '{0}'?	Rinominare Libreria come '{0}'?
 Rename_MOP	Rename MOP	Rinomina MOP
 Rename_Part	Rename part	Rinomina parte
 Repeat		Ripetere
 Repeat Commands		Ripetere comandi
 Repeat Commands.info	If True then drawing commands will be repeated.	Se Vero i comandi di disegno verrano ripetuti.
 Repeat.info	Code used for repeat.	Codice utilizzato per la ripetizione del programma.
-Replace		Sostituire
+Replace		Sostituisci
 Replace All		Sostituisci tutto
-Replace with:		Sostituire con:
-REPLACE_MOP_SOURCES	Replace machining operation source with selected objects?	Sostituire l'operazione attuale con gli oggetti selezionati?
+Replace with:		Sostituisci con:
+REPLACE_MOP_SOURCES	Replace machining operation source with selected objects?	Sostituire l'operazione di origine con gli oggetti selezionati?
 Reset		Ripristina
 Reset to defaults		Ripristina impostazioni predefinite
 Reset_To_Defaults	Reset to defaults	Ripristina impostazioni predefinite
-Resize		Ridimensionare
-Resize Objects		Ridimensionare gli oggetti
+Resize		Ridimensiona
+Resize Objects		Ridimensiona gli oggetti
 Resolution		Risoluzione
-Resolution.info	Distance along each scanline to test height (% of tooldiameter).\r\nUsed for Horizontal and Vertical only.	Distanza lungo ogni linea di scansione per testare altezza (% di tooldiameter). Utilizzato  solo per orizzontale e verticale.
-Restore PropertyGrid		Ripristinare Proprietà Griglia
+Resolution.info	Distance along each scanline to test height (% of tooldiameter).\r\nUsed for Horizontal and Vertical only.	Distanza lungo ogni linea di scansione per testare altezza (in rapporto (0-1.0 di [Diametro Utensile]). Utilizzato da [Profilo 3D] per [Orizzontale] e [Verticale].
+Restore PropertyGrid		Ripristina Proprietà Griglia
 Retract Height		Altezza di ritrazione
-Retract Height.info	For peck canned cyles, retract to this value after each peck.	Per cicli di foratura, ritrarre di questo valore dopo ciascun incremento della "Profondità per ritrarsi".
+Retract Height.info	For peck canned cyles, retract to this value after each peck.	Per cicli di foratura, ritrarre di questo valore dopo ciascun incremento della [Profondità per ritrarsi].
 Retry		Riprova
 Reverse		Indietro
-Reversing Polyline in join		Polilinea inversione a unirsi
+Reversing Polyline in join		Inverti Polilinea in unione
 Right		Destra
 Right Down		Destra Giù
 Right Hand		Mano Destra
@@ -1217,8 +1217,8 @@ Rigidity		Rigidità
 Rigidity.info	Informational.	Informativo.
 Root Folder		Cartella Principale
 Root Folder.info		Cartella Principale.info
-Rotate		Ruotare
-ROTATE_MODE	Rotate Mode	Modalità di ruotazione
+Rotate		Ruota
+ROTATE_MODE	Rotate Mode	Modalità di rotazione
 Rotation		Rotazione
 Rotation Mode		Modalità di rotazione
 Rotation Mode.info	The key and mouse combination used to rotate the drawing view.	La combinazione di tasti e mouse utilizzati per ruotare la vista del disegno.
@@ -1226,9 +1226,9 @@ Rotation.info		Rotazione.info
 rough.CutFeedrate		Velocità Sgrossatura
 Roughing		Sgrossatura
 Roughing / Finishing		Sgrossatura / Finitura
-Roughing / Finishing.info	Selects whether a roughing or finishing operation.  This information may be used in automatic speed and feed calculations.	Seleziona un'operazione di Sgrossatura o Finitura. Queste informazioni possono essere utilizzate in velocità automatica e calcolo della velocità.
-Roughing Clearance		Rimanenza Sgrossatura
-Roughing Clearance.info	This is the amount of stock to leave after the final cut.\nUsually removed later in a finishing pass.\nNegative values can be used to oversize holes.	Questa è la quantità di materiale da lasciare dopo il taglio finale.\nDi solito viene rimosso successivamente in una passata di finitura.\nI valori negativi possono essere utilizzati per aumentare il valore dell'ultima passata, questa creerà un sovrataglio.
+Roughing / Finishing.info	Selects whether a roughing or finishing operation.  This information may be used in automatic speed and feed calculations.	Seleziona il tipo dioperazione (Sgrossatura o Finitura). Queste informazioni possono essere utilizzate nel calcolo automatico di  velocità e avanzamento.
+Roughing Clearance		Margine sgrossatura
+Roughing Clearance.info	This is the amount of stock to leave after the final cut.\nUsually removed later in a finishing pass.\nNegative values can be used to oversize holes.	La quantità di materiale da lasciare dopo la passata finale di Sgrossatura.\nQuesto materiale viene rimosso di solito successivamente da una passata di finitura.\nValori negativi possono essere utilizzati per aumentare il valore dell'ultima passata, creando un sovrataglio.
 Round Bar		Barra Rotonda
 Rows		Righe
 Rows.info	Number of rows when using a grid nest method.	Numero di righe quando si utilizza un metodo Nidificazione griglia.
@@ -1240,26 +1240,26 @@ Save All		Salva tutto
 Save As		Salva con nome
 Save Current File		Salva file corrente
 Save settings		Salva impostazioni
-Save settings on exit		Salvare le impostazioni all'uscita
+Save settings on exit		Salva impostazioni all'uscita
 Save to Xml		Salva su  Xml
 SAVE_CHANGES_TO	Save changes to '{0}'?	Salva le modifiche a '{0}'?
 Save_Current_File	Save Current File	Salva file corrente
 SaveFile	Save File	Salva file
-Scale		
-Scanline Gradient Threshold		
+Scale		Scala
+Scanline Gradient Threshold		Soglia di gradiente per Scanline
 Script		Script
 Script-o-matic		Script-o-matic
 Search		Ricerca
 Select {0} point		Seleziona {0} punto
-Select a second point along the mirror line		
+Select a second point along the mirror line		Seleziona un secondo punto sulla linea di rispecchiamento
 Select All		Seleziona tutto
-Select all on layer		Seleziona tutti i layer
-Select All On Layer		Seleziona, tutto sullo Livello
+Select all on layer		Seleziona tutto sul Livello
+Select All On Layer		Seleziona tutto sul Livello
 Select Color		Colore selezione
-Select Color.info	The color used to select paint selected shapes.	Il colore utilizzato per oggetti selezionati.
-Select drawing objects		Selezionare gli oggetti di disegno
-Select Fade		Seleziona Dissolvenza
-Select Fade.info	Controls how much unselected shapes are faded (as a percent).	Controlla quanto le forme non selezionate sono sbiadite (in percentuale).
+Select Color.info	The color used to select paint selected shapes.	Il colore utilizzato per gli oggetti selezionati.
+Select drawing objects		Seleziona gli oggetti di disegno
+Select Fade		Seleziona dissolvenza
+Select Fade.info	Controls how much unselected shapes are faded (as a percent).	Controlla quanto sono sbiadite le forme non selezionate (in percentuale).
 Select point list.		Seleziona Elenco punti.
 Select reference angle		Seleziona angolo di riferimento
 Select rotation center point		Seleziona centro punto di rotazione
@@ -1267,18 +1267,18 @@ Select the center point of the polar array		Selezionate il punto centrale della 
 Select the Current Drawing Units		Selezionare le unità di disegno corrente
 Select the new polyline starting point		Selezionare il nuovo punto di partenza polilinea
 Select_Current_Units	Select the Current Drawing Units	Selezionare le unità di disegno corrente
-SELECT_FILENAME	Select filename	Seleziona nome
+SELECT_FILENAME	Select filename	Seleziona nome file
 SELECT_MACHINING_ORIGIN	Select machining origin	Selezionare origine lavorazione
 Select_MOP_Entities	Select MOP entities	Selezionare le entità MOP
 SELECT_POINT	Select {0} point	Selezionare {0} punto
-SELECT_POINT_LIST	Select point list.	Selezionare Elenco punto.
+SELECT_POINT_LIST	Select point list.	Selezionare elenco punti.
 SELECT_POLY_P1	Select the new polyline starting point	Selezionare il nuovo punto di partenza polilinea
 SELECT_START_POINT	Select start point	Selezionare il punto di partenza
-Selected Objects Extrema		Gli oggetti selezionati Extrema
+Selected Objects Extrema		Estremi degli oggetti selezionati
 Selected Only		Solo selezionati
 Selected Shapes		Forme selezionati
 Selection Only		Solo Selezionati
-SelectLibrary	Select library	Seleziona biblioteca
+SelectLibrary	Select library	Seleziona Libreria
 Set active part		Imposta parte attiva
 Set as active		Imposta come attivo
 Set as active layer		Imposta come Livello attivo
@@ -1287,7 +1287,7 @@ Set machining origin		Imposta origine lavorazione
 Set New Start Point		Imposta nuovo punto di partenza
 Set start point		Imposta il punto di partenza
 Set Start Point		Imposta il punto di partenza
-Set Stock Size for Lathe		Imposta la dimensione del pezzo nel Tornio
+Set Stock Size for Lathe		Imposta la dimensione del Grezzo per [Tornitura]
 Set_Active_Part	Set active part	Imposta parte attiva
 Set_machining_origin	Set machining origin	Imposta origine lavorazione
 Set_polyline_start	Set polyline start	Imposta inizio polilinea
@@ -1299,72 +1299,72 @@ Show		Visualizza
 Show all		Visualizza tutto
 Show axis		Visualizza gli assi
 Show cut widths		Visualizza larghezze di taglio
-Show Cut Widths		Visualizza larghezza di taglio
-Show Cut Widths.info	Shows the area that will be cut for each toolpath.	Visualizza l'area che sarà tagliata per ciascun percorso utensile.
-Show direction arrow		Visualizza freccia di direzione 
-Show Direction Vector		Visualizza Freccia di  Direzione
-Show Direction Vector.info	Displays an arrow indicating the cutting direction and toolpath start point.	Visualizza una freccia che indica la direzione di taglio e il punto di partenza del percorso utensile.
+Show Cut Widths		Visualizza larghezze di taglio
+Show Cut Widths.info	Shows the area that will be cut for each toolpath.	Visualizza l'area che sarà rimossa da ciascun PU.
+Show direction arrow		Visualizza Direzione di taglio 
+Show Direction Vector		Visualizza Direzione di Taglio
+Show Direction Vector.info	Displays an arrow indicating the cutting direction and toolpath start point.	Visualizza una freccia indicante la direzione di taglio e il punto di partenza del PU.
 Show grid		Visualizza griglia
 Show Grid		Visualizza Griglia
-Show Grid.info	Sets whether the drawing grid is displayed.\r\nAlternatively use the show grid button on the toolbar.	Imposta la visualizzazione della griglia di disegno. In alternativa, utilizzare il pulsante Mostra Griglia sulla barra degli strumenti.
+Show Grid.info	Sets whether the drawing grid is displayed.\r\nAlternatively use the show grid button on the toolbar.	Imposta la visualizzazione della griglia di disegno. In alternativa, utilizzare il pulsante "Mostra Griglia" sulla barra degli strumenti.
 Show License Form		Mostra Modulo di licenza
 Show nests		Visualizza Nidificazioni
 Show Nests		Visualizza Nidificazioni
 Show Nests.info	Displays nest copies when the part object is selected.	Visualizza copie Nidificazione quando l'oggetto è selezionato.
-Show or hide the axis		Visualizza o nasconde l'asse
+Show or hide the axis		Visualizza o nasconde gli assi
 Show or hide the grid		Visualizza o nasconde la griglia
 Show properties by category		Visualizzare le proprietà per categoria
 Show properties in alphbetical list		Visualizza le proprietà in ordine alfabetico
-Show rapids		Visualizza movimenti rapidi
-Show Rapids		Visualizza Movimenti Rapidi
-Show Rapids.info	Displays a line representing G0 rapid moves.	Visualizza una linea che rappresenta il movimento rapido G0.
-Show Selection Corners		Mostra Angoli di selezione
-Show Selection Corners.info	If True, display corner markers of selected shape bounds.	
-Show stock		Visualizza Pezzo
-Show Stock		Visualizza Pezzo
-Show Stock.info	Displays a block representing the stock object.	Consente di visualizzare un blocco che rappresenta il Pezzo.
-Show Toolpath Normal		Visualizza il normale percorso utensile
-Show Toolpath Normal.info	Displays a line perpendicular to the toolpath, typically toward the line being cut.	Visualizza una linea perpendicolare al percorso utensile, di solito verso la linea di taglio.
-Show toolpaths		Visualizza percorsi Utensile
-Show Toolpaths		Visualizza percorsi Utensile
-Show Toolpaths.info	Display toolpaths.	Visualizza i percorsi dell'Utensile.
+Show rapids		Visualizza rapidi
+Show Rapids		Visualizza Rapidi
+Show Rapids.info	Displays a line representing G0 rapid moves.	Visualizza una linea che rappresenta il rapido G0.
+Show Selection Corners		Mostra margini della selezione
+Show Selection Corners.info	If True, display corner markers of selected shape bounds.	Se Vero, mostra dei marcatori agli angoli delle forme selezionate. 
+Show stock		Visualizza Grezzo
+Show Stock		Visualizza Grezzo
+Show Stock.info	Displays a block representing the stock object.	Consente di visualizzare un parallelepipedo che rappresenta il Grezzo.
+Show Toolpath Normal		Visualizza il normale PU
+Show Toolpath Normal.info	Displays a line perpendicular to the toolpath, typically toward the line being cut.	Visualizza una linea perpendicolare al PU, di solito verso la linea di taglio.
+Show toolpaths		Visualizza PU
+Show Toolpaths		Visualizza PU
+Show Toolpaths.info	Display toolpaths.	Visualizza i percordi utensile (PU).
 Show_All_Layers	Show all layers	Visualizza tutti i livelli
-Show_hide_axis	Show or hide the axis	Visualizza o nasconde l'asse
+Show_hide_axis	Show or hide the axis	Visualizza o nasconde gli assi
 Show_hide_grid	Show or hide the grid	Visualizza o nasconde la griglia
 Show_Layer	Show layer	Visualizza il Livello
 Side Profile		Profilo laterale
-Side Profile.info	Side profiles are used to define 3D shapes from 2D drawings.	Profili laterali sono utilizzati per definire le forme 3D da disegni 2D.
+Side Profile.info	Side profiles are used to define 3D shapes from 2D drawings.	Profili laterali sono utilizzati per creare forme 3D partendo da disegni 2D.
 Silhouette		Silhouette
 Silhouettes		Silhouettes
 Simulate with CutViewer		Simulare con CutViewer
 Single Slice Test		Fetta Singola
 Size		Dimensione
-Size Threshold		Dimensione Soglia
-Size Threshold.info	Shapes with perimeters less than this value will not have any automatically calculated tabs.	Forme con perimetri inferiore a questo valore non avrà nessun Fermo calcolato automaticamente.
+Size Threshold		Soglia Dimensione
+Size Threshold.info	Shapes with perimeters less than this value will not have any automatically calculated tabs.	Per Forme con perimetri inferiori a questo valore non sarà calcolato automaticamente nessun Fermo.
 Slice Widths		Larghezza fetta
 Slope		Pendenza
 Snap to grid		Aggancia alla griglia
 Snap to Grid		Aggancia alla griglia
-Snap To Grid		
+Snap To Grid		Aggancia alla griglia
 Snap to Grid.info	If True, drawing points will snap to the minor grid units.	Se Vero, i punti del disegno si agganceranno ai punti più vicini della griglia.
-Snap To Object		
-Snap to objects		Aggancio agli oggetti
-Snap to Points		Aggancio ai punti
-Snap to Points.info	If True, drawing points will snap to shape control points, circle centers and other significant points.	Se Vero, i punti del disegno si agganceranno ai punti di controllo degli oggetti, centri di cerchio e altri punti importanti.
+Snap To Object		Aggancia agli Oggetti
+Snap to objects		Aggancia agli oggetti
+Snap to Points		Aggancia ai punti
+Snap to Points.info	If True, drawing points will snap to shape control points, circle centers and other significant points.	Se Vero, i punti del disegno si agganceranno ai punti di controllo degli oggetti, centri di cerchio e altri punti significativi.
 Source		Origine
 Source File		File di origine
-Source File.info	Filename of the source gcode	Nome del file GCode di origine
-Source Image		Immagine di origine
+Source File.info	Filename of the source gcode	Nome del file GCode sorgente
+Source Image		Immagine sorgente
 Spacing		Spazio
-Spacing.info	Distance between the toolpath centers of adjacent copies.	Distanza tra i centri dei percorsi utensile  adiacenti.
+Spacing.info	Distance between the toolpath centers of adjacent copies.	Distanza tra i centri delle copie dei PU adiacenti.
 Speed and feeds calculator		Calcolatore della velocità e dell'avanzamento
 SPEEDS_AND_FEEDS	Speeds and Feeds Calculator	Calcolatore della velocità e dell'avanzamento
 Spindle		Mandrino
 Spindle CCW		Mandrino CCW
-Spindle CCW.info	Code used for spindle CCW.	Codice utilizzato attivare il mandrino in senso antiorario.
+Spindle CCW.info	Code used for spindle CCW.	Codice utilizzato per attivare il mandrino in senso antiorario (CCW).
 Spindle Control		Controllo mandrino
 Spindle CW		Mandrino CW
-Spindle CW.info	Code used for spindle CW.	Codice utilizzato per attivare il mandrino in senso orario.
+Spindle CW.info	Code used for spindle CW.	Codice utilizzato per attivare il mandrino in senso orario (CW).
 Spindle Direction		Direzione del mandrino
 Spindle Direction.info	The direction of rotation of the spindle.	Il senso di rotazione del mandrino.
 Spindle Off		Mandrino Off
@@ -1372,23 +1372,23 @@ Spindle Off.info	Code used for spindle off.	Codice utilizzato per spegnere il ma
 Spindle Power		Potenza del mandrino
 Spindle Power.info		Potenza del mandrino.info
 Spindle Range		Gamma velocità mandrino
-Spindle Range.info	This may be the pulley number or dial setting of the spindle for the desired speed.	Questo può essere il numero della puleggia o l'impostazione del selettore del mandrino per la velocità desiderata.
-Spindle Range.info:MOP3DSurface	The pulley number or dial setting of the spindle for the target speed.	Il numero della puleggia o l'impostazione del selettore del mandrino per la velocità di riferimento.
-Spindle Range.info:MOPDrill	The pulley number or dial setting of the spindle for the target speed.	Il numero della puleggia o l'impostazione del selettore del mandrino per la velocità di riferimento.
-Spindle Range.info:MOPPocket	The pulley number or dial setting of the spindle for the target speed.	Il numero della puleggia o l'impostazione del selettore del mandrino per la velocità di riferimento.
-Spindle Range.info:MOPProfile	The pulley number or dial setting of the spindle for the target speed.	Il numero della puleggia o l'impostazione del selettore del mandrino per la velocità di riferimento.
+Spindle Range.info	This may be the pulley number or dial setting of the spindle for the desired speed.	Questo può essere il numero della puleggia o l'impostazione del selettore per la velocità desiderata del mandrino.
+Spindle Range.info:MOP3DSurface	The pulley number or dial setting of the spindle for the target speed.	Il numero della puleggia o l'impostazione del selettore del mandrino per la velocità obiettivo.
+Spindle Range.info:MOPDrill	The pulley number or dial setting of the spindle for the target speed.	Il numero della puleggia o l'impostazione del selettore del mandrino per la velocità obiettivo.
+Spindle Range.info:MOPPocket	The pulley number or dial setting of the spindle for the target speed.	Il numero della puleggia o l'impostazione del selettore del mandrino per la velocità obiettivo.
+Spindle Range.info:MOPProfile	The pulley number or dial setting of the spindle for the target speed.	Il numero della puleggia o l'impostazione del selettore del mandrino per la velocità obiettivo.
 Spindle Speed		Velocità del mandrino
 Spindle Speed.info	The speed in RPM of the spindle	La velocità in RPM del mandrino
 Spindle Speed.info:CAMStyle	The speed in RPM of the spinfle	La velocità in RPM del mandrino
 Spindle Speeds		Velocità del mandrino
 Spindle Speeds.info		Velocità del Mandrino.info
 Spiral		Spirale
-Spiral Angle		Angolo della spirale
-Spiral Angle.info	Used by spiral and tangents to control ramp angle.	Utilizzato da spirali e tangenti per controllare l'angolo della rampa.
-Spiral Flat Base		Base a spirale piatta
-Spiral Flat Base.info	For spiral drilling only.  If True, a full circle is added to the spiral base, to ensure a flat hole bottom.	Solo Per la foratura a spirale. Se Vero un cerchio completo viene aggiunto alla base della spirale, per garantire un fondo piatto al foro.
-Spiral Mill (CCW)		Fresatura Spirale (CCW)
-Spiral Mill (CW)		Fresatura Spirale (CW)
+Spiral Angle	Angle	Angolo
+Spiral Angle.info	Used by spiral and tangents to control ramp angle.	Utilizzato da spirali e tangenti per controllare l'angolo di rampa.
+Spiral Flat Base		Base spirale piatta
+Spiral Flat Base.info	For spiral drilling only.  If True, a full circle is added to the spiral base, to ensure a flat hole bottom.	Solo Per la foratura a spirale. \nSe Vero, un cerchio completo viene aggiunto alla base della spirale, per garantire un fondo piatto al foro.
+Spiral Mill (CCW)		Fresatura a Spirale (CCW)
+Spiral Mill (CW)		Fresatura a Spirale (CW)
 Spiral Path		Percorso della spirale
 Spiral Path Draw		Disegna percorso della Spirale
 SPIRAL_PATH1	First select a path for the spiral to follow.	
@@ -1396,46 +1396,46 @@ Spline		Spline
 Spline Curve Steps		Passi Curve Spline 
 Spline Curve Steps.info	When splines are displayed, their shape is approximated by line segments.  This setting controls the number of segments used to display	Quando le Spline vengono visualizzate, la loro forma è approssimata da segmenti di linea. Questa impostazione controlla il numero di segmenti utilizzati per visualizzarle
 Spline to Polyline Tolerance		Tolleranza da Spline a Polilinea
-Spline to Polyline Tolerance.info	Splines are converted to polylines internally before they can be used for some operations, such as toolpath generation.\r\nSmaller tolerances makes more accurate but larger polylines	Spline vengono convertite in polilinee internamente prima di poter essere utilizzate per alcune operazioni, come la generazione del percorso utensile.\n Tolleranze inferiori consente polilinee più accurate ma di dimensioni maggiori
+Spline to Polyline Tolerance.info	Splines are converted to polylines internally before they can be used for some operations, such as toolpath generation.\r\nSmaller tolerances makes more accurate but larger polylines	Le Spline vengono convertite in polilinee internamente prima di poter essere utilizzate per alcune operazioni, come la generazione del PU.\n Valori piccoli consentono polilinee più accurate ma di dimensioni maggiori
 Square		Quadrato
 Square Bar		Barra quadra
 Square Box		Scatola quadrata
 Start		Inizio
 Start Corner		Angolo d'inizio
-Start Corner.info	Corner to start profiling.\r\nUsed for Horizontal and Vertical only.	Angolo per iniziare la profilazione. Utilizzato solo per orizzontale e verticale.
+Start Corner.info	Corner to start profiling.\r\nUsed for Horizontal and Vertical only.	Angolo per iniziare la profilazione.\r\n Utilizzato solo da [Profilo 3D] per [Orizzontale] e [Verticale].
 Start Cut		Inizio Taglio
-Start Cut.info	Macro to use when about to feed cut.\nMay be used for plasma or laser to power on the cutting tool.	Macro da utilizzare quando si sta per iniziare il taglio.\nPuò essere utilizzata per il taglio al plasma o laser per accendere l'utensile da taglio.
+Start Cut.info	Macro to use when about to feed cut.\nMay be used for plasma or laser to power on the cutting tool.	Macro da utilizzare quando si sta per iniziare il taglio.\r\nPuò essere utilizzata nel taglio al plasma o laser per accendere l'utensile da taglio.
 Start Point		Punto d'inizio
-Start Point.info	A point used as a hint to the optimiser to determine where the next toolpath starts.	Un punto usato come un suggerimento per l'ottimizzatore per determinare da dove il percorso utensile deve partire.
+Start Point.info	A point used as a hint to the optimiser to determine where the next toolpath starts.	Un punto usato come un suggerimento per l'ottimizzatore per determinare da dove il prossimo PU deve partire.
 Start.info	The starting angle of the arc (in degrees).	L'angolo iniziale dell'arco (in gradi).
 STARTING_LEVEL	Starting level {0} at {1}	Livello di partenza {0} di {1}
 Step Around Geometry		Passo Attorno La geometria
 Step Distance		Distanza Passo 
 Step Over		Step Over
 StepOver		StepOver
-Stepover Feedrate		StepOver Avanzamento
-Stepover Feedrate.info	The feedrate to use when cutting from one toolpath to another.	La velocità di avanzamento da utilizzare durante il taglio da un percorso utensile ad un altro.
+Stepover Feedrate		Avanz. per StepOver
+Stepover Feedrate.info	The feedrate to use when cutting from one toolpath to another.	L'avanzamento da utilizzare durante il taglio da un PU ad un altro.
 StepOver must be positive and non-zero		StepOver deve essere positivo e diverso da zero
-StepOver.info	The cut is increased by this amount each step, expressed as a decimal (0-1.0) of the cutter width.	Il taglio è maggiorato di tale importo ogni passo, espresso in decimali (0-1), del diametro Utensile.
-StepOver.info:CAMStyle	The cut is increased by this amount each step, expressed as a % of the cutter width.	Il taglio è maggiorato di tale importo ogni passo, espresso in % del diametro Utensile.
+StepOver.info	The cut is increased by this amount each step, expressed as a decimal (0-1.0) of the cutter width.	Incremento di valore ad ogni passata.\r\nIn rapporto (0-1.0) a [Diametro Utensile].
+StepOver.info:CAMStyle	The cut is increased by this amount each step, expressed as a % of the cutter width.	Incremento di valore ad ogni passata\r\nIn rapporto (0-1.0) a [Diametro Utensile].
 Steps Per Unit		Passi per unità
 Steps Per Unit.info		Passi Per Unità.info
 STL_UNKNOWN_STL_TYPE	Unknown STL Type	STL di tipo sconosciuto
-Stock		Pezzo
-Stock Offset		Offset Pezzo
-Stock Offset.info	X,Y position of the lower left corner of the stock.	Posizione  X, Y l'angolo in basso a sinistra del pezzo.
-Stock Size		Dimensione Pezzo
-Stock Size.info	X, Y and Z dimensions of the stock block.	X, Y e Z le dimensioni del Pezzo
-Stock Surface		Superfice Pezzo
-Stock Surface.info	Z coordinate of the top surface of the stock.	Coordinata Z della superficie superiore del Pezzo
-Stock Surface.info:CAMStyle	The offset from the workplane of the stock surface.	L'offset dal piano di lavoro della superficie del pezzo.
-Stock Surface.info:MOP3DSurface	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del pezzo, dove un percorso utensile in genere inizia a tagliare.
-Stock Surface.info:MOPDrill	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del pezzo, dove un percorso utensile in genere inizia a tagliare.
-Stock Surface.info:MOPEngrave	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del pezzo, dove un percorso utensile in genere inizia a tagliare.
-Stock Surface.info:MOPLathe	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del pezzo, dove un percorso utensile in genere inizia a tagliare.
-Stock Surface.info:MOPPocket	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del pezzo, dove un percorso utensile in genere inizia a tagliare.
-Stock Surface.info:MOPProfile	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del pezzo, dove un percorso utensile in genere inizia a tagliare.
-Stock.info	Defines the stock dimensions and location.\r\nMay be used to determine some values such as stock surface and target depth.	Definisce le dimensioni dei pezzi e la posizione. Può essere usato per determinare alcuni valori come la superficie  e profondità di taglio.
+Stock		Grezzo
+Stock Offset		Offset Grezzo
+Stock Offset.info	X,Y position of the lower left corner of the stock.	Posizione  X, Y l'angolo in basso a sinistra del Grezzo.
+Stock Size		Dimensione Grezzo
+Stock Size.info	X, Y and Z dimensions of the stock block.	X, Y e Z le dimensioni del Grezzo
+Stock Surface		Superfice Grezzo
+Stock Surface.info	Z coordinate of the top surface of the stock.	Coordinata Z della superficie superiore del Grezzo
+Stock Surface.info:CAMStyle	The offset from the workplane of the stock surface.	L'offset dal piano di lavoro della superficie del Grezzo.
+Stock Surface.info:MOP3DSurface	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del Grezzo, dove un PU in genere inizia a tagliare.
+Stock Surface.info:MOPDrill	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del Grezzo, dove un PU in genere inizia a tagliare.
+Stock Surface.info:MOPEngrave	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del Grezzo, dove un PU in genere inizia a tagliare.
+Stock Surface.info:MOPLathe	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del Grezzo, dove un PU in genere inizia a tagliare.
+Stock Surface.info:MOPPocket	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del Grezzo, dove un PU in genere inizia a tagliare.
+Stock Surface.info:MOPProfile	The Z location of the stock surface, where a toolpath will typically start cutting.	La posizione Z della superficie del Grezzo, dove un PU in genere inizia a tagliare.
+Stock.info	Defines the stock dimensions and location.\r\nMay be used to determine some values such as stock surface and target depth.	Definisce le dimensioni dei pezzi e la posizione. Può essere usato per determinare alcuni valori come la superficie  e [Altezza Obiettivo].
 Stop		Stop
 Stop.info	Code used for stop.	Codice utilizzato per l'arresto.
 Style		Stile
@@ -1454,15 +1454,15 @@ Style.info:MOPProfile	If a style is specified, all default properties will be in
 Style:		Stile:
 STYLE_LIB_NOT_FOUND	Style library '{0}' not found	Libreria stile '{0}' non trovato
 STYLE_NOT_FOUND	Style '{0}' not found	Stile '{0}' non trovato
-Subtract		Sottrarre
+Subtract		Sottrai
 Suppress Parser Errors		Sopprimere gli errori di analisi
-Suppress Parser Errors.info	Setting True will prevent gcode parsing errors being displayed when generating non-standard gcode.	L'impostazione Vera evita che gli errori di analisi del gcode vengano visualizzati durante la generazione di gcode non standard.
+Suppress Parser Errors.info	Setting True will prevent gcode parsing errors being displayed when generating non-standard gcode.	Se Vero, evita che gli errori di analisi del GCode vengano visualizzati durante la generazione di GCode non standard.
 Surface		Superficie
 Surface Analysis		Analisi della superficie
 Surface Speed		Velocità di taglio
 Surface Speed x 1000 / ( Diameter x Pi )		Velocità di taglio  x 1000 / (diametro x Pi)
-Surface Speed.info	Surface cutting speed.\r\nNot currently used for toolpath generation!	Velocità di taglio.\nNon è attualmente utilizzata per la generazione di percorsi utensile!
-Sweep		Spazzata
+Surface Speed.info	Surface cutting speed.\r\nNot currently used for toolpath generation!	Velocità di taglio.\nNon è attualmente utilizzata per la generazione di PU!
+Sweep		Apertura
 Sweep.info	The sweep angle of the arc (in degrees).	L'angolo di apertura dell'arco (in gradi).
 System		Sistema
 System Path		Cartella di Sistema
@@ -1478,27 +1478,27 @@ Tabs		Fermi
 Tabs.info	A list of each holding tab position.	Lista delle posizioni dei Fermi
 Tag		Etichetta
 Tag.info	A general purpose text or notes field.	Un testo di uso generale.
-Tag.info:CADFile	General purpose text, may be used for notes.	Testo di uso generale, può essere utilizzato per le note.
-Tag.info:CAMPart	A general purpose, multi-line text property to store notes or machining parameters.	Un generico testo multi-linea per memorizzare appunti o parametri di lavorazione.
-Tag.info:MachiningOptions	A general purpose, multi-line text property to store notes or machining parameters.	Un generico testo multi-linea per memorizzare appunti o parametri di lavorazione.
-Tag.info:MOP3DSurface	A general purpose, multi-line text property to store notes or machining parameters.	Un generico testo multi-linea per memorizzare appunti o parametri di lavorazione.
-Tag.info:MOPDrill	A general purpose, multi-line text property to store notes or machining parameters.	Un generico testo multi-linea per memorizzare appunti o parametri di lavorazione.
-Tag.info:MOPEngrave	A general purpose, multi-line text property to store notes or machining parameters.	Un generico testo multi-linea per memorizzare appunti o parametri di lavorazione.
-Tag.info:MOPLathe	A general purpose, multi-line text property to store notes or machining parameters.	Un generico testo multi-linea per memorizzare appunti o parametri di lavorazione.
-Tag.info:MOPNCFile	A general purpose, multi-line text property to store notes or machining parameters.	Un generico testo multi-linea per memorizzare appunti o parametri di lavorazione.
-Tag.info:MOPPocket	A general purpose, multi-line text property to store notes or machining parameters.	Un generico testo multi-linea per memorizzare appunti o parametri di lavorazione.
-Tag.info:MOPProfile	A general purpose, multi-line text property to store notes or machining parameters.	Un generico testo multi-linea per memorizzare appunti o parametri di lavorazione.
+Tag.info:CADFile	General purpose text, may be used for notes.	Testo di uso generale, può essere utilizzato note varie.
+Tag.info:CAMPart	A general purpose, multi-line text property to store notes or machining parameters.	Un testo multi-linea per memorizzare appunti o parametri di lavorazione.
+Tag.info:MachiningOptions	A general purpose, multi-line text property to store notes or machining parameters.	Un testo multi-linea per memorizzare appunti o parametri di lavorazione.
+Tag.info:MOP3DSurface	A general purpose, multi-line text property to store notes or machining parameters.	Un testo multi-linea per memorizzare appunti o parametri di lavorazione.
+Tag.info:MOPDrill	A general purpose, multi-line text property to store notes or machining parameters.	Un testo multi-linea per memorizzare appunti o parametri di lavorazione.
+Tag.info:MOPEngrave	A general purpose, multi-line text property to store notes or machining parameters.	Un testo multi-linea per memorizzare appunti o parametri di lavorazione.
+Tag.info:MOPLathe	A general purpose, multi-line text property to store notes or machining parameters.	Un testo multi-linea per memorizzare appunti o parametri di lavorazione.
+Tag.info:MOPNCFile	A general purpose, multi-line text property to store notes or machining parameters.	Un testo multi-linea per memorizzare appunti o parametri di lavorazione.
+Tag.info:MOPPocket	A general purpose, multi-line text property to store notes or machining parameters.	Un testo multi-linea per memorizzare appunti o parametri di lavorazione.
+Tag.info:MOPProfile	A general purpose, multi-line text property to store notes or machining parameters.	Un testo multi-linea per memorizzare appunti o parametri di lavorazione.
 Tangent		Tangente
 Tangent Radius		Raggio tangente
 Tangent Radius.info	The radius of the tangent lead in.	Il raggio della tangente Lead In 
-Target Depth		Profondità di Taglio
+Target Depth		Altezza Obiettivo
 Target Depth.info	Final depth of the machining operation.	Profondità finale della lavorazione.
-TARGETDEPTH_ABOVE_STOCK	WARNING! Target depth should be less than stock surface	ATTENZIONE! La profondità di taglio dovrebbe essere inferiore al valore della superficie pezzo
+TARGETDEPTH_ABOVE_STOCK	WARNING! Target depth should be less than stock surface	ATTENZIONE! [Altezza Obiettivo] dovrebbe essere inferiore al valore della superficie Grezzo
 Teeth		Denti
 Testo		
 Text		Testo
 Text Alignment Horizontal		Allineamento orizzontale del testo
-Text Alignment Horizontal.info	Controls the horizontal alignment of the text relative to the text location point.	Determinal'allineamento orizzontale del testo relativo al punto di posizionamento.
+Text Alignment Horizontal.info	Controls the horizontal alignment of the text relative to the text location point.	Determina l'allineamento orizzontale del testo relativo al punto di posizionamento.
 Text Alignment Vertical		Allineamento verticale del testo
 Text Alignment Vertical.info	Controls the vertical alignment of the text relative to the text location point.	Determina l'allineamento verticale del testo relativo al punto di posizionamento.
 Text Curve Tolerance		Tolleranza curva di testo
@@ -1553,7 +1553,7 @@ Tool Library.info	If left blank, the default tool library will be used (Default-
 Tool Material		Materiale Utensile
 Tool Name Format		Formato Nome Utensile
 Tool Name Format.info		Formato Nome Utensile
-Tool Number		Numero Utensile
+Tool Number		Utensile - Numero
 Tool Number.info	The ToolNumber is used to identify the current tool, control tool changes and lookup properties from the tool library.	Il numero utensile viene utilizzato per identificare l'utensile corrente, controllo cambio utensile  recupero delle proprietà nella libreria utensili.
 Tool Number.info:CAMStyle	The ToolNumber is used to identify the current tool.\r\nIf ToolNumber changes between successive machine ops a toolchange instruction is given.	Il numero di utensile viene utilizzato per identificare l'utensile corrente.\nIn caso di modifiche numero utensili  tra lavorazioni successive, viene generata un'istruzione cambio utensile.
 Tool Number.info:MOP3DSurface	The ToolNumber is used to identify the current tool.\r\nIf ToolNumber changes between successive machine ops a toolchange instruction is given.\r\nToolNumber=0 will NOT generate a tool change instruction.	Il numero utensile viene utilizzato per identificare l'utensile corrente.\nIn caso di modifiche numero utensile  tra lavorazioni successiv,viene generata un'istruzione cambio utensile.\nNumero utensile = 0 NON genera un'istruzione cambio utensile
@@ -1575,35 +1575,35 @@ Tool Profile.info:MOPPocket	The shape of the cutter. If Unspecified, the tool nu
 Tool Profile.info:MOPProfile	The shape of the cutter. If Unspecified, the tool number will be used to look up the profile from the tool table.	l Profilo dell'Utensile. Se non specificato, il numero strumento sarà utilizzato per cercare il profilo dalla tabella utensili.
 Tool Profile.info:ToolDefinition	The shape or type of tool.	Il profilo o il tipo di Utensile
 Tool Table Item		Elemento Tabella Utensili
-Tool Table Item.info	Defines how each item of the {$tooltable} macro is produced.\nTool tables are typically inserted in the header of a file and contains commented text describing the list of tools that are used in the gcode file	Definisce come ogni elemento della macro {$tooltable} viene prodotta.\nTabelle utensili sono in genere inseriti nella intestazione di un file e contiene un testo che descrive l'elenco degli strumenti che vengono utilizzati nel file gcode
+Tool Table Item.info	Defines how each item of the {$tooltable} macro is produced.\nTool tables are typically inserted in the header of a file and contains commented text describing the list of tools that are used in the gcode file	Definisce come ogni elemento della macro {$tooltable} viene prodotta.\nTabelle Utensili sono in genere inseriti nella intestazione di un file e contiene un testo che descrive l'elenco degli strumenti che vengono utilizzati nel file gcode
 TOOL_DIAMETER_CONFLICT	WARNING! Conflicting tool diameters for tool number {0}	ATTENZIONE! Diametri utensili in conflitto per numero di utensile {0}
 TOOL_INDEX_NOT_FOUND	Tool index ({0}) not found	Indice utensile ({0}) non trovato
 Tool_Libraries	Tool Libraries	Librerie Utensili
 TOOL_LIBRARY_NOT_FOUND	Tool library '{0}' not found	Libreria Utensile '{0}' non trovato
 Toolkit		Kit Strumenti
-Toolpath Arc Color		Colore Percorso Utensile per  Archi 
-Toolpath Arc Color.info	The color of arc segments in toolpaths.	Il colore dei segmenti di arco in percorsi utensile.
-Toolpath color		Colore Percorso Utensile
-Toolpath distance '{0}' : {1} + rapids : {2} = total : {3}		Distanza 'Percorso Utensile{0}': {1} + rapidi: {2} = totale: {3}
-Toolpath Generation '{0}'		Generazione dei percorsi utensile '{0}'
-Toolpath index		Indice Percorso Utensile 
-Toolpath Line Color		Colore Percorso Utensile per Linee
-Toolpath Line Color.info	The color of line segments in toolpaths.	Il colore di segmenti di linea in percorsi utensile.
-Toolpath Rapid Color		Colore Percorso Utensile per Rapido
-Toolpath Rapid Color.info	The color used to display toolpath rapids.	Il colore utilizzato per visualizzare movimenti rapidi del percorso utensile.
-Toolpath view filter		Filtro Vista Percorso Utensile
-Toolpath View Filter		Visualizza il filtro percorso utensile 
-Toolpath Visibility		Visibilità percorso utensile
+Toolpath Arc Color		Colore PU per  Archi 
+Toolpath Arc Color.info	The color of arc segments in toolpaths.	Il colore dei segmenti di arco in PU.
+Toolpath color		Colore PU
+Toolpath distance '{0}' : {1} + rapids : {2} = total : {3}		Distanza 'PU{0}': {1} + rapidi: {2} = totale: {3}
+Toolpath Generation '{0}'		Generazione dei PU '{0}'
+Toolpath index		Indice PU 
+Toolpath Line Color		Colore PU per Linee
+Toolpath Line Color.info	The color of line segments in toolpaths.	Il colore di segmenti di linea in PU.
+Toolpath Rapid Color		Colore PU per Rapido
+Toolpath Rapid Color.info	The color used to display toolpath rapids.	Il colore utilizzato per visualizzare movimenti rapidi del PU.
+Toolpath view filter		Filtro Vista PU
+Toolpath View Filter		Visualizza il filtro PU 
+Toolpath Visibility		Visibilità PU
 Toolpath Visibility.info	Display all toolpaths or only those selected in the drawing tree.	Visualizza tutti i percorsi o solo quelli selezionati nell'albero di disegno.
-TOOLPATH_DISTANCE	Toolpath distance '{0}' : {1} + rapids : {2} = total : {3}	Percorso utensile distanza '{0}': {1} + rapidi: {2} = totale: {3}
-TOOLPATH_DURATION	Estimated Toolpath '{0}' duration : {1} + rapids : {2} = total : {3}	Stima del percorso utensile '{0}' durata: {1} + rapidi: {2} = totale: {3}
-TOOLPATH_GENERATION	Toolpath Generation '{0}'	Generazione di percorsi utensile '{0}'
-TOOLPATH_GENERATION2	Generate toolpath '{0}' duration : {1}	Generare percorsi utensile '{0}' durata: {1}
-Toolpath_To_Geometry	Toolpath to geometry	Percorso utensile a geometria
-Toolpaths to geometry		Percorsi utensile a geometria
+TOOLPATH_DISTANCE	Toolpath distance '{0}' : {1} + rapids : {2} = total : {3}	PU distanza '{0}': {1} + rapidi: {2} = totale: {3}
+TOOLPATH_DURATION	Estimated Toolpath '{0}' duration : {1} + rapids : {2} = total : {3}	Stima del PU '{0}' durata: {1} + rapidi: {2} = totale: {3}
+TOOLPATH_GENERATION	Toolpath Generation '{0}'	Generazione di PU '{0}'
+TOOLPATH_GENERATION2	Generate toolpath '{0}' duration : {1}	Generare PU '{0}' durata: {1}
+Toolpath_To_Geometry	Toolpath to geometry	Da PU a geometria
+Toolpaths to geometry		Da PU a geometria
 Tools		Strumenti
 Tooth Load		Carico Dente
-Tooth Load.info	Tooth load.\r\nNot currently used for toolpath generation!	Carico Dente. Non è attualmente utilizzato per la generazione di percorsi utensile!
+Tooth Load.info	Tooth load.\r\nNot currently used for toolpath generation!	Carico Dente. Non è attualmente utilizzato per la generazione di PU!
 Tooth Loading		Carico  Dente
 Tooth Size:		Dimensione Dente
 Top		Alto
@@ -1611,26 +1611,26 @@ Top+Bottom		Alto + basso
 Top+Left		Alto + Sinistra
 Top+Right		Alto + Destra
 Tournage1.ToolDiameter		Tournage1.Diametro Utensile
-Transform		Trasformare
+Transform		Trasforma
 Transform.info	A 4 x 4 matrix used to rotate, scale and translate the drawing object.	Una matrice 4 x 4 usati per ruotare, scalare e tradurre l'oggetto di disegno.
-Transform.info:MOP3DSurface	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al percorso utensile prima di generare il gcode.
-Transform.info:MOPDrill	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al percorso utensile prima di generare il gcode.
-Transform.info:MOPEngrave	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al percorso utensile prima di generare il gcode.
-Transform.info:MOPLathe	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al percorso utensile prima di generare il gcode.
-Transform.info:MOPPocket	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al percorso utensile prima di generare il gcode.
-Transform.info:MOPProfile	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al percorso utensile prima di generare il gcode.
+Transform.info:MOP3DSurface	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al PU prima di generare il gcode.
+Transform.info:MOPDrill	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al PU prima di generare il gcode.
+Transform.info:MOPEngrave	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al PU prima di generare il gcode.
+Transform.info:MOPLathe	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al PU prima di generare il gcode.
+Transform.info:MOPPocket	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al PU prima di generare il gcode.
+Transform.info:MOPProfile	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al PU prima di generare il gcode.
 Transformation		Trasformazione
 Translation		Traduzione
 Translations		Traduzioni
 Transparent		Trasparente
 Triangle		Triangolo
-Trim		Tagliare
+Trim		Spunta
 Trochoidal Path		Percorso della trocoidale
 True		Vero
 U Channels		Canali U
 Undefined		Predefinito
 Undo		Annulla
-Union		Unione
+Union		Unifica
 Unit Tests		Unit test
 Units		Unità
 Units (Inches)		Unità (pollici)
@@ -1652,17 +1652,17 @@ Upper Case		Maiuscolo
 Upper Case.info	If set to True, the post processor converts all text written to the gcode file to upper case.	Se impostato su True, il post processore converte tutto il testo scritto nel file di gcode in maiuscolo.
 Use existing value		Utilizzare il valore esistente
 Use Lead Ins		Usa Lead In
-Use Lead Ins.info	Square holding tabs will result in a vertical plunge on the trailing edge. This can be hard on cutters, especially in harder materials. If UseLeadIns is set True, an extra lead in move (as defined in the profile's LeadInMove property) is inserted at the trailing edge.	Con Fermi quadrati  verrà  effettuato un avanzamento verticale sul bordo di uscita. Questo può creare problemi con gli Utensili, soprattutto in materiali più duri. Se Usa Lead In è impostato su Vero, un movimento (Spirale o Tangente come definito nella proprietà Lead In Muove) viene inserito nel bordo di uscita.
+Use Lead Ins.info	Square holding tabs will result in a vertical plunge on the trailing edge. This can be hard on cutters, especially in harder materials. If UseLeadIns is set True, an extra lead in move (as defined in the profile's LeadInMove property) is inserted at the trailing edge.	Con Fermi quadrati verrà  effettuato un avanzamento verticale sul bordo di uscita. Questo può creare problemi con gli Utensili, soprattutto in materiali più duri. Se Usa Lead In è impostato su Vero, un movimento (Spirale o Tangente come definito nella proprietà "Movimento Lead In") viene inserito nel bordo di uscita.
 Use new value		Usa il nuovo valore
 Use New Value		Usa Nuovo valore
 Use Old Value		Usa Valore Vecchio
 Use Regular Expressions		Usa espressioni regolari
 Use same action for all conflicts		Usa stessa azione per tutti i conflitti
-Use Surface Selection Color		Usa selezione colore  della superficie
-Use Surface Selection Color.info	If True, selected surface objects are displayed using the selection color.	
+Use Surface Selection Color		Col. Selez.  per superficie
+Use Surface Selection Color.info	If True, selected surface objects are displayed using the selection color.	Se Vero, gli oggetti superficie selezionati sono visualizzati usando la proprietà [Colore selezione].
 Use Test PropertyGrid		Uso di test PropertyGrid
 User Input		Input Utente
-uses a rule of thumb		utilizza una regola di pollice
+uses a rule of thumb		utilizza una regola approssimata
 Value		Valore
 Value.info	A value that controls the selected side profile method.	Un valore che controlla il metodo del profilo laterale selezionato.
 Values for diametral pitch, number of teeth and pitch diameter do not match. Please click on one of the Calculate buttons and try again.		I valori di passo, numero di denti e diametro ruota non corrispondono. Si prega di fare clic su uno dei pulsanti Calcola e riprovare.
@@ -1674,17 +1674,17 @@ Vee Angle		Angolo  V
 Vee Angle.info	For V cutters, this is the angle of V.	Per Utensili a V, questo è l'angolo di V.
 Velocity Mode		Modo Velocità
 Velocity Mode - Constant Velocity		Modo Velocità - Velocità Costante 
-Velocity Mode - Constant Velocity.info	Code used for constant velocity mode.	Codice utilizzato per la modalità velocità costante.
+Velocity Mode - Constant Velocity.info	Code used for constant velocity mode.	Codice utilizzato per [Velocità Costante] generalmente (G64).
 Velocity Mode - Exact Stop		Modo Velocità - Arresto Preciso
-Velocity Mode - Exact Stop.info	Code used for exact stop velocity mode.	Codice utilizzato per la modalità velocità arresto preciso.
-Velocity Mode.info	Constant velocity will cut faster and smoother but may be less accurate.\r\nExact stop will be more precise but may be slower with more vibration.	Velocità costante taglierà più veloce e agevole, ma può essere meno preciso. Arresto preciso sarà più precisa, ma può essere più lenta con più vibrazioni.
-Velocity Mode.info:CAMStyle	Instructs the gcode interpretter whether or to use look ahead smoothing.	Velocità costante taglierà più veloce e agevole, ma può essere meno preciso. Arresto preciso sarà più precisa, ma può essere più lenta con più vibrazioni.
-Velocity Mode.info:MOP3DSurface	Instructs the gcode interpretter whether or to use look ahead smoothing.	Velocità costante taglierà più veloce e agevole, ma può essere meno preciso. Arresto preciso sarà più precisa, ma può essere più lenta con più vibrazioni.
-Velocity Mode.info:MOPDrill	Instructs the gcode interpretter whether or to use look ahead smoothing.	Velocità costante taglierà più veloce e agevole, ma può essere meno preciso. Arresto preciso sarà più precisa, ma può essere più lenta con più vibrazioni.
-Velocity Mode.info:MOPEngrave	Instructs the gcode interpretter whether or to use look ahead smoothing.	Velocità costante taglierà più veloce e agevole, ma può essere meno preciso. Arresto preciso sarà più precisa, ma può essere più lenta con più vibrazioni.
-Velocity Mode.info:MOPLathe	Instructs the gcode interpretter whether or to use look ahead smoothing.	Velocità costante taglierà più veloce e agevole, ma può essere meno preciso. Arresto preciso sarà più precisa, ma può essere più lenta con più vibrazioni.
-Velocity Mode.info:MOPPocket	Instructs the gcode interpretter whether or to use look ahead smoothing.	Velocità costante taglierà più veloce e agevole, ma può essere meno preciso. Arresto preciso sarà più precisa, ma può essere più lenta con più vibrazioni.
-Velocity Mode.info:MOPProfile	Instructs the gcode interpretter whether or to use look ahead smoothing.	Incarica l'interprete gcode ad  utilizzare il sistema più agevole.
+Velocity Mode - Exact Stop.info	Code used for exact stop velocity mode.	Codice utilizzato per [Arresto Preciso] generalmente (G61).
+Velocity Mode.info	Constant velocity will cut faster and smoother but may be less accurate.\r\nExact stop will be more precise but may be slower with more vibration.	Imposta il [Modo Velocità] da usare: \r\n[Velocità Costante] sarà più veloce e fluido, ma può essere meno preciso. [Arresto preciso] sarà più precisa, ma può essere più lento e con più vibrazioni.
+Velocity Mode.info:CAMStyle	Instructs the gcode interpretter whether or to use look ahead smoothing.	Imposta il [Modo Velocità] da usare: \r\n[Velocità Costante] sarà più veloce e fluido, ma può essere meno preciso. [Arresto Preciso] sarà più precisa, ma può essere più lento e con più vibrazioni.
+Velocity Mode.info:MOP3DSurface	Instructs the gcode interpretter whether or to use look ahead smoothing.	Imposta il [Modo Velocità] da usare: \r\n[Velocità Costante] sarà più veloce e fluido, ma può essere meno preciso. [Arresto Preciso] sarà più precisa, ma può essere più lento e con più vibrazioni.
+Velocity Mode.info:MOPDrill	Instructs the gcode interpretter whether or to use look ahead smoothing.	Imposta il [Modo Velocità] da usare: \r\n[Velocità Costante] sarà più veloce e fluido, ma può essere meno preciso. [Arresto Preciso] sarà più precisa, ma può essere più lento e con più vibrazioni.
+Velocity Mode.info:MOPEngrave	Instructs the gcode interpretter whether or to use look ahead smoothing.	Imposta il [Modo Velocità] da usare: \r\n[Velocità Costante] sarà più veloce e fluido, ma può essere meno preciso. [Arresto Preciso] sarà più precisa, ma può essere più lento e con più vibrazioni.
+Velocity Mode.info:MOPLathe	Instructs the gcode interpretter whether or to use look ahead smoothing.	Imposta il [Modo Velocità] da usare: \r\n[Velocità Costante] sarà più veloce e fluido, ma può essere meno preciso. [Arresto Preciso] sarà più precisa, ma può essere più lento e con più vibrazioni.
+Velocity Mode.info:MOPPocket	Instructs the gcode interpretter whether or to use look ahead smoothing.	Imposta il [Modo Velocità] da usare: \r\n[Velocità Costante] sarà più veloce e fluido, ma può essere meno preciso. [Arresto preciso] sarà più precisa, ma può essere più lento e con più vibrazioni.
+Velocity Mode.info:MOPProfile	Instructs the gcode interpretter whether or to use look ahead smoothing.	Imposta il [Modo Velocità] da usare: \r\n[Velocità Costante] sarà più veloce e fluido, ma può essere meno preciso. [Arresto Preciso] sarà più precisa, ma può essere più lento e con più vibrazioni.
 Version is up to date.		La versione è aggiornata.
 VERSION_CHECK_ERROR	Version Check Error : {0}	Versione Error Check: {0}
 VERSION_UP_TO_DATE	Version is up to date.	La versione è aggiornata.
@@ -1695,8 +1695,8 @@ View 3D Wireframe		Vista 3D Wireframe
 View 3D Wireframe.info	If True, 3D meshes will be displayed in wireframe mode.	Se Vero, mesh 3D verrà visualizzato in modalità wireframe.
 View Background Color		Colore di sfondo
 View Background Color.info	The color of the drawing background.	Il colore di sfondo del disegno.
-View Focal Length Scale		Visualizza la scala della lunghezza focalw
-View Focal Length Scale.info	For perspective projections, the 'camera' is set back from origin by a distance calculated from the viewport height and field of view multiplied by the focal length scale	
+View Focal Length Scale		Visualizza la scala della distanza focale
+View Focal Length Scale.info	For perspective projections, the 'camera' is set back from origin by a distance calculated from the viewport height and field of view multiplied by the focal length scale	Per le proiezioni prospettiche, la camera è posizionata dall'origine ad una posizione calcolata considerando l'altezza della vista e l'angolo di visione moltiplicato per la distanza focale.
 View Projection Mode		Visualizza modalità di proiezione
 View Projection Mode.info		
 View Samples		Mostra Esempi
@@ -1708,9 +1708,9 @@ Visit us at:		Il nostro sito:
 WARN_3D_USE_LEVELFIRST	WARNING! There known issues with 3D and depth first cut ordering using the Standard optimisation mode.\r\nPlease use OptimisationMode=Experimental or CutOrdering=LevelFirst.	ATTENZIONE! Ci sono problemi noti con il 3D e la profondità del taglio ordinato utilizzando la modalità standard. Si prega di utilizzare Modo Ottimizzazione = sperimentale o Ordine di Taglio = Primo Livello.
 WARN_APPLY_TRANSFORMATIONS	WARNING! This will multiply the points in the selected objects\r\nby their transform matrix and reset the matrix to identity.\r\nThis may cause unexpected results for arcs and curves where\r\nthe curve plane is (at the moment) always in the XY plane.\r\nDo you wish to continue?	ATTENZIONE! Questo moltiplicherà i punti dalla  matrice di\ntrasformazione degli oggetti selezionati\ne azzerera la matrice di identità.\nPuò causare risultati imprevisti per archi e curve dove\nil piano della curva è (al momento) sempre nel piano XY.\nVuoi continuare?
 WARN_BLANK_STYLE_REMOVE	WARNING! Blank named styles are used internally as top level default styles. Removing these styles can cause unpredictable results.\r\nDo you wish to delete this style?	ATTENZIONE! Stili senza nome vengono utilizzati internamente come gli stili predefiniti di Livello superiore. La rimozione di questi stili può causare risultati imprevedibili.\nVuoi cancellare questo stile?\n 
-WARN_CHANGING_DRILL_DEPTH	WARNING! Drill {0} : changed target depth from relative to absolute.	ATTENZIONE! Drill {0}: cambiato profondità del taglio da relativo ad assoluto.
+WARN_CHANGING_DRILL_DEPTH	WARNING! Drill {0} : changed target depth from relative to absolute.	ATTENZIONE! Drill {0}: cambiata [Altezza Obiettivo] da relativo ad assoluto.
 WARN_CHANGING_WORKPLANE_TO_XY	Changing unknown workplane to XY	Modifica piano di lavoro XY sconosciuto
-WARN_DEPTH_RELATIVE_TO	WARNING! DepthRelativeTo settings other than Absolute are no longer supported. Please check your machining operation target depths.	ATTENZIONE! DepthRelativeTo impostazioni diverse da assoluto non sono più supportate. Controlla la profondità di taglio della lavorazione.\n
+WARN_DEPTH_RELATIVE_TO	WARNING! DepthRelativeTo settings other than Absolute are no longer supported. Please check your machining operation target depths.	ATTENZIONE! DepthRelativeTo impostazioni diverse da assoluto non sono più supportate. Controlla la [Altezza Obiettivo] della lavorazione.
 WARN_DRILL_INVALID_DEPTHINCREMENT	WARNING! Invalid spiral depth increment in drill operation ({0})	ATTENZIONE! Incremento profondità spirale non valido nell'operazione di foratura ({0})
 WARN_DRILL_TOOL_TOO_LARGE	WARNING! Tool larger than hole diameter in drill operation ({0})	ATTENZIONE! Strumento più grande di diametro del foro in funzione foratura({0})
 WARN_DUPLICATE_PRIMITIVE_ID	WARNING! Duplicate primitive id : ({0})	ATTENZIONE! Duplicato ID di primitiva: ({0})
@@ -1723,8 +1723,8 @@ Warning: undercutting may occur. Consider increasing teeth.		Attenzione: Si poss
 Waterline Finish		WaterLine Fine
 Waterline Rough		WaterLine Grezzo
 Waterline Safety Check		Controllo della sicurezza WaterLine
-Waterline Safety Check.info	If True, prevent gcode creating if errors are suspected in 3D waterline toolpaths.	Se Vero, impedisce la generazione di GCode se si sospettano errori in percorsi utensile 3D Waterline.
-WATERLINE_DURATION	GenerateWaterlines duration : {0}	Generazione Waterline durata: {0}
+Waterline Safety Check.info	If True, prevent gcode creating if errors are suspected in 3D waterline toolpaths.	Se Vero, impedisce la generazione di GCode se si sospettano errori in PU 3D Waterline.
+WATERLINE_DURATION	GenerateWaterlines duration : {0}	Durata generazione Waterline: {0}
 WATERLINE_MUST_SPECIFY_DEPTHINCREMENT	Must specify depth increment for waterline machining	È necessario specificare la profondità di incremento per lavorazioni Waterline
 Width		Larghezza
 Width.info	The width of the rectangle.	La larghezza del rettangolo.
@@ -1754,7 +1754,7 @@ X Mode Radius		X modalità Raggio
 X Mode Radius.info	Used in the {$lathexmode} macro to specify that X values are in radius mode.\nFor example EMC2 recognizes G8.	Utilizzato nella macro{$lathexmode}  per specificare che i valori X sono in modalità  raggio.\nPer esempio EMC2 riconosce G8.
 X Scale		
 X Stepover		StepOver X
-X Stepover.info	Amount to step X for each height test point.	Quantità di passo X per ciascun punto di test dell'altezza.
+X Stepover.info	Amount to step X for each height test point.	Incremento di X per ogni punto di test dell'altezza.
 X Width		X Width
 X.info		Il valore di X
 XPOLY_OPEN_POLY_DETECTED	WARNING! Open poly detected	ATTENZIONE! Individuate polilinee aperte
@@ -1774,8 +1774,8 @@ Y Axis		Asse Y
 Y Axis.info		Asse Y.info
 Y Height		Y Height
 Y Scale		
-Y Stepover		Y StepOver
-Y Stepover.info	Amount to step Y for each height test point.	Ammontare del passo Y per ogni punto di misurazione altezza.
+Y Stepover		StepOver Y
+Y Stepover.info	Amount to step Y for each height test point.	Incremento di Y per ogni punto di misurazione altezza.
 Y.info		Il valore di Y
 Yes		Sì
 You have changed the current drawing units to {0}.\r\nWould you also like to change the default units for new drawings to {0}?		Sono state modificate le unità di disegno correnti a {0}.\nVolete modificare anche le unità predefinite per i nuovi disegni a {0}?

@@ -43,7 +43,7 @@ All open documents		Tutti i documenti aperti
 AllFiles	All Files	Tutti i file
 AllGeometryFiles	All Geometry Files	Tutti i file Geometria
 AllScriptFiles	All Script Files	Tutti i File di script
-alpha		alfa
+alpha		Trasparenza linea
 Alpha		Alfa
 Alpha.info	Layer transparancy (0.0 to 1.0). 0 is hidden, 1 is 100% (solid), 0.5 is 50% transparancy (faded).	Trasparenza Livello (da 0,0 a 1,0). 0 è nascosta, 1 è al 100% (solido), 0,5 è trasparente al 50%  (sbiadito).
 ALT+Left		ALT + Sinistra
@@ -258,15 +258,15 @@ CREATE_NEW_LAYER	Would you like to create a new layer?	Volete creare un nuovo Li
 Current document		Documento corrente
 Current Test		Prova corrente
 Custom		Personalizzato
-Custom File Footer		Personaliz. piè di pagina
-Custom File Footer.info	A multi line gcode script that will be inserted into the final gcode post footer section.	GCode multilinea che sarà inserito nella sezione piè di pagina dopo il GCode generato.
-Custom File Header		Personaliz. intestazione
-Custom File Header.info	A multi line gcode script that will be inserted into the final gcode post header section.	GCode multilinea che sarà inserito nella sezione intestazione di pagina prima del GCode generato.
+Custom File Footer		Piè di pagina pers.
+Custom File Footer.info	A multi line gcode script that will be inserted into the final gcode post footer section.	GCode personalizzato che verrà inserito nella sezione piè di pagina dopo il GCode generato (multilinea).
+Custom File Header		Intestazione pers.
+Custom File Header.info	A multi line gcode script that will be inserted into the final gcode post header section.	GCode personalizzato che verrà inserito nella sezione intestazione di pagina prima del GCode generato (multilinea).
 Custom Filler		Riempitivi personalizzati
-Custom MOP Footer		Lavorazioni (MOP) personalizzate  piè di pagina
-Custom MOP Footer.info	A multi line gcode script that will be inserted into the final gcode post after the machine operation.	GCode multilinea personalizzato che verrà inserito alla fine del GCode generato. 
-Custom MOP Header		Lavorazioni (MOP) personalizzate  di intestazione
-Custom MOP Header.info	A multi line gcode script that will be inserted into the final gcode post before the machine operation.	GCode multilinea personalizzato che verrà inserito all'inizio del GCode generato. 
+Custom MOP Footer		Post ambolo pers. (MOP)
+Custom MOP Footer.info	A multi line gcode script that will be inserted into the final gcode post after the machine operation.	GCode personalizzato che verrà inserito alla fine del GCode generato per la MOP (multilinea). 
+Custom MOP Header		Intestazione pers. (MOP)
+Custom MOP Header.info	A multi line gcode script that will be inserted into the final gcode post before the machine operation.	GCode personalizzato che verrà inserito all'inizio del GCode generato per la MOP (multilinea). 
 Custom Script		Script personalizzato
 Custom Script.info	Custom GCode script used for drilling.	Script personalizzato di GCode utilizzato per la foratura.
 Cut		Taglia
@@ -276,7 +276,7 @@ Cut Feedrate		Avanzamento
 Cut Feedrate.info	The feed rate to use when cutting.	La velocità di avanzamento da utilizzare durante il taglio.
 Cut Ordering		Ordinamento del Taglio 
 Cut Ordering.info	Controls whether to cut to depth first or all cuts on this level first.	Controlla se tagliare prima in profondità o prima questo Livello di taglio.
-Cut toolpath color		Colore PU 
+Cut toolpath color		Colore PU proc. 
 Cut Velocity		Velocità di Taglio 
 Cut Velocity.info		Velocità di Taglio.info
 Cut Width		Larghezza taglio
@@ -630,8 +630,8 @@ GCode		GCode
 GCode Editor		Editor GCode
 GCode Editor.info	An external command used to edit gcode files.\r\nIf no command is specified, the internal editor is used.	Un programma esterno utilizzato per modificare i file GCode. Se nessun programma è specificato, viene utilizzato l'editor interno.
 GCode Generation		Generazione GCode
-G-Code Options		G-Code Opzioni
-GCode Order		GCode Ordine
+G-Code Options		Opzioni GCode 
+GCode Order		Ordine GCode 
 GCode Order.info	Auto - post all consecutive MOPs with the same toolnumber for each nest copy\r\nNestEachMOP - each MOP is output at each nest location before moving to the next MOP.\r\nAllMOPsPerCopy - All the MOPs in the part are posted before moving to the next nest location.	Auto - Inserisce tutte le MOP consecutive con stesso  numero di utensile per ogni copia Nidificazione\nOgni MOP per Nidificazione - Ogni MOP è inserita in ogni posizione Nidificazione prima di passare alla successiva MOP.\nTutte le MOP per Copia - Tutte le MOP della parte sono inserite prima di passare alla successiva posizione Nidificazione.
 GcodeFiles	Gcode	Gcode
 Gear information. Select and right click to copy to clipboard.		Informazioni Ingranaggio. Selezionare e fare clic destro per copiare negli appunti.
@@ -821,7 +821,7 @@ Line Number Start		Inizio numero di linea
 Line Numbering		Numerazione linee
 Line Space		Spazio di linea
 Line Space.info	Number of height units used to space multiple lines of text.	Altezza linea, utilizzato come spazio per linee multiple di testo.
-line width		Larghezza linea
+line width		Spessore linea
 LINE_EDIT_1	Enter points then press enter or esc	Inserire i punti, quindi premere INVIO o ESC
 Linear		Lineare
 Linear.info	This property is not currently used	Questa proprietà non è attualmente utilizzata
@@ -895,9 +895,9 @@ Minimum Arc Length.info	A numerical value that controls the precision limits use
 Minimum Tabs		Minimo Fermi
 Minimum Tabs.info	The minimum number of auto tabs to insert around each shape.	Numero minimo di fermi da inserire in automatico attorno ad ogni forma.
 Minimum.info		Minimo.info
-Minor Scale		Scala Minore
+Minor Scale		Scala minore
 Minor Scale.info		Dimensione della scala minore della grglia in unità di disegno
-MinorScale		Scala Minore
+MinorScale		Scala minore
 MinorScale.info		Dimensione della scala minore della grglia in unità di disegno
 Mirror		Specchio
 MIRROR_EDIT1	Enter a point on the mirror line	
@@ -943,16 +943,16 @@ Name.info:ToolDefinition	Unique name of this item.	Nome univoco di questo Utensi
 Name.info:ToolLibrary		Name.info: ToolLibrary
 NC File		File NC 
 Nest		Nidificazione
-Nest Each MOP		Ogni  MOP per Nidificazione
+Nest Each MOP		Nidifica ogni MOP
 Nest Method		Metodo Nidificazione
 Nest Method.info	Grid - a grid arry of part copies.\nIsoGrid - a grid with alternate rows offset.\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie parziali.\nIsoGrid - una griglia con righe alternate offset.\nPointList - punti copia sono presi da un elenco di punti.
 Nest Method.info:NestingInfo	Grid - a grid arry of part copies.\r\nIsoGrid - a grid with alternate rows offset.\r\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie parziali.\nIsoGrid - una griglia con righe alternate offset.\nPointList - punti copia sono presi da un elenco di punti.
 Nest to point list		Da Nidificazione a Elenco di punti 
 Nest_Item_Move	Nest item move	Nidificazione voce mossa
 Nesting		Nidificazione
-Nesting Items		Elementi di Nidificazioneo
+Nesting Items		Elementi di Nidificazione
 Nesting Items.info		Elementi che compongono la Nidificazione
-Nesting.info	Nests can be used to create arrays of copies of parts.	I Nidificazioni possono essere usati per creare matrici di copie di parti.
+Nesting.info	Nests can be used to create arrays of copies of parts.	Le Nidificazioni possono essere usate per creare di copie di parti ordinate come griglia (matrice).
 New		Nuovo
 New (0.9.8)		Nuovo (0.9.8)
 New CAM style		Nuovo stile CAM
@@ -995,7 +995,7 @@ Number of teeth on the gear. Must be an integer. Minimum of 16 for 14.5 deg pres
 Number of Teeth:		Numero di denti:
 Number of Vertices		Numero di vertici
 Number of Vertices.info	The number of vertices that make up the surface.	Il numero di vertici che compongono la superficie.
-Object Visibility		Visibilità oggetto
+Object Visibility		Visibilità oggetti
 OBJECT_EXTREMAS	Selected Objects Extrema	Estremi oggetti selezionati 
 Off		Off
 Offset		Offset
@@ -1297,41 +1297,41 @@ Shank Diameter.info	Diameter of the tool shank.	Diametro del codolo Utensile.
 Shape Outline		Contorno forma
 Show		Visualizza
 Show all		Visualizza tutto
-Show axis		Visualizza gli assi
-Show cut widths		Visualizza larghezze di taglio
-Show Cut Widths		Visualizza larghezze di taglio
-Show Cut Widths.info	Shows the area that will be cut for each toolpath.	Visualizza l'area che sarà rimossa da ciascun PU.
-Show direction arrow		Visualizza Direzione di taglio 
-Show Direction Vector		Visualizza Direzione di Taglio
+Show axis		Mostra assi
+Show cut widths		Mostra larghezza taglio
+Show Cut Widths		Mostra larghezza taglio
+Show Cut Widths.info	Shows the area that will be cut for each toolpath.	Mostra l'area che sarà rimossa da ciascun PU.
+Show direction arrow		Mostra direzione taglio 
+Show Direction Vector		Mostra direzione Taglio
 Show Direction Vector.info	Displays an arrow indicating the cutting direction and toolpath start point.	Visualizza una freccia indicante la direzione di taglio e il punto di partenza del PU.
-Show grid		Visualizza griglia
-Show Grid		Visualizza Griglia
+Show grid		Mostra griglia
+Show Grid		Mostra griglia
 Show Grid.info	Sets whether the drawing grid is displayed.\r\nAlternatively use the show grid button on the toolbar.	Imposta la visualizzazione della griglia di disegno. In alternativa, utilizzare il pulsante "Mostra Griglia" sulla barra degli strumenti.
 Show License Form		Mostra Modulo di licenza
-Show nests		Visualizza Nidificazioni
-Show Nests		Visualizza Nidificazioni
-Show Nests.info	Displays nest copies when the part object is selected.	Visualizza copie Nidificazione quando l'oggetto è selezionato.
+Show nests		Mostra nidificazioni
+Show Nests		Mostra nidificazioni
+Show Nests.info	Displays nest copies when the part object is selected.	Visualizza le copie della Parte Nidificata quando la Parte è selezionata.
 Show or hide the axis		Visualizza o nasconde gli assi
 Show or hide the grid		Visualizza o nasconde la griglia
 Show properties by category		Visualizzare le proprietà per categoria
 Show properties in alphbetical list		Visualizza le proprietà in ordine alfabetico
-Show rapids		Visualizza rapidi
-Show Rapids		Visualizza Rapidi
+Show rapids		Mostra rapidi
+Show Rapids		Mostra Rapidi
 Show Rapids.info	Displays a line representing G0 rapid moves.	Visualizza una linea che rappresenta il rapido G0.
 Show Selection Corners		Mostra margini della selezione
 Show Selection Corners.info	If True, display corner markers of selected shape bounds.	Se Vero, mostra dei marcatori agli angoli delle forme selezionate. 
-Show stock		Visualizza Grezzo
-Show Stock		Visualizza Grezzo
+Show stock		Mostra Grezzo
+Show Stock		Mostra Grezzo
 Show Stock.info	Displays a block representing the stock object.	Consente di visualizzare un parallelepipedo che rappresenta il Grezzo.
 Show Toolpath Normal		Visualizza il normale PU
 Show Toolpath Normal.info	Displays a line perpendicular to the toolpath, typically toward the line being cut.	Visualizza una linea perpendicolare al PU, di solito verso la linea di taglio.
-Show toolpaths		Visualizza PU
-Show Toolpaths		Visualizza PU
-Show Toolpaths.info	Display toolpaths.	Visualizza i percordi utensile (PU).
-Show_All_Layers	Show all layers	Visualizza tutti i livelli
-Show_hide_axis	Show or hide the axis	Visualizza o nasconde gli assi
-Show_hide_grid	Show or hide the grid	Visualizza o nasconde la griglia
-Show_Layer	Show layer	Visualizza il Livello
+Show toolpaths		Mostra PU
+Show Toolpaths		Mostra PU
+Show Toolpaths.info	Display toolpaths.	Mostra i percordi utensile (PU).
+Show_All_Layers	Show all layers	Mostra tutti i livelli
+Show_hide_axis	Show or hide the axis	Mostra o nasconde gli assi
+Show_hide_grid	Show or hide the grid	Mostra o nasconde la griglia
+Show_Layer	Show layer	Mostra il Livello
 Side Profile		Profilo laterale
 Side Profile.info	Side profiles are used to define 3D shapes from 2D drawings.	Profili laterali sono utilizzati per creare forme 3D partendo da disegni 2D.
 Silhouette		Silhouette
@@ -1513,7 +1513,7 @@ Texturize
 The angle to offset each array item from one another.		L'angolo per compensare ogni voce della matrice uno dall'altro.
 The diameter of the pitch circle in the current drawing units		Il diametro del cerchio  nell' unità di disegno corrente
 The distance along each line to test for Z heights.		La distanza lungo ciascuna linea di test per altezza di Z.
-The distance measured in drawing units.\r\nPress OK to copy to clipboard.		La distanza misurata in unità di disegno. Premere OK per copiare negli appunti.
+The distance measured in drawing units.\r\nPress OK to copy to clipboard.		Distanza misurata in unità di disegno.\r\nPremere OK per copiare negli appunti.
 The distance to offset each array item from one another, with optional scale.		La distanza per compensare ogni voce della matrice uno  da un altro, con scala opzionale.
 The file '{0}' already exists!\r\nOverwrite existing file?		Il file '{0}' esiste già! Sovrascrivere il file esistente?
 The number of copies in the array.		Il numero di copie della matrice.
@@ -1583,7 +1583,7 @@ TOOL_LIBRARY_NOT_FOUND	Tool library '{0}' not found	Libreria Utensile '{0}' non 
 Toolkit		Kit Strumenti
 Toolpath Arc Color		Colore PU per  Archi 
 Toolpath Arc Color.info	The color of arc segments in toolpaths.	Il colore dei segmenti di arco in PU.
-Toolpath color		Colore PU
+Toolpath color		Colore PU vis.
 Toolpath distance '{0}' : {1} + rapids : {2} = total : {3}		Distanza 'PU{0}': {1} + rapidi: {2} = totale: {3}
 Toolpath Generation '{0}'		Generazione dei PU '{0}'
 Toolpath index		Indice PU 
@@ -1591,8 +1591,8 @@ Toolpath Line Color		Colore PU per Linee
 Toolpath Line Color.info	The color of line segments in toolpaths.	Il colore di segmenti di linea in PU.
 Toolpath Rapid Color		Colore PU per Rapido
 Toolpath Rapid Color.info	The color used to display toolpath rapids.	Il colore utilizzato per visualizzare movimenti rapidi del PU.
-Toolpath view filter		Filtro Vista PU
-Toolpath View Filter		Visualizza il filtro PU 
+Toolpath view filter		Filtro vista PU
+Toolpath View Filter		Filtro vista PU 
 Toolpath Visibility		Visibilità PU
 Toolpath Visibility.info	Display all toolpaths or only those selected in the drawing tree.	Visualizza tutti i percorsi o solo quelli selezionati nell'albero di disegno.
 TOOLPATH_DISTANCE	Toolpath distance '{0}' : {1} + rapids : {2} = total : {3}	PU distanza '{0}': {1} + rapidi: {2} = totale: {3}
@@ -1786,7 +1786,7 @@ YZ Plane		Piano YZ
 Z		Z
 Z Axis		Asse Z
 Z Axis.info		Asse Z.info
-Z depth index		Indice  profondità Z 
+Z depth index		Indice profondità Z 
 Z Height Range		Gamma altezza Z
 Z.info		Il valore di Z
 Zoom		

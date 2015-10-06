@@ -38,7 +38,7 @@ In questo sito trovate:
 
 1) La traduzione dell'interfaccia di CamBam per la lingua italiana il file translate_it-[AAAAMMGG].
 
-2) Il file camabam-helpers.zip che contiene i file e le istruzioni per avere CamBam nel vostro menu applicazioni e per associare i file di CamBam con il programma.
+2) Il file cambam-helpers.zip che contiene i file e le istruzioni per avere CamBam nel vostro menu applicazioni e per associare i file di CamBam con il programma.
 
 Prossimamente troverete anche "Introduzione a CamBam", un manuale introduttivo all'uso del programma, che rispecchia il file di traduzione qui fornito.
 

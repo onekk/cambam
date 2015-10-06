@@ -31,9 +31,9 @@ Add Tab		Aggiungi Scheda
 Add tool		Aggiungi Utensile
 Add_Holding_Tab	Add holding tab	Aggiungi Fermi
 Additive		Additivo
-Additive.info	If set to True then do a bottom up toolpath suitable for (additive) extrusion heads.	Se impostato su Vero genera un PU additivo, dal basso verso l'alto, adatto per teste di estrusione.\n 
+Additive.info	If set to True then do a bottom up toolpath suitable for (additive) extrusion heads.	Se impostato su Vero genera un PU additivo, dal basso verso l'alto, adatto per teste di estrusione. 
 Adjust Cut Width		Regola la Larghezza di taglio
-Adjust Cut Width.info	False - the toolpaths will just follow the calculated profile.\nTrue - machine all the stock layers above as well as on the profile (rouging)	Se Falso - Il PU si limiterà a seguire il profilo calcolato.\n\nSe Vero - Lavora tutti gli strati superiori del materiale, nonché il profilo (sgrossatura)
+Adjust Cut Width.info	False - the toolpaths will just follow the calculated profile.\r\nTrue - machine all the stock layers above as well as on the profile (rouging)	Se Falso - Il PU si limiterà a seguire il profilo calcolato.\r\n\r\nSe Vero - Lavora tutti gli strati superiori del materiale, nonché il profilo (sgrossatura)
 Advanced		Avanzato
 Align		Allinea
 Align Objects		Allinea gli oggetti
@@ -52,19 +52,19 @@ Always		Sempre
 Amount		Quantità
 AND_RELATED_MOPS	and all related machining operations?	e tutte le Lavorazioni (MOP) connesse?
 AND_RELATED_PRIMS	and all related drawing objects?	e tutti gli oggetti di disegno correlati?
-Angle per step (RotX,RotY,RotZ)		Angolo per passo (RotX, RotY, Rotz)
+Angle per step (RotX,RotY,RotZ)		Angolo di rotazione (RotX, RotY, Rotz)
 Angles		Angoli
 Anti-alias		Anti-alias
 Apply		Applica
-Apply Transformations		Applica le trasformazioni
-Apply_Transformations	Apply transformations	Applica le trasformazioni
+Apply Transformations		Applica Trasformazioni
+Apply_Transformations	Apply transformations	Applica Trasformazioni
 Arc		Arco
 Arc CCW		Arco CCW
 Arc CCW.info	Rule for a counter clockwise arc feed move.	Imposta un movimento in senso antiorario dell'arco
 Arc Center Absolute		Centro Arco Assoluto
-Arc Center Absolute.info	Used in the {$mop.header} macro to specify that ArcCenterMode is set to Absolute.\nMach3 recognizes G90.1	Utilizzato nella macro{$mop.header} per specificare che Modo Centro Arco è impostato su Assoluto. Mach3 riconosce G90.1
+Arc Center Absolute.info	Used in the {$mop.header} macro to specify that ArcCenterMode is set to Absolute.\r\nMach3 recognizes G90.1	Utilizzato nella macro{$mop.header} per specificare che Modo Centro Arco è impostato su Assoluto.\r\nMach3 riconosce G90.1
 Arc Center Incremental		Centro Arco Incrementale
-Arc Center Incremental.info	Used in the {$mop.header} macro to specify that ArcCenterMode is set to Incremental.\nMach3 recognizes G91.1	Utilizzato nella macro {$mop.header}  per specificare che Modo Centro Arco è impostata su incrementale. Mach3 riconosce G91.1
+Arc Center Incremental.info	Used in the {$mop.header} macro to specify that ArcCenterMode is set to Incremental.\r\nMach3 recognizes G91.1	Utilizzato nella macro {$mop.header}  per specificare che Modo Centro Arco è impostata su incrementale.\r\n Mach3 riconosce G91.1
 Arc Center Mode		Modo Centro Arco
 Arc Center Mode.info	NOTE:  This only affects the arc I,J coordinates.  It does not affect G90/G91 codes	NOTA: Questo riguarda solo le coordinate I,J dell'arco. Non influisce sui codici G90/G91 
 Arc Center Mode.info:MachiningOptions	If Default, then uses post processor setting.	Se Default, usa le impostazione del post processore.
@@ -77,7 +77,7 @@ Arc Fit		Forma dell'Arco
 Arc Fit Tolerance		Tolleranza forma dell'Arco
 Arc Output		Generazione Arco
 Arc Output All Axis		Tutti gli Assi dell'Arco
-Arc Output All Axis.info	Controls whether to output all the axis values for G02/G03 moves.	Controlla i valori di output di tutti gli assi per movimenti G02/G03 .
+Arc Output All Axis.info	Controls whether to output all the axis values for G02/G03 moves.	Controlla i valori di output di tutti gli assi per movimenti G02/G03.
 Arc Output.info	Controls how arcs are output to gcode	Controlla come gli archi vengono generati nel GCode
 Arc To Lines Tolerance		Tolleranza da Arco a Linee
 Arc To Lines Tolerance.info	If ArcOutput=ConverToLines is used, this value determines the allowed error.\nSmaller tolerances will result in smoother curves, but larger files.	Se viene utilizzato "Generazione Arco" = Converti in Linee, questo valore determina l'errore consentito. Tolleranze più piccole si traducono in curve più arrotondate, ma in file di dimensioni maggiori.
@@ -87,8 +87,8 @@ ARC_EDIT_3	Enter arc center, hold SHIFT to invert the arc	Inserisci il centro de
 Arc_Fit	Arc fit	Forma dell'Arco
 Arcs Centers		Centri dell'Arco
 ArcText Plugin		ArcText Plugin
-Array Copy		Copia di Matrice
-Array_Copy	Array copy	Copia di Matrice
+Array Copy		Copia in serie
+Array_Copy	Array copy	Copia in serie
 Auto		Auto
 Auto Arc Fitting		Auto Aggiusta Arco
 Auto Arc Fitting.info	Whether to apply arc fitting in certain drawing operations (such as plane slicing).	Applica l'auto aggiustamento dell'arco per alcune operazioni di disegno (ad esempio nello "slicing" di un piano).
@@ -141,7 +141,7 @@ Boundary Taper.info	Angle in degrees from vertical to taper the outer boundary e
 Bounding Box		Rettangolo di selezione
 Break at Intersections		Dividi alle Intersezioni
 Break At Points		Dividi nei Punti
-Break_At_Intersections	Break at intersections	Dividi in corrispondenza delle intersezioni
+Break_At_Intersections	Break at intersections	Dividi alle intersezioni
 Break_At_Points	Break at points	Dividi nei punti
 Browse gcode folder		Sfoglia cartella gcode
 Browse system folder		Sfoglia cartella di sistema
@@ -175,8 +175,8 @@ Canned Cycles		Cicli Fissi
 Cannot explode {0}		Non è possibile esplodere {0}
 CCW		CCW
 Center		Centro
-Center (Extents)		Centro (Estensioni)
-Center (Of Points)		Centro (di punti)
+Center (Extents)		Centra (rds)
+Center (Of Points)		Centra (media punti)
 Center.info	The location of the circle center point.	La posizione del centro del cerchio.
 Center.info:Arc	The center point of the arc.	Il punto centrale dell'arco.
 Centers		Centri
@@ -195,7 +195,7 @@ CIRCLE_EDIT_1	Enter circle center point or esc	Inserisci il punto centrale del c
 CIRCLE_EDIT_2	Enter a point on the circle	Inserire un punto sul cerchio
 Clean		Pulisci
 Cleaning Tolerance		Tolleranza di Pulizia
-Clear		Cancella
+Clear		Svuota
 Clear messages		Cancella i Messaggi 
 Clear_Layer	Clear layer	Livello trasparente
 Clearance Plane		Piano di Sicurezza
@@ -227,7 +227,7 @@ Colors		Colori
 Columns		Colonne
 Columns.info	Number of columns when using a grid nest method.	Numero di colonne quando si utilizza una modalità  griglia nidificata.
 Comment		Inizio Commento
-Comment.info	Rule for an opening comment character.\nUsed by {$comment} macro.	Regola per un carattere di inizio commento.\nUsato dalla macro {$comment}.
+Comment.info	Rule for an opening comment character.\r\nUsed by {$comment} macro.	Regola per un carattere di inizio commento.\r\nUsato dalla macro {$comment}.
 Compile (F5)		Compilazione (F5)
 Concave Radius		Raggio concavo
 Configuration		Configurazione
@@ -236,9 +236,9 @@ Contents		Contenuto
 Control Point Tolerance		Punto di controllo Tolleranza
 Control Point Tolerance.info		Punto di controllo Tolleranza
 Control Points		Punti di controllo
-Control Points.info		Punti di Controllo Points
+Control Points.info		Punti di Controllo
 Conventional		Discorde
-Convert To		Converti
+Convert To		Converti a
 Convert To Lines		Converti in linee
 Convert_To_Polyline	Convert to polyline	Convertire in polilinea
 Convert_To_Region	Convert to region	Convertire in regione
@@ -249,7 +249,7 @@ Corner Overcut		Sovrataglio Angoli
 Corner Overcut.info	Add a move to cut corners otherwise too narrow for cutter.	Aggiunge un movimento per tagliare gli angoli troppo stretti per l'Utensile.
 Corner Overcut.info:CAMStyle	Add a move to cut corners otherwise to narrow for cutter.	Aggiunge un movimento per tagliare gli angoli troppo stretti per l'Utensile.
 Corner Radius		Raggio angolo
-Corner Radius.info	Used to give rounded corners to the rectangle.	Usato per arrotondare gli  angoli del rettangolo.\nAccetta valori compresi tra 0 e 3
+Corner Radius.info	Used to give rounded corners to the rectangle.	Usato per arrotondare gli  angoli del rettangolo.\nAccetta valori compresi tra 0 e la metà del lato del rettangolo.
 Create MOP		Crea MOP
 Create New File		Crea nuovo file
 Create Surface		Crea una superficie
@@ -300,10 +300,10 @@ Default Font Family		Famiglia del Carattere predefinito
 Default Font Family.info	This is the font used when no font is specified for text drawing objects.	Questo è il carattere usato quando nessun carattere viene specificato per gli oggetti di disegno del testo.
 Default GCode Extension		Estensione Predefinita del GCode
 Default GCode Extension.info	A default file extension used when gcode files are produced.	Estensione del file predefinita utilizzata quando viene generato un file GCode.
-Default Layer Color		Colore di Livello  Predefinito
+Default Layer Color		Colore predefinito del livello 
 Default Layer Color.info	The color to use when new layers are inserted into a drawing.	Colore da utilizzare per i nuovi livelli inseriti in un disegno.
 Default Post Processor		Post Processor predefinito
-Default Stock Color		Colore predefinito per il materiale
+Default Stock Color		Colore predefinito del materiale
 Default Stock Color.info	The default color to use to display stock objects.	Il colore predefinito da utilizzare per visualizzare il "Grezzo".
 Defines the size of the teeth. Must be the same for gears that mesh. Large values have less backlash.		Definisce la dimensione dei denti. Deve essere lo stesso per ingranaggi che ingranano. Grandi valori hanno meno gioco.
 Degenerate Tolerance		Tolleranza degenerata
@@ -311,7 +311,7 @@ Degenerate Tolerance.info	Distance to use in silhouette degenerate test.	Distanz
 Degree		Grado
 Degree.info	1=Linear,2=Quadratic,3=Cubic,etc...	1 = Lineare, 2 = Quadratica, 3 = Cubica, ecc ..
 degrees		Gradi
-Delete		Eliminare
+Delete		Elimina
 DELETE_CONFIRM	Delete '{0}'?	Eliminare '{0}'?
 DELETE_CONFIRM2	Delete {0} {1}s?	Eliminare {0} {1} s?
 DELETE_ENTITIES	Delete selected entities	Eliminare le entità selezionate?
@@ -359,7 +359,7 @@ Distance Mode.info	GCode distance mode (absoulte or relative), used to determine
 Distance to extrude the selected objects.		Distanza per l'estrusione degli oggetti selezionati.
 Distance to keep clear between boundary shapes.		Le distanze per tenersi discosta tra il contorno delle figure.
 Divers		Diversi
-Divide Geometry		Dividi Geometria
+Divide Geometry		Dividi geometria
 Dot Product		Dot Product
 Down Left		In basso a Sinistra
 Down Right		In basso a Destra
@@ -426,7 +426,7 @@ Edit		Modifica
 Edit gcode		Modifica GCode
 Edit Text		Modifica testo
 Edit Text Style		Modifica stile del testo
-Edit_Pointlist	Edit pointlist	Modifica lista punti
+Edit_Pointlist	Edit pointlist	Modifica Elenco di punti
 EDIT_POINTLIST_1	Drag point list points, press enter or middle mouse to end, ESC to cancel	Trascinare punto di un Elenco di punti, premere INVIO o centrale del mouse per finire, ESC per annullare
 EDIT_POLY_1	Drag polyline points, press enter or middle mouse to end, ESC to cancel	Trascinate i punti di polilinea, premere INVIO o centrale del mouse per finire, ESC per annullare
 Edit_Polyline	Edit polyline	Modifica polilinea
@@ -482,7 +482,7 @@ ERR_GENERATE_GCODE_FIRST	You must first generate the gcode file	È necessario pr
 ERR_INSUFFICIENT_POINTS	Insufficient points entered	Punti inseriti insufficenti!
 ERR_INVALID_ARC	Invalid arc detected	Rilevato arco non valido!
 ERR_INVALID_OPACITY	Invalid Opacity - use 0 to 100	Opacità non valido - utilizzare 0-100
-ERR_INVALID_POINT_LIST	ERROR! Invalid PointList ID	ERRORE! ID Lista Punti non valido! 
+ERR_INVALID_POINT_LIST	ERROR! Invalid PointList ID	ERRORE! ID Elenco di punti non valido! 
 ERR_INVALID_START_POINT	Invalid Start Point expression	Punto di avvio dell'espressione non valido!
 ERR_JOIN_CLOSED_POLY	Can't join closed Polyline	Non è possibile unire polilinee chiuse!
 ERR_LIB_PATH_NOT_FOUND	Library path not found: {0}	Percorso della libreria non trovato: {0}
@@ -563,7 +563,7 @@ File		File
 File Backups		File di backup
 File Backups.info	Specify the number of backups copies to retain for CamBam (.cb), library and post processor files.	Specificare il numero di copie di backup da conservare per: File CamBam (. cb), Libreria e File di post processor.
 FILE_DELETE_CONFIRM	File {0} will be permanantly deleted!	File {0} sarà cancellato definitivamente!
-Fill Geometry		Riempi Geometria
+Fill Geometry		Riempi geometria
 Fill Margin		Riempi Margine
 Fill Region		Riempi Regione
 Fill Stepover		Riempi StepOver
@@ -683,7 +683,7 @@ Hardness		Durezza
 Hardness.info	Informational.	Informativo.
 Header		Intestazione
 Header.info	Rules for the {$header} macro.\nUsually inserted at the start of the gcode output.	Regole per la macro {$header} . Di solito inserita all'inizio del gcode.
-Height		Altezza
+Height		Dim. - Altezza 
 Height.info	The height of the rectangle.	L'altezza del rettangolo.
 Height.info:CBValue`1	The height of the holding tab measured from the stock base or target depth.	L'altezza dei Fermi misurata dal fondo del Grezzo o da [Altezza Obiettivo].
 Height.info:MText	The height of the 'em' square defined for the font.\r\nThe em square will enclose the largest character in the font.	L'altezza del quadrato  (em) definito per il tipo di carattere.\nIl quadrato sarà tale da racchiudere il carattere più grande del font di solito la 'm'.
@@ -693,7 +693,7 @@ Helix Angle		Angolo Spirale
 Helix Angle.info	Angle of the spiral profile in degrees.	Angolo del profilo  spirale in gradi.
 Helix Convert To Lines		Spirale Converti in Linee
 Help		Aiuto
-Hide		Nascondere
+Hide		Nascondi
 Hide all but this		Nascondi tutti tranne questo
 Hide_All_But_This_Layer	Hide all but this layer	Nascondi tutti tranne questo Livello
 Hide_Layer	Hide layer	Nascondi Livello
@@ -744,7 +744,7 @@ Inside Offsets		Interno
 Install {0} License		
 Install CamBam License		Installare Licenza CamBam 
 Intersection		Intersezione
-Intersection Points		Punti di Intersezione
+Intersection Points		Punti di intersezione
 Intersection Tolerance		Intersezione di tolleranza
 Intersection_Points	Intersection points	Punti di intersezione
 Invalid valid for tooth size. Please enter a value and try again.		Valore non valido per dimensione dei denti. Si prega di inserire un nuovo valore e riprovare.
@@ -828,7 +828,7 @@ Linear.info	This property is not currently used	Questa proprietà non è attualm
 Location		Posizione
 Location.info		Posizione.info
 Lower		Inferiore
-Lower Left		In basso a sinistra
+Lower Left		Origine - SX-Basso
 Lower Left.info	The location of the lower left point of the rectangle.	La posizione del punto in basso a sinistra del rettangolo.
 M Codes		Codici M 
 Machinability Index		Indice di lavorabilità
@@ -839,8 +839,8 @@ Machine_Definitions	Machine Definitions	Definizioni Macchina
 Machining		Lavorazioni (MOP)
 Machining Origin		Origine della lavorazione
 Machining Origin.info	A drawing point to be used as the machining origin (X=0,Y=0) when gcode is created.	Un punto di disegno da utilizzare come origine di lavorazione (X = 0, Y = 0) quando il GCode viene generato.
-Major Scale		Scala maggiore
-Major Scale.info		Dimensione della scala maggiore della grglia in unità di disegno
+Major Scale		Linee principali
+Major Scale.info		Spaziatura delle linee principali della griglia in unità di disegno
 Manual		Manuale
 Mark All		Segna tutti
 Marker Color		Colore marcatore
@@ -895,11 +895,11 @@ Minimum Arc Length.info	A numerical value that controls the precision limits use
 Minimum Tabs		Minimo Fermi
 Minimum Tabs.info	The minimum number of auto tabs to insert around each shape.	Numero minimo di fermi da inserire in automatico attorno ad ogni forma.
 Minimum.info		Minimo.info
-Minor Scale		Scala minore
-Minor Scale.info		Dimensione della scala minore della grglia in unità di disegno
-MinorScale		Scala minore
-MinorScale.info		Dimensione della scala minore della grglia in unità di disegno
-Mirror		Specchio
+Minor Scale		Linee secondarie
+Minor Scale.info		Spaziatura delle linee secondarie della grglia in unità di disegno
+MinorScale		Linee secondarie
+MinorScale.info		Spaziatura delle linee secondarie della grglia in unità di disegno
+Mirror		Specchia
 MIRROR_EDIT1	Enter a point on the mirror line	
 MIRROR_EDIT2	Select a second point along the mirror line	
 Misc		Varie
@@ -945,8 +945,8 @@ NC File		File NC
 Nest		Nidificazione
 Nest Each MOP		Nidifica ogni MOP
 Nest Method		Metodo Nidificazione
-Nest Method.info	Grid - a grid arry of part copies.\nIsoGrid - a grid with alternate rows offset.\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie parziali.\nIsoGrid - una griglia con righe alternate offset.\nPointList - punti copia sono presi da un elenco di punti.
-Nest Method.info:NestingInfo	Grid - a grid arry of part copies.\r\nIsoGrid - a grid with alternate rows offset.\r\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie parziali.\nIsoGrid - una griglia con righe alternate offset.\nPointList - punti copia sono presi da un elenco di punti.
+Nest Method.info	Grid - a grid arry of part copies.\r\nIsoGrid - a grid with alternate rows offset.\r\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie di parti.\r\nIsoGrid - una griglia con righe alternate offset.\r\nPointList - punti copia sono presi da un elenco di punti.
+Nest Method.info:NestingInfo	Grid - a grid arry of part copies.\r\nIsoGrid - a grid with alternate rows offset.\r\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie di parti.\r\nIsoGrid - una griglia con righe alternate offset.\r\nPointList - punti copia sono presi da un elenco di punti.
 Nest to point list		Da Nidificazione a Elenco di punti 
 Nest_Item_Move	Nest item move	Nidificazione voce mossa
 Nesting		Nidificazione
@@ -1001,8 +1001,8 @@ Off		Off
 Offset		Offset
 Offset Backtrack Check		Verifica Offset tracce posteriori
 Offset Backtrack Check.info	If True, back track drawing glitches will be removed by the offset routine.	Se Vero, difetti delle tracce posteriori del disegno verranno rimosse dalla routine offset.
-Offset Fill Geometry		Offset Compila Geometria
-Offsets per step (X,Y,Z[,Scale])		Offset per passo (X, Y, Z [, Scala])
+Offset Fill Geometry		Riempi geometria (sfalsato)
+Offsets per step (X,Y,Z[,Scale])		Spostamento per copia (X, Y, Z [, Scala]) 
 OK		OK
 Online Forum		Forum Online
 Online Scripting Help		Guida in linea 
@@ -1090,9 +1090,9 @@ Points		Punti
 Points.info	A list of control points that define the polyline.	Un elenco di punti di controllo che definiscono la polilinea.
 Points.info:Line		
 Points.info:PointList	A list of the points contained in the point list.	Un elenco dei punti contenuti nell'elenco di punti.
-Polar Array Copy		Copia Serie Polare
+Polar Array Copy		Serie polare
 POLAR_ARRAY_1	Select the center point of the polar array	Selezionate il punto centrale della serie polare
-Polar_Array_Copy	Polar array copy	Serie copia polare
+Polar_Array_Copy	Polar array copy	Serie polare
 POLY_DRAW1	Enter points then press enter, (c)lose or esc	Inserire i punti poi premere INVIO, (C)hiude o ESC
 POLY_SUBTRACT1	Select the source objects, then press ENTER or ESC to cancel 	Selezionare gli oggetti originali, quindi premere INVIO (ESC per annullare)
 POLY_SUBTRACT2	Select the objects to subtract, then press ENTER or ESC to cancel	Selezionare gli oggetti da sottrarre, quindi premere INVIO (ESC per annullare)
@@ -1181,7 +1181,7 @@ Remove_Dupes	Remove dupes	Rimuovi doppioni
 Remove_Holding_Tab	Remove holding tab	Rimuovi Fermi
 Remove_Overlaps	Remove overlaps	Rimuovi Sovrapposizioni
 REMOVE_PRIMS_IN_LAYER	Remove all the primitives in layer '{0}'?	Rimuovere tutte le primitive nel Livello '{0}'?
-Rename		Rinominare
+Rename		Rinomina
 Rename all tools		Rinominare tutti gli Utensili
 RENAME_FILE	Rename file to '{0}'?	Rinominare file come '{0}'?
 Rename_Layer	Rename layer	Rinomina Livello
@@ -1400,7 +1400,7 @@ Spline to Polyline Tolerance.info	Splines are converted to polylines internally 
 Square		Quadrato
 Square Bar		Barra quadra
 Square Box		Scatola quadrata
-Start		Inizio
+Start		Angolo iniziale
 Start Corner		Angolo d'inizio
 Start Corner.info	Corner to start profiling.\r\nUsed for Horizontal and Vertical only.	Angolo per iniziare la profilazione.\r\n Utilizzato solo da [Profilo 3D] per [Orizzontale] e [Verticale].
 Start Cut		Inizio Taglio
@@ -1409,7 +1409,7 @@ Start Point		Punto d'inizio
 Start Point.info	A point used as a hint to the optimiser to determine where the next toolpath starts.	Un punto usato come un suggerimento per l'ottimizzatore per determinare da dove il prossimo PU deve partire.
 Start.info	The starting angle of the arc (in degrees).	L'angolo iniziale dell'arco (in gradi).
 STARTING_LEVEL	Starting level {0} at {1}	Livello di partenza {0} di {1}
-Step Around Geometry		Passo Attorno La geometria
+Step Around Geometry		Spazia intorno a geometria
 Step Distance		Distanza Passo 
 Step Over		Step Over
 StepOver		StepOver
@@ -1462,7 +1462,7 @@ Surface Analysis		Analisi della superficie
 Surface Speed		Velocità di taglio
 Surface Speed x 1000 / ( Diameter x Pi )		Velocità di taglio  x 1000 / (diametro x Pi)
 Surface Speed.info	Surface cutting speed.\r\nNot currently used for toolpath generation!	Velocità di taglio.\nNon è attualmente utilizzata per la generazione di PU!
-Sweep		Apertura
+Sweep		Angolo Apertura
 Sweep.info	The sweep angle of the arc (in degrees).	L'angolo di apertura dell'arco (in gradi).
 System		Sistema
 System Path		Cartella di Sistema
@@ -1497,10 +1497,10 @@ TARGETDEPTH_ABOVE_STOCK	WARNING! Target depth should be less than stock surface	
 Teeth		Denti
 Testo		
 Text		Testo
-Text Alignment Horizontal		Allineamento orizzontale del testo
-Text Alignment Horizontal.info	Controls the horizontal alignment of the text relative to the text location point.	Determina l'allineamento orizzontale del testo relativo al punto di posizionamento.
-Text Alignment Vertical		Allineamento verticale del testo
-Text Alignment Vertical.info	Controls the vertical alignment of the text relative to the text location point.	Determina l'allineamento verticale del testo relativo al punto di posizionamento.
+Text Alignment Horizontal		Allin. orizz. testo
+Text Alignment Horizontal.info	Controls the horizontal alignment of the text relative to the text location point.	Determina l'allineamento orizzontale del testo relativo a [Posizione].
+Text Alignment Vertical		Allin. vert. testo
+Text Alignment Vertical.info	Controls the vertical alignment of the text relative to the text location point.	Determina l'allineamento verticale del testo relativo a [Posizione].
 Text Curve Tolerance		Tolleranza curva di testo
 Text Curve Tolerance.info	The degree of error allowed when converting text to polylines, measured in font units (0-2048)	Il grado di errore ammesso durante la conversione del testo in polilinee, misurati in unità di font (0-2048)
 Text Font		
@@ -1510,11 +1510,11 @@ Text.info	The multi-line text to be displayed.	Il testo multi-linea  da visualiz
 TEXT_INSERT	Select insertion point	Selezionare il punto di inserimento
 Texte		Texte
 Texturize		
-The angle to offset each array item from one another.		L'angolo per compensare ogni voce della matrice uno dall'altro.
-The diameter of the pitch circle in the current drawing units		Il diametro del cerchio  nell' unità di disegno corrente
+The angle to offset each array item from one another.		L'angolo di sfalsamento di ogni elemento della serie rispetto all'altro.
+The diameter of the pitch circle in the current drawing units		Il diametro del cerchio  nell'unità di disegno corrente
 The distance along each line to test for Z heights.		La distanza lungo ciascuna linea di test per altezza di Z.
-The distance measured in drawing units.\r\nPress OK to copy to clipboard.		Distanza misurata in unità di disegno.\r\nPremere OK per copiare negli appunti.
-The distance to offset each array item from one another, with optional scale.		La distanza per compensare ogni voce della matrice uno  da un altro, con scala opzionale.
+The distance measured in drawing units.\r\nPress OK to copy to clipboard.		La distanza misurata in unità di disegno. Premere OK per copiare negli appunti.
+The distance to offset each array item from one another, with optional scale.		Lo spostamento di ogni copia uno dall'altro, con un fattore di scala opzionale.
 The file '{0}' already exists!\r\nOverwrite existing file?		Il file '{0}' esiste già! Sovrascrivere il file esistente?
 The number of copies in the array.		Il numero di copie della matrice.
 The value of the following inherited property has changed.:		Il valore della seguente proprietà ereditata è cambiato.:.
@@ -1726,7 +1726,7 @@ Waterline Safety Check		Controllo della sicurezza WaterLine
 Waterline Safety Check.info	If True, prevent gcode creating if errors are suspected in 3D waterline toolpaths.	Se Vero, impedisce la generazione di GCode se si sospettano errori in PU 3D Waterline.
 WATERLINE_DURATION	GenerateWaterlines duration : {0}	Durata generazione Waterline: {0}
 WATERLINE_MUST_SPECIFY_DEPTHINCREMENT	Must specify depth increment for waterline machining	È necessario specificare la profondità di incremento per lavorazioni Waterline
-Width		Larghezza
+Width		Dim. - Larghezza
 Width.info	The width of the rectangle.	La larghezza del rettangolo.
 Width.info:CBValue`1	The final width of the holding tab, measured at the thinnest part of the tab.	La larghezza finale dei fermi, misurata nella parte più sottile.
 Window opacity		Opacità Finestra

@@ -1,4 +1,4 @@
-1.0	it	2015-09-22 00:00:00Z
+1.0	it	2015-10-16 11:40:32Z
 		
 (General)		(Generale)
 (Main)		(Principale)
@@ -73,8 +73,8 @@ Arc CW.info	Rule for a clockwise arc feed move.	Imposta un movimento in senso or
 Arc Display Degrees		Gradi per l'Arco
 Arc Display Degrees.info	Arcs are displayed using multiple line segments.  This setting defines the angle between each segment. Smaller numbers make smoother curves but slower display rates	Gli archi vengono visualizzati utilizzando segmenti di linea. Questa impostazione definisce l'angolo tra ogni segmento. Piccoli numeri generano curve più arrotondate ma la visualizzazione è più lenta
 Arc Expand Tolerance		Tolleranza espansione Arco
-Arc Fit		Forma dell'Arco
-Arc Fit Tolerance		Tolleranza forma dell'Arco
+Arc Fit		Adattamento Curva
+Arc Fit Tolerance		Tolleranza Adattamento Curva
 Arc Output		Generazione Arco
 Arc Output All Axis		Tutti gli Assi dell'Arco
 Arc Output All Axis.info	Controls whether to output all the axis values for G02/G03 moves.	Controlla i valori di output di tutti gli assi per movimenti G02/G03.
@@ -84,7 +84,7 @@ Arc To Lines Tolerance.info	If ArcOutput=ConverToLines is used, this value deter
 ARC_EDIT_1	Enter first arc point or esc	Inserisci il primo punto dell'arco o ESC
 ARC_EDIT_2	Enter second arc point	Inserisci secondo punto dell'arco
 ARC_EDIT_3	Enter arc center, hold SHIFT to invert the arc	Inserisci il centro dell'arco, tenere premuto SHIFT per invertire l'arco
-Arc_Fit	Arc fit	Forma dell'Arco
+Arc_Fit	Arc fit	Adattamento Curva
 Arcs Centers		Centri dell'Arco
 ArcText Plugin		ArcText Plugin
 Array Copy		Copia in serie
@@ -233,8 +233,8 @@ Concave Radius		Raggio concavo
 Configuration		Configurazione
 Constant Velocity		Velocità costante
 Contents		Contenuto
-Control Point Tolerance		Punto di controllo Tolleranza
-Control Point Tolerance.info		Punto di controllo Tolleranza
+Control Point Tolerance		Tolleranza Punto di controllo 
+Control Point Tolerance.info		Tolleranza Punto di controllo 
 Control Points		Punti di controllo
 Control Points.info		Punti di Controllo
 Conventional		Discorde
@@ -369,6 +369,7 @@ Drag mouse around center point to rotate - Rotation Axis = {0}, Angle = {1}°\nP
 Drag Point		Trascinare Punti
 Drag point list points, press enter or middle mouse to end, ESC to cancel		Trascinare  punto o elenco di punti, premere INVIO o centrale del mouse per finire, ESC per annullare
 Drag polyline points, press enter or middle mouse to end, ESC to cancel		Trascinare i punti polilinea, premere INVIO o centrale del mouse per finire, ESC per annullare
+Drag rectangle points, press enter or middle mouse to end, ESC to cancel		
 DRAG_ENTITY_1	SHIFT+arrow moves 1 grid unit, CTRL+SHIFT+arrow moves 1 major grid unit	MAIUSC + freccia si muove 1 unità di rete, CTRL + MAIUSC + freccia si muove di 1 unità principale di griglia
 DRAG_MACHINING_ORIGIN	Drag machining origin	Trascinare l'origine di lavorazione
 DRAG_MODE	Drag Mode	Modalità trascinamento
@@ -430,7 +431,11 @@ Edit_Pointlist	Edit pointlist	Modifica Elenco di punti
 EDIT_POINTLIST_1	Drag point list points, press enter or middle mouse to end, ESC to cancel	Trascinare punto di un Elenco di punti, premere INVIO o centrale del mouse per finire, ESC per annullare
 EDIT_POLY_1	Drag polyline points, press enter or middle mouse to end, ESC to cancel	Trascinate i punti di polilinea, premere INVIO o centrale del mouse per finire, ESC per annullare
 Edit_Polyline	Edit polyline	Modifica polilinea
+EDIT_RECT_1	Drag rectangle points, press enter or middle mouse to end, ESC to cancel	
+Edit_Rectangle		
 Ellipse		Ellisse
+ELLIPSE_DRAW1	Enter first bounding rectangle point or esc	Inserire il primo punto del rettangolo o <ESC> per annullare
+ELLIPSE_DRAW2	Enter second bounding rectangle point or esc	Inserire il secondo punto del rettangolo o <ESC> per annullare
 Enable / Disable MOP		Attiva / Disattiva MOP
 Enable / disable part		Abilitare / disabilitare Parte
 Enabled		Abilitato
@@ -459,9 +464,13 @@ Enter any two parameters below and click on "Calculate" to generate the third.		
 Enter arc center, hold SHIFT to invert the arc		Inserisci il centro dell'arco, tieni premuto SHIFT per invertire l'arco
 Enter circle center point or esc		Inserisci il centro del cerchio o ESC
 Enter first arc point or esc		Inserisci il primo punto dell'arco  o ESC
+Enter first bounding rectangle point or esc		
 Enter first rectangle point or esc		Inserisci il primo punto del rettangolo o ESC
 Enter second arc point		Inserisci il secondo punto dell'arco
+Enter second bounding rectangle point or esc		
 Enter second rectangle point or esc		Inserisci il secondo punto del rettangolo o ESC
+Enter the first tangent point		
+Enter the second tangent point		
 ENTITY_MOVE_1	Select a reference point	Selezionare un punto di riferimento
 ENTITY_MOVE_2	Enter destination point	Inserisci il punto di destinazione
 Entity_Reorder	Entity reorder	Entità di riordino
@@ -506,8 +515,8 @@ ERR_ONE_FILE_ONLY	You can only specify one file!	Si può specificare un solo fil
 ERR_PARSING_INT_LIST	Error parsing integer list	Errore di analisi lista interi
 ERR_PRIM_IN_INDEX	Primtitive {0} already in index	Primtitive {0} già nell'indice
 ERR_READING_PROMPTS	Error reading prompt history : {0}	Errore durante la lettura cronologia prompt: {0}
-ERR_READING_TRANSLATIONS	Error reading translations ({0}) at line {1}	Errore di traduzione lettura ({0}) alla riga {1}
-ERR_REVERSE_POLY_IN_JOIN	Reversing Polyline in join	Errore inversione polilinea ad unirsi
+ERR_READING_TRANSLATIONS	Error reading translations ({0}) at line {1}	Errore leggendo la traduzione ({0}) alla riga {1}
+ERR_REVERSE_POLY_IN_JOIN	Reversing Polyline in join	Errore inversione polilinea in Unisci
 ERR_SCRIPT_LINE	Line={0} - {1}	Linea = {0} - {1}
 ERR_SCRIPT_UNKNOWN_OBJECT	{1} Error : Unknown object {0}	{1} Errore: oggetto sconosciuto {0}
 ERR_SELECT_POLYS_TO_SPLIT	You must first select some polylines to split.	È necessario innanzitutto selezionare alcune polilinee da dividere.
@@ -584,10 +593,10 @@ Finish Stepover At TargetDepth		Passata di finitura a [Altezza Obiettivo]
 Finish Stepover At TargetDepth.info	If true, then finish stepover stock will be removed at the target depth pass.  If false then finish stepover removed at each depth pass.	Se Vero, il materiale lasciato da  [Passata di finitura] viene asportato in un solo passaggio a [Altezza Obiettivo].\n\nSe Falso, il materiale viene asportato in più passaggi usando l'incremento [Passata di finitura].
 Finish Stepover.info	This is the thickness of stock to leave for the final cut.	Lo spessore del materiale, intorno ai perimetri delle forme, che verrà asportato con l'ultima passata del PU.
 Finishing		Finitura
-First select a path for the spiral to follow.		
+First select a path for the spiral to follow.		Selezionare prima un percorso da seguire per la spirale.
 Fit Points		Adatta punti
 Fit Points.info		Adatta punti.info
-Fit Tolerance		Adatta tolleranza
+Fit Tolerance		Adatta - tolleranza
 Fit Tolerance.info		Adatta Tolleranza.info
 FIT_CURVE_RESULT	Fit Curves results {0} segments	Adatta Curve risulta {0} segmenti
 FIT_CURVE_START	Fit Curves start {0} segments	Adatta Curve inizia {0} segmenti
@@ -745,7 +754,7 @@ Install {0} License
 Install CamBam License		Installare Licenza CamBam 
 Intersection		Intersezione
 Intersection Points		Punti di intersezione
-Intersection Tolerance		Intersezione di tolleranza
+Intersection Tolerance		Intersezione - tolleranza
 Intersection_Points	Intersection points	Punti di intersezione
 Invalid valid for tooth size. Please enter a value and try again.		Valore non valido per dimensione dei denti. Si prega di inserire un nuovo valore e riprovare.
 Invert		Invertire
@@ -761,9 +770,9 @@ Italic		Corsivo
 Italic.info	Italic font style.	Stile del carattere corsivo.
 Javascript		Javascript
 Join		Unisci
-Join Tolerance		Tolleranza per unisci
+Join Tolerance		Unisci - tolleranza
 JScript		JScript
-Knot Tolerance		Nodo di tolleranza
+Knot Tolerance		Nodo - tolleranza
 Knot Tolerance.info		Nodo Tolerance.info
 Kontur.TargetDepth		Kontur.Profondità Finale
 Language		Lingua
@@ -999,8 +1008,8 @@ Object Visibility		Visibilità oggetti
 OBJECT_EXTREMAS	Selected Objects Extrema	Estremi oggetti selezionati 
 Off		Off
 Offset		Offset
-Offset Backtrack Check		Verifica Offset tracce posteriori
-Offset Backtrack Check.info	If True, back track drawing glitches will be removed by the offset routine.	Se Vero, difetti delle tracce posteriori del disegno verranno rimosse dalla routine offset.
+Offset Backtrack Check		Correggi Sovrapp.  
+Offset Backtrack Check.info	If True, back track drawing glitches will be removed by the offset routine.	Se Vero, le sovrapposizione verranno rimosse in fase di creazione dei PU.
 Offset Fill Geometry		Riempi geometria (sfalsato)
 Offsets per step (X,Y,Z[,Scale])		Spostamento per copia (X, Y, Z [, Scala]) 
 OK		OK
@@ -1012,7 +1021,7 @@ Open Existing File		Apri file esistenti
 Open Offset		Offset aperto
 Open_Existing_File	Open Existing File	Apri file esistenti
 Operations aborted.		Operazioni interrotta.
-Operations are still in progress!\nExit CamBam?		Le operazioni sono ancora in corso!\nUscire da CamBam?
+Operations are still in progress!\r\nExit CamBam?		Le operazioni sono ancora in corso!\r\nUscire da CamBam?
 Optimisation Mode		Modalità Ottimizzazione
 Optimisation Mode.info	If OptimisationMode=Standard, then toolpaths are ordered to minimize rapids.\r\nIf OptimisationMode=Experimental, then a new test optimizer will be used.\r\nIf OptimisationMode=None, then toolpaths are not optimised and are written in the order they were generated.	Se Modalità Ottimizzazione = standard, i PU sono generati per ridurre al minimo i rapidi.\nSe Modalità Ottimizzazione = Sperimentale, un nuovo ottimizzatore sperimentale sarà utilizzato.\nSe Modalità Ottimizzazione = Nessuno, i PU non sono ottimizzati e sono scritti nell'ordine come sono stati generati.
 Optimisation Mode.info:CAMStyle	If OptimisationMode=Standard, then toolpaths are ordered to minimize rapids.\r\nIf OptimisationMode=None, then toolpaths are not optimised and are written in the order they were generated.	Se Modalità Ottimizzazione = standard, i PU sono generati per ridurre al minimo i rapidi.\nSe Modalità Ottimizzazione = Nessuno, i PU non sono ottimizzati e sono scritti nell'ordine come sono stati generati.
@@ -1207,7 +1216,7 @@ Restore PropertyGrid		Ripristina Proprietà Griglia
 Retract Height		Altezza di ritrazione
 Retract Height.info	For peck canned cyles, retract to this value after each peck.	Per cicli di foratura, ritrarre di questo valore dopo ciascun incremento della [Profondità per ritrarsi].
 Retry		Riprova
-Reverse		Indietro
+Reverse		Inverti
 Reversing Polyline in join		Inverti Polilinea in unione
 Right		Destra
 Right Down		Destra Giù
@@ -1266,6 +1275,8 @@ Select rotation center point		Seleziona centro punto di rotazione
 Select the center point of the polar array		Selezionate il punto centrale della serie polare
 Select the Current Drawing Units		Selezionare le unità di disegno corrente
 Select the new polyline starting point		Selezionare il nuovo punto di partenza polilinea
+Select the spiral center point or esc		Selezionare il punto centrale o <ESC>
+Select the spiral end point		Selezionare il punto finale della spirale 
 Select_Current_Units	Select the Current Drawing Units	Selezionare le unità di disegno corrente
 SELECT_FILENAME	Select filename	Seleziona nome file
 SELECT_MACHINING_ORIGIN	Select machining origin	Selezionare origine lavorazione
@@ -1355,7 +1366,7 @@ Source		Origine
 Source File		File di origine
 Source File.info	Filename of the source gcode	Nome del file GCode sorgente
 Source Image		Immagine sorgente
-Spacing		Spazio
+Spacing		Spaziatura
 Spacing.info	Distance between the toolpath centers of adjacent copies.	Distanza tra i centri delle copie dei PU adiacenti.
 Speed and feeds calculator		Calcolatore della velocità e dell'avanzamento
 SPEEDS_AND_FEEDS	Speeds and Feeds Calculator	Calcolatore della velocità e dell'avanzamento
@@ -1385,18 +1396,21 @@ Spindle Speeds.info		Velocità del Mandrino.info
 Spiral		Spirale
 Spiral Angle	Angle	Angolo
 Spiral Angle.info	Used by spiral and tangents to control ramp angle.	Utilizzato da spirali e tangenti per controllare l'angolo di rampa.
+Spiral Draw		Disegna Spirale
 Spiral Flat Base		Base spirale piatta
 Spiral Flat Base.info	For spiral drilling only.  If True, a full circle is added to the spiral base, to ensure a flat hole bottom.	Solo Per la foratura a spirale. \nSe Vero, un cerchio completo viene aggiunto alla base della spirale, per garantire un fondo piatto al foro.
 Spiral Mill (CCW)		Fresatura a Spirale (CCW)
 Spiral Mill (CW)		Fresatura a Spirale (CW)
 Spiral Path		Percorso della spirale
 Spiral Path Draw		Disegna percorso della Spirale
+SPIRAL_DRAW1	Select the spiral center point or esc	
+SPIRAL_DRAW2	Select the spiral end point	
 SPIRAL_PATH1	First select a path for the spiral to follow.	
 Spline		Spline
 Spline Curve Steps		Passi Curve Spline 
 Spline Curve Steps.info	When splines are displayed, their shape is approximated by line segments.  This setting controls the number of segments used to display	Quando le Spline vengono visualizzate, la loro forma è approssimata da segmenti di linea. Questa impostazione controlla il numero di segmenti utilizzati per visualizzarle
 Spline to Polyline Tolerance		Tolleranza da Spline a Polilinea
-Spline to Polyline Tolerance.info	Splines are converted to polylines internally before they can be used for some operations, such as toolpath generation.\r\nSmaller tolerances makes more accurate but larger polylines	Le Spline vengono convertite in polilinee internamente prima di poter essere utilizzate per alcune operazioni, come la generazione del PU.\n Valori piccoli consentono polilinee più accurate ma di dimensioni maggiori
+Spline to Polyline Tolerance.info	Splines are converted to polylines internally before they can be used for some operations, such as toolpath generation.\r\nSmaller tolerances makes more accurate but larger polylines	Le Spline vengono convertite in polilinee internamente prima di poter essere utilizzate per alcune operazioni, come la generazione di PU.\n Valori piccoli consentono polilinee più accurate ma di dimensioni maggiori
 Square		Quadrato
 Square Bar		Barra quadra
 Square Box		Scatola quadrata
@@ -1491,6 +1505,8 @@ Tag.info:MOPProfile	A general purpose, multi-line text property to store notes o
 Tangent		Tangente
 Tangent Radius		Raggio tangente
 Tangent Radius.info	The radius of the tangent lead in.	Il raggio della tangente Lead In 
+TANGENT_DRAW1	Enter the first tangent point	
+TANGENT_DRAW2	Enter the second tangent point	
 Target Depth		Altezza Obiettivo
 Target Depth.info	Final depth of the machining operation.	Profondità finale della lavorazione.
 TARGETDEPTH_ABOVE_STOCK	WARNING! Target depth should be less than stock surface	ATTENZIONE! [Altezza Obiettivo] dovrebbe essere inferiore al valore della superficie Grezzo
@@ -1501,7 +1517,7 @@ Text Alignment Horizontal		Allin. orizz. testo
 Text Alignment Horizontal.info	Controls the horizontal alignment of the text relative to the text location point.	Determina l'allineamento orizzontale del testo relativo a [Posizione].
 Text Alignment Vertical		Allin. vert. testo
 Text Alignment Vertical.info	Controls the vertical alignment of the text relative to the text location point.	Determina l'allineamento verticale del testo relativo a [Posizione].
-Text Curve Tolerance		Tolleranza curva di testo
+Text Curve Tolerance		 Curva di testo - tolleranza
 Text Curve Tolerance.info	The degree of error allowed when converting text to polylines, measured in font units (0-2048)	Il grado di errore ammesso durante la conversione del testo in polilinee, misurati in unità di font (0-2048)
 Text Font		
 Text Font.info		Il  carattere usato nel testo
@@ -1620,7 +1636,7 @@ Transform.info:MOPLathe	This transformation matrix will be applied to the toolpa
 Transform.info:MOPPocket	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al PU prima di generare il gcode.
 Transform.info:MOPProfile	This transformation matrix will be applied to the toolpath before gcode generation.	Questa matrice di trasformazione sarà applicata al PU prima di generare il gcode.
 Transformation		Trasformazione
-Translation		Traduzione
+Translation		Spostamento
 Translations		Traduzioni
 Transparent		Trasparente
 Triangle		Triangolo

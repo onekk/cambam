@@ -1,4 +1,4 @@
-1.0	it	2015-10-16 11:40:32Z
+1.0	it	2015-10-20 13:06:25Z
 		
 (General)		(Generale)
 (Main)		(Principale)
@@ -1186,6 +1186,7 @@ Reload post processors		Ricarica Post Processor
 Remove Arcs		Rimuovi Archi
 Remove Overlaps		Rimuovi Sovrapposizioni
 Remove Tab		Rimuovi Fermi
+Remove_Arcs	Remove Arcs	
 Remove_Dupes	Remove dupes	Rimuovi doppioni
 Remove_Holding_Tab	Remove holding tab	Rimuovi Fermi
 Remove_Overlaps	Remove overlaps	Rimuovi Sovrapposizioni

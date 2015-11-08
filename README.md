@@ -40,7 +40,7 @@ In questo sito trovate:
 
 2) Il file cambam-helpers.zip che contiene i file e le istruzioni per avere CamBam nel vostro menu applicazioni e per associare i file di CamBam con il programma.
 
-3) il file CamBam-Intro-it cioè "CamBam Guida Introduttiva", versione pre-Alpha un manuale introduttivo all'uso del programma, che rispecchia il file di traduzione qui fornito.
+3) il file CamBam-Intro-it.pdf cioè "CamBam Guida Introduttiva", versione Alpha un manuale introduttivo all'uso del programma, che rispecchia il file di traduzione qui fornito.
 
 
 Usate le Issues per contattarmi.

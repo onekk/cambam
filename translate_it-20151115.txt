@@ -1,4 +1,4 @@
-1.0	it	2015-11-08 16:13:47Z
+1.0	it	2015-11-09 12:30:44Z
 		
 (General)		(Generale)
 (Main)		(Principale)
@@ -13,7 +13,7 @@ _CleanShapeList Test		_CleanShapeList Test
 3D Profile		Profilo 3D
 3D Surface		Superficie 3D 
 3D Surface - Back Face		Superficie 3D - Faccia posteriore
-3D Surface - Boundary		Superficie 3D - Contorno
+3D Surface - Boundary		Superficie 3D - Limiti
 3DSurface		Superficie 3D 
 A Axis		Asse A
 A Axis.info		Il valore di A
@@ -108,13 +108,13 @@ Axis Setup		Impostazione Asse
 B Axis		Asse B
 B Axis.info		Il valore di B
 Back Face		Faccia posteriore
-Back Face Culling		Faccia Posteriore scartata
-Back Face Culling.info	Enabling back face culling can improve performance if mesh is well formed.	Abilita lo scarto della faccia posteriore, può migliorare le prestazioni se la mesh è ben formata.
-Back Face Zero Z		Faccia Posteriore Zero Z 
+Back Face Culling		Ignora faccette post.
+Back Face Culling.info	Enabling back face culling can improve performance if mesh is well formed.	Abilita lo scarto delle faccette posteriori, può migliorare le prestazioni se la mesh è ben formata.
+Back Face Zero Z		Faccia post. - Zero Z 
 Back Face Zero Z.info	The current Z offset that will be at Z=0 when the model is rotated to do the back face.	Il valore di offset Z che sarà a Z = 0 quando il modello viene ruotato per lavorare la faccia posteriore.
 Back Face.info	If False then machine the front face of the model.\r\nIf True then machine the back face.	Se Vero la macchina lavora la faccia posteriore.\r\n\r\nSe Falso la macchina lavora la faccia anteriore del modello.
-Backface Culling		Faccia Posteriore scartata
-Backface Culling.info	When displaying surface meshes, faces with back facing normals (using right hand rule) are not displayed.	Quando si visualizzano superfici 3D (Mesh), le facce con il retro rivolto verso le normali (usando la regola della mano destra) non vengono visualizzate
+Backface Culling		Ignora faccette post.
+Backface Culling.info	When displaying surface meshes, faces with back facing normals (using right hand rule) are not displayed.	Quando si visualizzano superfici 3D (Mesh), le faccette con i vertici rivolti nel verso contrario delle normali non vengono visualizzate
 Background Color		Colore di sfondo
 Background Color.info		Colore di Sfondo
 Backlash		Gioco
@@ -130,16 +130,16 @@ Bold.info	Bold font style.	Stile del carattere: grassetto.
 Bottom		Fondo
 Bottom+Left		In basso a sinistra 
 Bottom+Right		In basso a destra 
-Boundary		Contorno
-Boundary Margin		Margine di Contorno
-Boundary Margin.info	Distance around boundary shapes to machine.	Distanza intorno al contorno delle figure da lavorare.
-Boundary Method		Metodo di Contorno
-Boundary Method.info	Method to use to limit toolpaths to boundary shapes.	Metodo da utilizzare per limitare i PU al contorno della figura
-Boundary Shape IDs		ID Contorno della Forma
+Boundary		Limiti
+Boundary Margin		Estensione Limiti
+Boundary Margin.info	Distance around boundary shapes to machine.	Distanza intorno al limite delle geometrie da lavorare.
+Boundary Method		Metodo di limitazione
+Boundary Method.info	Method to use to limit toolpaths to boundary shapes.	Metodo da utilizzare per la limitazione dei PU
+Boundary Shape IDs		ID geometrie limite
 Boundary Shape IDs.info	List of drawing objects to use as toolpath boundary	Elenco degli oggetti di disegno da utilizzare come contorno PU
-Boundary Taper		Rastremazione Contorno 
-Boundary Taper.info	Angle in degrees from vertical to taper the outer boundary edge.	Angolo in gradi per la rastremazione del bordo esterno del contorno. 
-Bounding Box		Rettangolo di selezione
+Boundary Taper		Inclinazione dei bordi 
+Boundary Taper.info	Angle in degrees from vertical to taper the outer boundary edge.	Angolo in gradi per l'inclinazione del bordo esterno della zona limitata. 
+Bounding Box		Selezione Rettangolare
 Break at Intersections		Dividi alle Intersezioni
 Break At Points		Dividi nei Punti
 Break_At_Intersections	Break at intersections	Dividi alle intersezioni
@@ -202,31 +202,31 @@ Clear_Layer	Clear layer	Livello trasparente
 Clearance Plane		Piano di Sicurezza
 Clearance Plane Axis		Asse Piano di Sicurezza 
 Clearance Plane Axis.info	Used to specify which direction clearance moves are made.\nUsually Z, but may be set to X or Z for lathe operations.	Utilizzato per specificare in quale direzione si muove l'asse per il piano di sicurezza. Di solito Z, ma può essere impostato su X o Z per operazioni di tornitura.
-Clearance Plane.info	The 'safe' Z location to return before a rapid to a new location.	La  posizione 'sicura'  di Z  a cui andare prima di un  rapido per una nuova posizione.
+Clearance Plane.info	The 'safe' Z location to return before a rapid to a new location.	La  quota 'sicura' di Z a cui andare prima di un  rapido per una nuova posizione.
 Clearance Plane.info:CAMStyle	The clearance plane (offset from the work plane)	Il piano di sicurezza (rispetto alla superficie di lavoro)
 Click to calculate the number of teeth from the tooth size and pitch diameter.		Clicca per calcolare il numero di denti, dalla dimensione dei denti e dall diametro della ruota.
 Click to calculate the pitch diameter from the tooth size and number of teeth.		Clicca per calcolare il diametro della ruota dalla dimensione dei denti e dal numero dei denti.
 Click to calculate the tooth size from the number of teeth and pitch diameter.		Clicca per calcolare le dimensioni del dente dal numero dei denti e dal diametro della ruota.
 CLICK_OK_TO_CONFIRM	Click OK to confirm.	Fare clic su OK per confermare.
 Climb		Concorde
-Clip Area Max		Clip Area Max
-Clip Area Max.info	A 2D Point, used with ClipAreaMin to define a clipping area.\r\nIf ClipAreaMax and ClipAreaMin coordinates are both 0, the 3d machining area will not be clipped.	Un punto 2D, usata con ClipAreaMin per definire un'area di ritaglio. Se le coordinate ClipAreaMax e ClipAreaMin sono entrambi 0, l'area di lavorazione 3D non sarà tagliata.
-Clip Area Min		Clip Area Min
-Clip Area Min.info	A 2D Point, used with ClipAreaMax to define a clipping area.\r\nIf ClipAreaMax and ClipAreaMin coordinates are both 0, the 3d machining area will not be clipped.	Un punto 2D, usata con ClipAreaMax per definire un'area di ritaglio. Se le coordinate ClipAreaMax e ClipAreaMin sono entrambi 0, l'area di lavorazione 3D non sarà tagliata.
+Clip Area Max		Limite max zona
+Clip Area Max.info	A 2D Point, used with ClipAreaMin to define a clipping area.\r\nIf ClipAreaMax and ClipAreaMin coordinates are both 0, the 3d machining area will not be clipped.	Un punto 2D, usato con [Limite min zona] per definire la zona limitata. Se le coordinate [Limite max zona] e [Limite min zona] sono entrambe a 0, l'area di lavorazione 3D non sarà tagliata.
+Clip Area Min		Limite min zona
+Clip Area Min.info	A 2D Point, used with ClipAreaMax to define a clipping area.\r\nIf ClipAreaMax and ClipAreaMin coordinates are both 0, the 3d machining area will not be clipped.	Un punto 2D, usata con [Limite max zona] per definire un'area di ritaglio. Se le coordinate [Limite max zona] e [Limite min zona] sono entrambe a 0, l'area di lavorazione 3D non sarà tagliata.
 Clock Face		Quadrante di orologio
-Close		Chiude
+Close		Chiudi
 Closed		Chiuso
 Closed.info	Open - polyline has two ends and no defined inside or outside.\r\nClosed - the first and last points are the same and has a well defined inside and outside.	Vero - La Polilinea possiede due estremità unite (Chiusa).\nFalso - La Polilinea possiede due estremità separate (Aperta).
 Coating		Rivestimento
 Coating.info	Tool coating.	Rivestimento Utensile
 Collision Detection		Rilevamento collisione
-Collision Detection.info	Makes sure adjacent toolpaths do not overlap by unioning them together.	Assicura che percorsi adiacenti non si sovrappongono quando sono unificati.
+Collision Detection.info	Makes sure adjacent toolpaths do not overlap by unioning them together.	Assicura che percorsi adiacenti non si sovrappongano quando vengono unificati.
 Color		Colore
 Color.info	Color used to draw objects within this layer.	Colore usato per disegnare oggetti all'interno di questo Livello.
 Color.info:StockDef	Color used to display the stock.	Colore usato per visualizzare la superfice del materiale.
 Colors		Colori
 Columns		Colonne
-Columns.info	Number of columns when using a grid nest method.	Numero di colonne per la griglia di nidificazione.
+Columns.info	Number of columns when using a grid nest method.	Numero di colonne per la griglia di ripetizione.
 Comment		Commento
 Comment.info	Rule for an opening comment character.\r\nUsed by {$comment} macro.	Regola per un carattere di inizio commento.\r\nUsato dalla macro {$comment}.
 Comment.info:ToolDefinition	This text can be included using the {$tool.comment} macro from the post processor.	
@@ -371,7 +371,7 @@ Drag mouse around center point to rotate - Rotation Axis = {0}, Angle = {1}°\nP
 Drag Point		Trascinare Punti
 Drag point list points, press enter or middle mouse to end, ESC to cancel		Trascinare  punto o elenco di punti, premere INVIO o centrale del mouse per finire, ESC per annullare
 Drag polyline points, press enter or middle mouse to end, ESC to cancel		Trascinare i punti polilinea, premere INVIO o centrale del mouse per finire, ESC per annullare
-Drag rectangle points, press enter or middle mouse to end, ESC to cancel		
+Drag rectangle points, press enter or middle mouse to end, ESC to cancel		Trascinare i punti del rettangolo
 DRAG_ENTITY_1	SHIFT+arrow moves 1 grid unit, CTRL+SHIFT+arrow moves 1 major grid unit	MAIUSC + freccia si muove 1 unità di rete, CTRL + MAIUSC + freccia si muove di 1 unità principale di griglia
 DRAG_MACHINING_ORIGIN	Drag machining origin	Trascinare l'origine di lavorazione
 DRAG_MODE	Drag Mode	Modalità trascinamento
@@ -477,7 +477,7 @@ ENTITY_MOVE_1	Select a reference point	Selezionare un punto di riferimento
 ENTITY_MOVE_2	Enter destination point	Inserisci il punto di destinazione
 Entity_Reorder	Entity reorder	Entità di riordino
 ENTITY_ROTATE_1	Select rotation center point	Selezionare il punto centrale di rotazione
-ENTITY_ROTATE_2	Select reference angle	Seleziona angolo di riferimento
+ENTITY_ROTATE_2	Select reference angle	Selezionare angolo di riferimento
 ENTITY_ROTATE_3	Drag mouse around center point to rotate - Rotation Axis = {0}, Angle = {1}°\nPress X,Y or Z to change axis	Trascinare il mouse intorno al punto centrale per ruotare - Asse di rotazione = {0}, Angolo = {1} ° Premere X, Y o Z per cambiare l'asse
 ENTITY_SELECT	Select objects, (use ctrl+click to deselect), then press enter or esc.	Selezionare gli oggetti, (usare CTRL + clic per deselezionare), quindi premere INVIO o ESC.
 ERR_CANT_CONVERT_TO_REGION_POLY	Warning! Can not convert {0} to region or polyline.	Attenzione! Impossibile convertire {0} in regione o polilinea.
@@ -593,7 +593,7 @@ Finish Stepover At Target Depth		Stepover fin. a [QO]
 Finish Stepover At Target Depth.info	If true, then finish stepover stock will be removed at the target depth pass.  If false then finish stepover removed at each depth pass.	Se Vero, il materiale lasciato per [Stepover finitura] viene asportato in un solo passaggio a [Quota Obiettivo].\n\nSe Falso, il materiale viene asportato in più passaggi usando l'incremento quota di taglio.
 Finish Stepover At TargetDepth		Stepover finitura a [Quota Obiettivo]
 Finish Stepover At TargetDepth.info	If true, then finish stepover stock will be removed at the target depth pass.  If false then finish stepover removed at each depth pass.	Se Vero, il materiale lasciato da  [Stepover finitura] viene asportato in un solo passaggio a [Quota Obiettivo].\n\nSe Falso, il materiale viene asportato in più passaggi usando l'incremento [Stepover finitura].
-Finish Stepover.info	This is the thickness of stock to leave for the final cut.	Lo spessore del materiale, intorno ai perimetri delle forme, che verrà asportato con l'ultima passata del PU.
+Finish Stepover.info	This is the thickness of stock to leave for the final cut.	Lo spessore del materiale, intorno ai perimetri delle geometrie, che verrà asportato con l'ultima passata del PU.
 Finishing		Finitura
 First select a path for the spiral to follow.		Selezionare prima un percorso da seguire per la spirale.
 Fit Points		Adatta punti
@@ -605,7 +605,7 @@ FIT_CURVE_START	Fit Curves start {0} segments	Adatta Curve inizia {0} segmenti
 Flat Bar		Barra piatta
 Flat Spiral		Spirale piatta
 Flat Spiral Draw		Disegno a spirale piatta
-Flip Axis		Asse di Rotazione
+Flip Axis		Asse di rotazione
 Flip Axis.info	The axis around which you would flip the stock to machine the back face.	L'asse attorno al quale va ruotato il Grezzo per lavorare la faccia posteriore.
 Flute Length		Lunghezza Tagliente
 Flute Length.info	Length of the cutting flutes.	Lunghezza dei Taglienti dell'Utensile.
@@ -643,7 +643,7 @@ GCode Editor.info	An external command used to edit gcode files.\r\nIf no command
 GCode Generation		Generazione GCode
 G-Code Options		Opzioni GCode 
 GCode Order		Ordine GCode 
-GCode Order.info	Auto - post all consecutive MOPs with the same toolnumber for each nest copy\r\nNestEachMOP - each MOP is output at each nest location before moving to the next MOP.\r\nAllMOPsPerCopy - All the MOPs in the part are posted before moving to the next nest location.	[Auto] - Inserisce tutte le MOP consecutive con stesso  numero di utensile per ogni copia Nidificazione\r\n[Nidifica Ogni MOP] - Ogni MOP è inserita in ogni posizione Nidificazione prima di passare alla successiva MOP.\r\n[Tutte le MOP per Copia] - Tutte le MOP della parte sono inserite prima di passare alla successiva posizione Nidificazione.
+GCode Order.info	Auto - post all consecutive MOPs with the same toolnumber for each nest copy\r\nNestEachMOP - each MOP is output at each nest location before moving to the next MOP.\r\nAllMOPsPerCopy - All the MOPs in the part are posted before moving to the next nest location.	[Auto] - Inserisce tutte le MOP consecutive con stesso  numero di utensile per ogni copia.\r\n[Ripeti Ogni MOP] - Ogni MOP è generata per ogni posizione di ripetizione prima di passare alla successiva MOP.\r\n[Tutte le MOP per Copia] - Tutte le MOP della parte sono inserite prima di passare alla successiva posizione di ripetizione.
 GcodeFiles	Gcode	Gcode
 Gear information. Select and right click to copy to clipboard.		Informazioni Ingranaggio. Selezionare e fare clic destro per copiare negli appunti.
 Gear Information:		Informazioni Ingranaggio:
@@ -651,13 +651,13 @@ Generate Biomorph		Genera biomorfa
 Generate Gear		Genera Ingranaggio
 Generate toolpath '{0}' duration : {1}		Genera PU '{0}' durata: {1}
 Generate toolpaths		Genera PU
-GenerateWaterlines duration : {0}		Genera Waterline durata: {0}
+GenerateWaterlines duration : {0}		Genera LdG durata: {0}
 Gerber - Flatten		Gerber - Unisci
 Gerber - Flatten.info	If True, flatten all layers to a single (unioned) layer.	Se Vero, unifica tutti i Livelli in un unico Livello.
 Gerber - Subtract Layers		Gerber - Sottrai Livelli
 Gerber - Subtract Layers.info	If True, 'Clear' layers will be subtracted from previous layers.	Se Vero, strati chiari saranno sottratti dai livelli precedenti.
 Gerber - Union Layers		Gerber - Unifica Livelli
-Gerber - Union Layers.info	If True, all shapes on each layer will be unioned together.	Se Vero, tutte le forme su ogni Livello saranno unificate.
+Gerber - Union Layers.info	If True, all shapes on each layer will be unioned together.	Se Vero, tutte le geometrie su ogni Livello saranno unificate.
 Gerber - Union Traces		Gerber - Unifica Tracce
 Gerber - Union Traces.info	If True, each trace will be unioned together.  If False the traces will be left as line and arc sections.	Se Vero, ogni traccia viene unificata.\n\n Se Falso le tracce saranno lasciate come linee o sezioni di arco.
 Gerber Import		Gerber - Importa
@@ -749,7 +749,7 @@ Insert_Entity	Insert entity	Inserisci entità
 Insert_MOP	Insert MOP	Inserisci MOP
 Inside		Interno
 Inside / Outside		Tipo profilo
-Inside / Outside.info	Whether to cut Inside or Outside the selected shapes.\r\nFor open shapes the point order determines which side of the line to cut.	Sia per tagliare all'interno che all'esterno delle forme selezionate.\nPer le forme aperte  determina il lato della linea di taglio.
+Inside / Outside.info	Whether to cut Inside or Outside the selected shapes.\r\nFor open shapes the point order determines which side of the line to cut.	Sia per tagliare all'interno che all'esterno delle geometrie selezionate.\nPer le geometrie aperte determina il lato della linea da lavorare.
 Inside + Outside Offsets		Interno + Esterno
 Inside Offsets		Interno
 Install {0} License		
@@ -762,8 +762,8 @@ Invalid valid for tooth size. Please enter a value and try again.		Valore non va
 Invert		Invertire
 Invert Arcs		Inverti Archi
 Invert Arcs.info	If set True, CW arcs will be output as CCW and vice versa.\nThis may be useful for front face lathe operations.	Se è impostato su Vero archi CW vengono commutati come CCW e viceversa.\nCiò può essere utile per operazioni di tornitura delle facce anteriori.
-Invert Faces		Inverti Facce
-Invert_Faces	Invert faces	Inverti facce
+Invert Faces		Inverti le normali
+Invert_Faces	Invert faces	Inverti le normali
 Involute		Evolvente
 Involute Gear		Ingranaggi Evolvente 
 Involute Gear Generator		Generatore ingranaggi Evolvente 
@@ -953,17 +953,17 @@ Name.info:MOPProfile	Each machine operation can be given a meaningful name or de
 Name.info:ToolDefinition	Unique name of this item.	Nome univoco di questo Utensile.
 Name.info:ToolLibrary		Name.info: ToolLibrary
 NC File		File NC 
-Nest		Nidificazione
-Nest Each MOP		Nidifica ogni MOP
-Nest Method		Metodo Nidificazione
-Nest Method.info	Grid - a grid arry of part copies.\r\nIsoGrid - a grid with alternate rows offset.\r\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie di parti.\r\nIsoGrid - una griglia con righe alternate offset.\r\nPointList - punti copia sono presi da un elenco di punti.
-Nest Method.info:NestingInfo	Grid - a grid arry of part copies.\r\nIsoGrid - a grid with alternate rows offset.\r\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie di parti.\r\nIsoGrid - una griglia con righe alternate offset.\r\nPointList - punti copia sono presi da un elenco di punti.
-Nest to point list		Da Nidificazione a Elenco punti 
-Nest_Item_Move	Nest item move	Nidificazione voce mossa
-Nesting		Nidificazione
-Nesting Items		Nidificazione - Elementi
-Nesting Items.info		Elementi che compongono la Nidificazione
-Nesting.info	Nests can be used to create arrays of copies of parts.	Le Nidificazioni possono essere usate per creare di copie di parti ordinate come griglia (matrice).
+Nest		Ripetizione
+Nest Each MOP		Ripeti ogni MOP
+Nest Method		Metodo Ripetizione
+Nest Method.info	Grid - a grid arry of part copies.\r\nIsoGrid - a grid with alternate rows offset.\r\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie di parti.\r\nIsoGrid - una griglia con righe alternate offset.\r\nPointList - i centri delle copie sono presi da un elenco di punti.
+Nest Method.info:NestingInfo	Grid - a grid arry of part copies.\r\nIsoGrid - a grid with alternate rows offset.\r\nPointList - copy points are taken from a point list.	Griglia - una matrice a griglia di copie di parti.\r\nIsoGrid - una griglia con righe alternate offset.\r\nPointList - i centri delle copie sono presi da un elenco di punti.
+Nest to point list		Da Ripetizione a Elenco punti 
+Nest_Item_Move	Nest item move	Muovi Elemento Ripetizione
+Nesting		Ripetizione
+Nesting Items		Ripetizione - Elementi
+Nesting Items.info		Elementi che compongono la Ripetizione
+Nesting.info	Nests can be used to create arrays of copies of parts.	Le Ripetizioni possono essere usate per creare di copie di parti ordinate come griglia (matrice).
 New		Nuovo
 New (0.9.8)		Nuovo (0.9.8)
 New CAM style		Nuovo stile CAM
@@ -1069,8 +1069,8 @@ Pitch Diameter		Diametro Passo
 Pitch Diameter:		Diametro Passo:
 Planar		Planare
 Planar.info	This property is not currently used	Questa proprietà non è attualmente utilizzato
-Plane Slice Only		Solo Piano di Taglio  
-Plane Slice Only.info	For waterline machining methods, if True, then do simple plane slicing only.\r\nWARNING! If True, overhangs will not be detected.	Per i metodi di lavorazione a Waterline, se Vero, fa solo il piano di taglio.\r\nATTENZIONE! Se Vero, le sporgenze non vengono rilevate.
+Plane Slice Only		Solo sezionam. piano  
+Plane Slice Only.info	For waterline machining methods, if True, then do simple plane slicing only.\r\nWARNING! If True, overhangs will not be detected.	Per i metodi di lavorazione a linea di galleggiamento (LdG), se Vero, scansiona solo in piano.\r\nATTENZIONE! Se Vero, le sporgenze non vengono rilevate.
 Plane Slice X		Piano di taglio X
 Plane Slice Y		Piano di taglio Y
 Plane Slice Z		Piano di taglio Z
@@ -1082,12 +1082,12 @@ Plunge Feedrate		Avanzamento Verticale
 Plunge Feedrate.info	The feed rate to use when plunging.	La velocità di avanzamento da utilizzare quando il mandrino scende (Plunge Feedrate).
 Poche1.SpindleDirection		Tasca 1. Direzione mandrino
 Pocket		Tasca 
-POCKET_UNCLOSED_SHAPES_IGNORED	Unclosed shapes in pocket ignored!	Forme non chiusa nella tasca ignorata!
+POCKET_UNCLOSED_SHAPES_IGNORED	Unclosed shapes in pocket ignored!	Geometrie non chiuse nella tasca ignorate!
 Point Cloud Reader		Lettore nuvola di punti
 Point list		Elenco di Punti
 Point List		Elenco di Punti
 Point List ID		ID Elenco di punti
-Point List ID.info	If using a point list nest method, this property specifies the ID of the point list drawing object.	Se si utilizza un Elenco di punti per una nidificazione, questa proprietà specifica l'ID dell'Elenco di punti usato.
+Point List ID.info	If using a point list nest method, this property specifies the ID of the point list drawing object.	Se si utilizza un Elenco di punti per una Ripetizione, questa proprietà specifica l'ID dell'Elenco di punti usato.
 POINT_DRAW1	Enter points then press enter, (c)lose or esc	Inserire i punti poi premere INVIO, (C)hiude o ESC
 Point_Select	Point select	Selezionare il punto
 PointList		Elenco di Punti
@@ -1177,8 +1177,8 @@ Refresh		Rinfresca
 Region		Regione
 Region Fill Style		Stile riempimento Regione
 Region Fill Style.info	Method to use to fill regions.	Metodo da utsare per riempire le regioni.
-Region Fill Style.info:CAMStyle	Method to use to fill regions.  Waterline rough only.	Metodo da usare per riempire regioni. Solo per sgrossatura Waterline.
-Region Fill Style.info:MOP3DSurface	Method to use to fill regions.  Waterline rough only.	Metodo da usare per riempire regioni. Solo per sgrossatura Waterline.
+Region Fill Style.info:CAMStyle	Method to use to fill regions.  Waterline rough only.	Metodo da usare per riempire regioni. Solo per [LdG - sgrossatura].
+Region Fill Style.info:MOP3DSurface	Method to use to fill regions.  Waterline rough only.	Metodo da usare per riempire regioni. Solo per [LdG - sgrossatura].
 Region_Fill	Region fill	Riempire Regioni
 REGION_FILL_DURATION	Region Fill duration : {0}	Durata riempimento Regione: {0}
 Regular		Regolare
@@ -1243,7 +1243,7 @@ Roughing Clearance		Margine sgrossatura
 Roughing Clearance.info	This is the amount of stock to leave after the final cut.\nUsually removed later in a finishing pass.\nNegative values can be used to oversize holes.	La quantità di materiale da lasciare dopo la passata finale di Sgrossatura.\nQuesto materiale viene rimosso di solito successivamente da una passata di finitura.\nValori negativi possono essere utilizzati per aumentare il valore dell'ultima passata, creando un sovrataglio.
 Round Bar		Barra Rotonda
 Rows		Righe
-Rows.info	Number of rows when using a grid nest method.	Numero di righe per la griglia di nidificazione.
+Rows.info	Number of rows when using a grid nest method.	Numero di righe per la griglia di ripetizione.
 RPM		RPM
 RPM x Diameter x Pi / 1000		RPM x Diametro x Pi / 1000
 RPM x Tooth Load x Flutes		RPM x Carico Dente x Taglienti
@@ -1258,7 +1258,7 @@ SAVE_CHANGES_TO	Save changes to '{0}'?	Salva le modifiche a '{0}'?
 Save_Current_File	Save Current File	Salva file corrente
 SaveFile	Save File	Salva file
 Scale		Scala
-Scanline Gradient Threshold		Soglia di gradiente per Scanline
+Scanline Gradient Threshold		Soglia gradiente scansione
 Script		Script
 Script-o-matic		Script-o-matic
 Search		Ricerca
@@ -1271,7 +1271,7 @@ Select Color		Colore selezione
 Select Color.info	The color used to select paint selected shapes.	Il colore utilizzato per gli oggetti selezionati.
 Select drawing objects		Seleziona gli oggetti di disegno
 Select Fade		Seleziona dissolvenza
-Select Fade.info	Controls how much unselected shapes are faded (as a percent).	Controlla quanto sono sbiadite le forme non selezionate (in percentuale).
+Select Fade.info	Controls how much unselected shapes are faded (as a percent).	Controlla quanto sono sbiadite le geometrie non selezionate (in percentuale).
 Select point list.		Seleziona Elenco punti.
 Select reference angle		Seleziona angolo di riferimento
 Select rotation center point		Seleziona centro punto di rotazione
@@ -1290,7 +1290,7 @@ SELECT_POLY_P1	Select the new polyline starting point	Selezionare il nuovo punto
 SELECT_START_POINT	Select start point	Selezionare il punto di partenza
 Selected Objects Extrema		Estremi degli oggetti selezionati
 Selected Only		Solo selezionati
-Selected Shapes		Forme selezionati
+Selected Shapes		Geometrie selezionate
 Selection Only		Solo Selezionati
 SelectLibrary	Select library	Seleziona Libreria
 Set active part		Imposta parte attiva
@@ -1308,7 +1308,7 @@ Set_polyline_start	Set polyline start	Imposta inizio polilinea
 Set_start_point	Set start point	Imposta il punto di partenza
 Shank Diameter		Diametro codolo
 Shank Diameter.info	Diameter of the tool shank.	Diametro del codolo Utensile.
-Shape Outline		Contorno forma
+Shape Outline		Contorno forma 3D
 Show		Visualizza
 Show all		Visualizza tutto
 Show axis		Mostra assi
@@ -1322,9 +1322,9 @@ Show grid		Mostra griglia
 Show Grid		Mostra griglia
 Show Grid.info	Sets whether the drawing grid is displayed.\r\nAlternatively use the show grid button on the toolbar.	Imposta la visualizzazione della griglia di disegno. In alternativa, utilizzare il pulsante "Mostra Griglia" sulla barra degli strumenti.
 Show License Form		Mostra Modulo di licenza
-Show nests		Mostra nidificazioni
-Show Nests		Mostra nidificazioni
-Show Nests.info	Displays nest copies when the part object is selected.	Visualizza le copie della Parte Nidificata quando la Parte è selezionata.
+Show nests		Mostra ripetizioni
+Show Nests		Mostra ripetizioni
+Show Nests.info	Displays nest copies when the part object is selected.	Visualizza le ripetizioni della Parte quando la Parte è selezionata.
 Show or hide the axis		Visualizza o nasconde gli assi
 Show or hide the grid		Visualizza o nasconde la griglia
 Show properties by category		Visualizzare le proprietà per categoria
@@ -1333,7 +1333,7 @@ Show rapids		Mostra rapidi
 Show Rapids		Mostra Rapidi
 Show Rapids.info	Displays a line representing G0 rapid moves.	Visualizza una linea che rappresenta il rapido G0.
 Show Selection Corners		Mostra margini della selezione
-Show Selection Corners.info	If True, display corner markers of selected shape bounds.	Se Vero, mostra dei marcatori agli angoli delle forme selezionate. 
+Show Selection Corners.info	If True, display corner markers of selected shape bounds.	Se Vero, mostra dei marcatori agli angoli delle geometrie selezionate. 
 Show stock		Mostra Grezzo
 Show Stock		Mostra Grezzo
 Show Stock.info	Displays a block representing the stock object.	Consente di visualizzare un parallelepipedo che rappresenta il Grezzo.
@@ -1347,15 +1347,15 @@ Show_hide_axis	Show or hide the axis	Mostra o nasconde gli assi
 Show_hide_grid	Show or hide the grid	Mostra o nasconde la griglia
 Show_Layer	Show layer	Mostra il Livello
 Side Profile		Profilo laterale
-Side Profile.info	Side profiles are used to define 3D shapes from 2D drawings.	Profili laterali sono utilizzati per creare forme 3D partendo da disegni 2D.
+Side Profile.info	Side profiles are used to define 3D shapes from 2D drawings.	Profili laterali sono utilizzati per creare geometrie 3D partendo da disegni 2D.
 Silhouette		Silhouette
 Silhouettes		Silhouettes
 Simulate with CutViewer		Simulare con CutViewer
 Single Slice Test		Fetta Singola
 Size		Dimensione
 Size Threshold		Soglia Dimensione
-Size Threshold.info	Shapes with perimeters less than this value will not have any automatically calculated tabs.	Per Forme con perimetri inferiori a questo valore non sarà calcolato automaticamente nessun Fermo.
-Slice Widths		Larghezza fetta
+Size Threshold.info	Shapes with perimeters less than this value will not have any automatically calculated tabs.	Per geometrie con perimetri inferiori a questo valore non sarà calcolato automaticamente nessun Fermo.
+Slice Widths		Intervallo fette
 Slope		Smusso
 Snap to grid		Aggancia alla griglia
 Snap to Grid		Aggancia alla griglia
@@ -1418,8 +1418,8 @@ Square		Quadrato
 Square Bar		Barra quadra
 Square Box		Scatola quadrata
 Start		Angolo iniziale
-Start Corner		Angolo d'inizio
-Start Corner.info	Corner to start profiling.\r\nUsed for Horizontal and Vertical only.	Angolo per iniziare la profilazione.\r\n Utilizzato solo da [Profilo 3D] per [Orizzontale] e [Verticale].
+Start Corner		Spigolo d'inizio
+Start Corner.info	Corner to start profiling.\r\nUsed for Horizontal and Vertical only.	Spigolo da cui iniziare la scansione.\r\n Utilizzato solo da [Profilo 3D] per [Orizzontale] e [Verticale].
 Start Cut		Inizio Taglio
 Start Cut.info	Macro to use when about to feed cut.\nMay be used for plasma or laser to power on the cutting tool.	Macro da utilizzare quando si sta per iniziare il taglio.\r\nPuò essere utilizzata nel taglio al plasma o laser per accendere l'utensile da taglio.
 Start Point		Punto d'inizio
@@ -1537,7 +1537,7 @@ The distance to offset each array item from one another, with optional scale.		L
 The file '{0}' already exists!\r\nOverwrite existing file?		Il file '{0}' esiste già! Sovrascrivere il file esistente?
 The number of copies in the array.		Il numero di copie della matrice.
 The value of the following inherited property has changed.:		Il valore della seguente proprietà ereditata è cambiato.:.
-The width of each plane slice.		La larghezza di ogni fetta aereo.
+The width of each plane slice.		La distanza tra ogni fetta del modello.
 Thinking Message		Messaggio pensiero
 Thinking Message.info	Message to display when CamBam is busy calculating.\r\nDisplayed in full, unexpurgated technicolor! :-)	Messaggio da visualizzare quando CamBam è occupato nel calcolo. Visualizzato in puro, technicolor! :-)
 This is the distance between each point.		Questa è la distanza tra ciascun punto.
@@ -1740,12 +1740,12 @@ WARN_MULTIPLE_GCODE_ORIGINOFFSETS	WARNING! Multiple GCodeOriginOffsets detected.
 WARNING! Open poly detected		ATTENZIONE! Individuate polilinee aperte
 WARNING! Open poly detected (offset={0})		ATTENZIONE! Individuate polilinee aperte (offset = {0})
 Warning: undercutting may occur. Consider increasing teeth.		Attenzione: Si possono verificare lavorazioni con sottoquotazioni. Considerare di aumentare denti.
-Waterline Finish		Finitura WaterLine
-Waterline Rough		Sgrossatura WaterLine
+Waterline Finish		LdG - finitura
+Waterline Rough		LdG - sgrossatura
 Waterline Safety Check		Controllo della sicurezza WaterLine
-Waterline Safety Check.info	If True, prevent gcode creating if errors are suspected in 3D waterline toolpaths.	Se Vero, impedisce la generazione di GCode se si sospettano errori in PU 3D Waterline.
-WATERLINE_DURATION	GenerateWaterlines duration : {0}	Durata generazione Waterline: {0}
-WATERLINE_MUST_SPECIFY_DEPTHINCREMENT	Must specify depth increment for waterline machining	È necessario specificare la quota di incremento per lavorazioni Waterline
+Waterline Safety Check.info	If True, prevent gcode creating if errors are suspected in 3D waterline toolpaths.	Se Vero, impedisce la generazione di GCode se si sospettano degli errori nei PU generati con LdG.
+WATERLINE_DURATION	GenerateWaterlines duration : {0}	Durata generazione LdG: {0}
+WATERLINE_MUST_SPECIFY_DEPTHINCREMENT	Must specify depth increment for waterline machining	È necessario specificare la quota di incremento per lavorazioni a linea di galleggiamento (LdG).
 Width		Dim. - Larghezza
 Width.info	The width of the rectangle.	La larghezza del rettangolo.
 Width.info:CBValue`1	The final width of the holding tab, measured at the thinnest part of the tab.	La larghezza finale dei fermi, misurata nella parte più sottile.

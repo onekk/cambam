@@ -36,11 +36,11 @@ CC BY-NC-SA 3.0 IT
 
 In questo sito trovate:
 
-1) La traduzione dell'interfaccia di CamBam per la lingua italiana il file translate_it-[AAAAMMGG].
+1) La traduzione dell'interfaccia di CamBam per la lingua italiana il file translate_it-20151115.
 
 2) Il file cambam-helpers.zip che contiene i file e le istruzioni per avere CamBam nel vostro menu applicazioni e per associare i file di CamBam con il programma.
 
-3) il file CamBam-Intro-it.pdf cioè "CamBam Guida Introduttiva", versione Alpha un manuale introduttivo all'uso del programma, che rispecchia il file di traduzione qui fornito.
+3) il file CamBam-Intro-it.pdf cioè "CamBam Guida Introduttiva", versione 0.30-Beta un manuale introduttivo all'uso del programma, che rispecchia il file di traduzione qui fornito.
 
 
 Usate le Issues per contattarmi.

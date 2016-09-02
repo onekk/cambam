@@ -204,7 +204,7 @@ Clearance Plane Axis		Asse Piano di Sicurezza
 Clearance Plane Axis.info	Used to specify which direction clearance moves are made.\nUsually Z, but may be set to X or Z for lathe operations.	Utilizzato per specificare in quale direzione si muove l'asse per il piano di sicurezza. Di solito Z, ma può essere impostato su X o Z per operazioni di tornitura.
 Clearance Plane.info	The 'safe' Z location to return before a rapid to a new location.	La  quota 'sicura' di Z a cui andare prima di un  rapido per una nuova posizione.
 Clearance Plane.info:CAMStyle	The clearance plane (offset from the work plane)	Il piano di sicurezza (rispetto alla superficie di lavoro)
-Click to calculate the number of teeth from the tooth size and pitch diameter.		Clicca per calcolare il numero di denti, dalla dimensione dei denti e dall diametro della ruota.
+Click to calculate the number of teeth from the tooth size and pitch diameter.		Clicca per calcolare il numero di denti, dalla dimensione dei denti e dal diametro della ruota.
 Click to calculate the pitch diameter from the tooth size and number of teeth.		Clicca per calcolare il diametro della ruota dalla dimensione dei denti e dal numero dei denti.
 Click to calculate the tooth size from the number of teeth and pitch diameter.		Clicca per calcolare le dimensioni del dente dal numero dei denti e dal diametro della ruota.
 CLICK_OK_TO_CONFIRM	Click OK to confirm.	Fare clic su OK per confermare.
